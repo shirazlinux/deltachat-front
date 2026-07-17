@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ارتباط - ارسلان</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="تغییر تم">
+            <span class="icon">🌙</span>
+        </button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">عضویت و راهنمای نصب</a></li>
+        <li><a href="contact.html">ارتباط با ادمین</a></li>
+	<li><a href="https://dc.arsalandalvand.ir/id/share">اشتراک‌گذاری</a></li>
+        <li><a href="apps/">برنامه‌ها (WebXDC)</a></li>
+
+        <li><a href="download.html">دانلود دلتاچت</a></li>
+        <li><a href="deltachat.html">دلتاچت چیست؟</a></li>
+        <li><a href="info.html">این سرور چیست؟</a></li>
+        <li><a href="privacy.html">حریم خصوصی</a></li>
+        </ul>
+    </nav>
+   <div class="container" style="max-width: 900px; margin: 0 auto;">
+        <div class="glass-panel fade-in" data-dc-link="B0B445BB647E106EAD5874E4D544DB41BF0A761C&i=-VEiNX45vDFRAaLDDFE-A4a0&s=hEMEzmyp9LS6GXzNTF59P2sB&a=arsalan%40%5B37.152.191.28%5D&n=%23Arsalan+2" style="margin-bottom: 30px; position: relative; overflow: hidden; border: 1px solid rgba(0, 210, 255, 0.3); box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);">
+            <div style="background: linear-gradient(90deg, transparent, rgba(0, 210, 255, 0.2), transparent); position: absolute; top: 0; left: 0; right: 0; padding: 8px; text-align: center; font-size: 0.9rem; font-weight: bold; color: var(--accent-color); letter-spacing: 1px;">
+               ادمین سرور
+            </div>
+            
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 25px;">                
+                <h3 style="margin: 15px 0 5px 0; font-size: 1.8rem;">Arsalan#</h3>
+                <span style="background: rgba(0, 210, 255, 0.15); color: var(--accent-color); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Server Admin</span>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                    <button class="cta-button" onclick="openDeltaChat(this)" style="min-width: 160px;">
+                        <span style="margin-left: 8px;">💬</span>پیام در دلتاچت
+                    </button>
+                    <button class="cta-button" onclick="copyLink(this)" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); min-width: 160px;">
+                        <span style="margin-left: 8px;">📋</span>کپی آدرس
+                    </button>
+                </div>
+                
+                <div class="code-box" style="margin-top: 25px; font-size: 0.75em; opacity: 0.8; max-width: 100%;">
+                     <pre style="overflow-x: auto;"><code>https://i.delta.chat/#B0B445BB647E106EAD5874E4D544DB41BF0A761C&i=-VEiNX45vDFRAaLDDFE-A4a0&s=hEMEzmyp9LS6GXzNTF59P2sB&a=arsalan%40%5B37.152.191.28%5D&n=%23Arsalan+2</code></pre>
+                </div>
+
+                <div style="position: relative;">
+                    <img src="images/arsalan.png" id="result-qr-omid" width="300" alt="Omid" style="border: 1px solid var(--accent-color); padding: 3px; background: rgba(255,255,255,0.1);" />
+                    <div style="position: absolute; bottom: 5px; right: 5px; background: #2ecc71; width: 15px; height: 15px; border-radius: 50%; border: 2px solid var(--bg-color);" title="Online"></div>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="manual-box glass-panel fade-in">
+            <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--text-primary); display: flex; align-items: center gap: 10px;">
+                <span style="font-size: 1.2rem;">💡</span> راهنمای ارتباط سریع:
+            </h3>
+            <ol style="margin-right: 20px; font-size: 0.95em; color: var(--text-secondary); line-height: 1.8;">
+                <li>روی دکمه <strong>"پیام در دلتاچت"</strong> کلیک کنید.</li>
+                <li>اگر برنامه باز نشد، دکمه <strong>"کپی آدرس"</strong> را بزنید.</li>
+                <li>در دلتاچت، به بخش <strong>Saved Messages</strong> بروید و لینک را Paste و ارسال کنید.</li>
+                <li>روی لینک ارسال شده کلیک کنید تا پروفایل ادمین باز شود.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        سرور چت ارسلان
+    </footer>
+
+    <script>
+        function getDCLink(element) {
+            const container = element.closest('[data-dc-link]');
+            if (!container) {
+                console.error("Link container not found");
+                return null;
+            }
+            return container.getAttribute('data-dc-link');
+        }
+
+        function openDeltaChat(element) {
+            const link = getDCLink(element);
+            if (link) {
+                window.location.href = "openpgp4fpr:" + link.replaceAll('&i', '#i');
+            }
+        }
+
+        function copyLink(element) {
+            const link = getDCLink(element);
+            if (link) {
+                fallbackCopyTextToClipboard("https://i.delta.chat/#" + link);
+            }
+        }
+
+        function copyText(el) {
+            copyToClipboard(el.innerText);
+        }
+
+        function copyToClipboard(text) {
+            fallbackCopyTextToClipboard(text);
+        }
+
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+
+            textArea.style.position = "fixed";
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.width = "200px";
+            textArea.style.height = "100px";
+            textArea.style.padding = "12px";
+            textArea.style.border = "1px solid #ccc";
+            textArea.style.borderRadius = "8px";
+            textArea.style.background = "white";
+            textArea.style.outline = "none";
+            textArea.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
+            textArea.style.zIndex = "9999";
+            textArea.style.opacity = "0.9";
+
+            textArea.setAttribute("readonly", "");
+            textArea.setAttribute("aria-label", "کد ورود به دلتاچت");
+
+            document.body.appendChild(textArea);
+
+            textArea.focus();
+            textArea.select();
+
+            let success = false;
+            try {
+                success = document.execCommand('copy');
+                if (success) {
+                    alert("✅ کپی شد!");
+                } else {
+                    alert("❌ کپی ناموفق. لطفاً دستی کپی کنید.");
+                }
+            } catch (err) {
+                console.error('Fallback copy failed', err);
+                alert("❌ کپی ناموفق. لطفاً دستی کپی کنید.");
+            } finally {
+                document.body.removeChild(textArea);
+            }
+
+            const btn = document.querySelector('.copy-btn');
+            if(btn) {
+            }
+        }
+    </script>
+</body>
+</html>

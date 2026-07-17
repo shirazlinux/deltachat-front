@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>دلتاچت</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="logo.svg">
+    <script src="qrcode.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="تغییر تم">
+            <span class="icon">🌙</span>
+        </button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">عضویت و راهنمای نصب</a></li>
+        <li><a href="contact.html">ارتباط با ادمین</a></li>
+	<li><a href="https://dc.arsalandalvand.ir/id/share">اشتراک‌گذاری</a></li>
+        <li><a href="apps/">برنامه‌ها (WebXDC)</a></li>
+        <li><a href="download.html">دانلود دلتاچت</a></li>
+        <li><a href="deltachat.html">دلتاچت چیست؟</a></li>
+        <li><a href="info.html">این سرور چیست؟</a></li>
+        <li><a href="privacy.html">حریم خصوصی</a></li>
+        </ul>
+    </nav>
+
+    <h2>سرور چت ارسلان</h2>
+
+    <div class="glass-panel fade-in">
+        <p style="margin-top: -13px; font-size: 1.05em; line-height: 1.6;">
+            <span style="font-size: 0.95em; color: var(--text-primary); line-height: 1.7;">
+    <strong style="color: #ff2424; font-size: 1.1em; display: block; margin-bottom: 0px;">
+        ⚠️ پشتیبانی از سرور دلتاچت: لطفاً به ما و کاربران دیگر کمک کنید تا این پیام‌رسان زنده بماند.
+    </strong>
+    <span style="font-size: 0.95em; color: #fff; line-height: 1.7;">
+        این سرور چت اختصاصی با هدف ارتباط امن و پایدار در شرایط سخت اینترنت ایجاد شده است.  
+        و حفظ این پایداری به صرف هزینه، وقت و انرژی زیادی نیاز دارد.  
+            لطفا درصورتی که فعالیت های ما تا به حال براتون براتون مفید بوده، از طریق لینک زیر دونیت کنید تا هم هزینه های سرورامون تامین بشه و هم انگیزه برای ادامه فعالیت های ما بشه:
+    </span>
+    <br>
+    <div style="margin-top: -10px;">
+<a href="https://daramet.com/arsalandalvand"
+   target="_blank"
+   class="donate-glass-banner fade-in"
+   aria-label="حمایت مالی از سرور">
+
+    <div class="donate-left">
+        <img src="images/Arsalan.jpg" alt="ShieldPack" class="donate-avatar">
+        <div class="donate-text">
+            <strong>حمایت از سرور چت</strong>
+            <span>با حمایت شما، سرور ها و فعالیت های ما پایدار می‌ماند ❤️</span>
+        </div>
+    </div>
+
+    <div class="donate-cta">
+        حمایت مالی
+    </div>
+</a>
+    </div>
+    </span>
+        </p>
+    </div>
+
+    <div class="glass-panel fade-in">
+        <p style="margin-top: -13px; font-size: 1.05em; line-height: 1.6;">
+            <span style="font-size: 0.95em; color: var(--text-primary); line-height: 1.7;">
+                <strong>ساده، سریع و همیشه متصل</strong><br>
+                 دلتاچت یک پیام‌رسان است که بر پایه استاندارد ایمیل ساخته شده، اما تجربه‌ای سریع و آشنا مانند سرویس‌های چت مدرن به شما ارائه می‌دهد. فقط کافی است دلتاچت را دانلود بکنید و یک حساب کاربری در سرور ما بسازید تا بتوانید با هر کاربر Delta Chat گفتگو کنید. بدون نیاز به شماره تلفن و بدون نگرانی از فیلترینگ و با حفظ کامل حریم خصوصی چت کنید.
+                برای شما یک سرور اختصاصی و پرسرعت برای شما آماده کرده‌ایم. کافیست دکمه پایین را بزنید تا بر روی سرور ما اکانت شما ساخته شود
+            </span>
+        </p>
+    </div>
+
+    <div id="account-result" class="glass-panel fade-in" style="display: none;">
+        <h2 style="margin-top: -12px;">عضویت در پیامرسان</h2>
+        <div class="input-container">
+            <label for="username">نام کاربری دلخواه خود را وارد کنید:</label>
+            <input type="text" id="username" maxlength="30" oninput="validateUsername(this)"
+                placeholder="مثلاً: ali_reza" required />
+            <div id="error" class="error">لطفاً فقط حروف کوچک، اعداد و زیرخط (_) استفاده کنید.</div>
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 17px; margin-bottom: -6px;">
+            <button class="cta-button" onclick="openDeltaChat()" style="font-size: 0.9em; padding: 10px 20px;">ورود به
+                دلتاچت</button>
+            <button class="cta-button" onclick="openDeltaChatIOS()"
+                style="font-size: 0.9em; padding: 10px 20px; background: #007AFF;">ورود مخصوص iOS</button>
+            <button class="cta-button" onclick="copyLink()"
+                style="font-size: 0.9em; padding: 10px 20px; background: #444;">کپی کد دعوت</button>
+        </div>
+        <div class="code-box">
+            <pre><code id="dynamic-username"></code></pre>
+        </div>
+        <div style="background: white; padding: 7px; border-radius: 8px; display: inline-block;">
+            <div id="qrcode-container" style="margin-top: 0px; display: inline-block; width: 220px; height: 220px;">
+            </div>
+            <p style="color: #666; font-size: 0.8em; margin: 5px 0 0 0;">(کد فوق مخصوص اندروید/دسکتاپ است - برای iOS از
+                دکمه یا از آموزش زیر استفاده کنید)</p>
+        </div>
+    </div>
+
+    <div class="manual-box glass-panel">
+        <strong>راهنمای نصب دلتاچت و افزودن دستی کد دعوت (اگر دکمه کار نکرد):</strong>
+        <ol>
+            <li style="font-size: 1.1em; font-weight: 500;">
+                <a href="download.html" target="_blank">ابتدا برای دانلود برنامه دلتاچت روی اینجا کلیک بکنید.</a>
+            </li>
+            <li>در دلتاچت "ایجاد پروفایل جدید" (Create new profile) را انتخاب کنید.</li>
+            <li>سپس "استفاده از سرور دیگر" (Use Other server) را بزنید.</li>
+            <li>سپس "اسکن کد دعوت" (SCAN INVITATION CODE) را بزنید.</li>
+            <li>کد دعوت بالا یا عبارت زیر را کپی کرده و در بخش اسکن کد بر روی سه نقطه بزنید و گزینه "جایگذاری از حافظه"
+                (Paste from clipboard) را بزنید:</li>
+            <div class="code-box">
+                <button class="copy-btn" onclick="copyLink()">کپی کد</button>
+                <pre><code id="manual-link"></code></pre>
+            </div>
+            <p id="manual-link" dir="ltr"
+                style="word-break: break-all; margin-top: 10px; color: #ccc; cursor: pointer;"
+                onclick="copyText(this)"></p>
+            <li style="font-size: 1.1em; font-weight: 500;">
+                <a href="contact.html" target="_blank" style="color: #ff2424;">
+                    با ادمین سرور ارتباط بگیرید تا در گروه ها ادتون بکنه. 
+                    <a href="contact.html" target="_blank">
+                        (برای ارتباط با من روی اینجا کلیک کنید)
+                    </a>
+                </a>
+            </li>
+
+    </div>
+
+
+    <div class="manual-box glass-panel" style="background: rgba(255, 255, 255, 0.05); border-top: 1px solid #444;">
+        <strong>نکته مخصوص کاربران iOS (آیفون):</strong>
+        <p style="font-size: 0.9em; margin-top: 10px;">کاربران آیفون باید لینک استاندارد بالا را کپی کرده و در هنگام
+            ساخت اکانت جدید به شکل زیر عمل کنند:</p>
+        <p dir="ltr" style="font-size: 0.85em;">new account > use other server > scan > paste</p>
+        <p style="font-size: 0.85em; margin-top: 10px;">اگرچه کلیک روی دکمه ورود در iOS ممکن است کار کند، اما به دلیل
+            محدودیت‌های سیستم‌عامل، روش کپی و جایگذاری (Paste) پیشنهاد می‌شود.</p>
+    </div>
+
+    <script>
+        function validateUsername(input) {
+            const value = input.value;
+            const validPattern = /^[a-z0-9_]+$/;
+
+            let lowerCaseValue = value.toLowerCase();
+            if (input.value === '') {
+                document.getElementById('error').style.display = 'none';
+            } else if (!validPattern.test(lowerCaseValue)) {
+                const filteredValue = lowerCaseValue.replace(/[^a-z0-9_]/g, '');
+                input.value = filteredValue;
+                document.getElementById('error').style.display = 'block';
+            } else {
+                input.value = lowerCaseValue;
+                document.getElementById('error').style.display = 'none';
+            }
+        }
+
+        let currentLink = "";
+        let currentLinkIOS = "";
+
+        function generateRandomString(length) {
+            const charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+            let result = "";
+            for (let i = 0; i < length; i++) {
+                result += charset.charAt(Math.floor(Math.random() * charset.length));
+            }
+            return result;
+        }
+
+        document.getElementById('username').addEventListener('input', function () {
+            const username_html = this.value.trim();
+            generateAccount(username_html)
+        });
+
+        function generateAccount(username_html) {
+            let username;
+            if (typeof username_html !== 'undefined') {
+                if (username_html && username_html.length > 0) {
+                    username = username_html + generateRandomString(4);
+                } else {
+                    username = generateRandomString(9);
+                }
+            } else {
+                username = generateRandomString(9);
+            }
+            const password = generateRandomString(24);
+            const email = `${username}@[37.152.191.28]`;
+            const host = "37.152.191.28" || "[37.152.191.28]";
+            const turnOffTLS = ("false" === "true");
+
+            if (turnOffTLS) {
+                currentLink = `dclogin:${email}/?p=${encodeURIComponent(password)}&v=1&ih=${host}&ip=143&sh=${host}&sp=25&is=plain&ss=plain&sc=3`;
+            } else {
+                currentLink = `dclogin:${email}/?p=${encodeURIComponent(password)}&v=1&ih=${host}&ip=993&sh=${host}&sp=465&ic=3&ss=default`;
+            }
+            currentLinkIOS = currentLink.replace("dclogin:", "dclogin://");
+
+            // document.getElementById('manual-link').innerText = currentLink;
+            const manualLinkCode = document.querySelector('#manual-link code');
+             if(manualLinkCode) manualLinkCode.innerText = currentLink;
+             else document.getElementById('manual-link').innerText = currentLink;
+
+
+            document.getElementById('dynamic-username').textContent = currentLink;
+
+            const qrContainer = document.getElementById('qrcode-container');
+            qrContainer.innerHTML = '';
+
+            const qr = new QRCode(qrContainer, {
+                text: currentLink,
+                width: 220,
+                height: 220,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+
+            document.getElementById('account-result').style.display = 'block';
+        }
+
+        function openDeltaChat() {
+            if (currentLink) window.location.href = currentLink;
+        }
+
+        function openDeltaChatIOS() {
+            if (currentLinkIOS) window.location.href = currentLinkIOS;
+        }
+
+        function copyLink() {
+            if (currentLink) {
+                fallbackCopyTextToClipboard(currentLink);
+            } else {
+                alert("ابتدا یک نام کاربری وارد کنید.");
+            }
+        }
+
+        function copyText(el) {
+            copyToClipboard(el.innerText);
+        }
+
+        function copyToClipboard(text) {
+            fallbackCopyTextToClipboard(text);
+        }
+
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+
+            textArea.style.position = "fixed";
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.width = "200px";
+            textArea.style.height = "100px";
+            textArea.style.padding = "12px";
+            textArea.style.border = "1px solid #ccc";
+            textArea.style.borderRadius = "8px";
+            textArea.style.background = "white";
+            textArea.style.outline = "none";
+            textArea.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
+            textArea.style.zIndex = "9999";
+            textArea.style.opacity = "0.9";
+
+            textArea.setAttribute("readonly", "");
+            textArea.setAttribute("aria-label", "کد ورود به دلتاچت");
+
+            document.body.appendChild(textArea);
+
+            textArea.focus();
+            textArea.select();
+
+            let success = false;
+            try {
+                success = document.execCommand('copy');
+                if (success) {
+                    alert("✅ کپی شد!");
+                } else {
+                    alert("❌ کپی ناموفق. لطفاً دستی کپی کنید.");
+                }
+            } catch (err) {
+                console.error('Fallback copy failed', err);
+                alert("❌ کپی ناموفق. لطفاً دستی کپی کنید.");
+            } finally {
+                document.body.removeChild(textArea);
+            }
+
+            const btn = document.querySelector('.copy-btn');
+            if(btn) {
+                btn.textContent = 'کپی شد!';
+                btn.classList.add('copied');
+
+                setTimeout(() => {
+                    btn.textContent = 'کپی کد';
+                    btn.classList.remove('copied');
+                }, 2000);
+            }
+        }
+
+        window.onload = generateAccount;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const input = document.getElementById('username');
+            if (input) {
+                input.value = '';
+            }
+        });
+    </script>
+
+    <footer>
+        سرور چت ارسلان
+    </footer>
+</body>
+
+</html>
