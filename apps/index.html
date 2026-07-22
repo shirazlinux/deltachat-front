@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>فروشگاه اپلیکیشن دلتاچت</title>
+    <script src="/translations.js"></script>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="apps-adapter.css">
+    <link rel="icon" href="../webicon320.png">
+    
+    <script src="../main.js" defer></script>
+    
+    <script src="webxdc-logic.js" type="module"></script>
+</head>
+
+<body>
+
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html" data-i18n="nav_home">اصلی</a></li>
+            <li><a href="../info.html" data-i18n="nav_info">راهنما</a></li>
+            <li><a href="../privacy.html" data-i18n="nav_privacy">حریم خصوصی</a></li>
+            <li><a href="../security.html" data-i18n="nav_security">امنیت</a></li>
+            <li><a href="#" data-i18n="nav_applications">فروشگاه برنامه‌ها</a></li>
+            <li><a href="../deploy.html" data-i18n="nav_deploy">راه‌‌اندازی</a></li>
+            <li><a href="../docs_index.html" data-i18n="nav_docs">مستندات</a></li>
+        </ul>
+    </nav>
+
+    <h2>فروشگاه برنامه‌های WebXDC</h2>
+
+<div class="glass-panel warning-box fade-in">
+    <div class="warning-header">
+        <span class="warning-icon">⚠️</span>
+        <h3>نکات امنیتی و حریم خصوصی WebXDC</h3>
+    </div>
+    <div class="warning-content">
+        <p>کاربر گرامی، با توجه به اهمیت حفظ حریم خصوصی، لطفاً قبل از نصب به نکات زیر توجه کنید:</p>
+        <ul>
+            <li>
+                <strong>اجرای کد:</strong> فایل‌های WebXDC حاوی کدهای برنامه‌نویسی هستند که روی دستگاه شما اجرا می‌شوند. اگرچه آن‌ها در محیط ایزوله (Sandbox) اجرا می‌شوند، اما همیشه فقط فایل‌هایی را باز کنید که از منبع معتبر (مثل همین فروشگاه) دانلود کرده‌اید.
+            </li>
+            <li>
+                <strong>دسترسی به اینترنت:</strong> برخی برنامه‌های WebXDC ممکن است برای عملکرد خود نیاز به اتصال به اینترنت داشته باشند (مثلاً دریافت اخبار). این موضوع می‌تواند IP شما را برای سرور آن سرویس یا شخصی که باهاش چت میکنید، آشکار کند.
+            </li>
+            <li>
+                <strong>دریافت از ناشناس:</strong> هرگز فایل‌های `.xdc` که توسط افراد ناشناس در گروه‌ها یا چت‌های خصوصی ارسال می‌شود را باز نکنید، مگر اینکه فرستنده را کاملاً بشناسید.
+            </li>
+        </ul>
+        <p class="disclaimer">
+            <small>این برنامه‌ها توسط توسعه‌دهندگان جامعه نرم‌افزار آزاد نوشته شده‌اند و این سرور چت صرفاً آن‌ها را گردآوری کرده است.</small>
+        </p>
+    </div>
+</div>
+
+    <div id="apps"></div>
+
+    <footer>
+        سرور دلتاچت | بخش برنامه‌ها
+    </footer>
+</body>
+</html>

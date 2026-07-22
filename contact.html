@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارتباط با ادمین</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="main.js"></script>
+    <script src="translations.js"></script>
+</head>
+<body>
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
+        </ul>
+    </nav>
+    
+<div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 800px; margin: 20px auto;">
+    <h1 data-i18n="contact_admin_title">ارتباط با ادمین</h1>
+    
+    <div class="glass-panel" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: right;">
+        <h3 data-i18n="contact_get_in_touch">📧 تماس با ادمین</h3>
+
+        <p style="color: var(--text-secondary); font-size: 1em; line-height: 1.8;" data-i18n="contact_description">
+            هر گونه پرسش، پاسخ یا گزارش مشکلات
+        </p>
+        
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+            <a href="mailto:admin@example.com" class="cta-button" 
+               style="font-size: 0.95em; padding: 12px 20px;" 
+               data-i18n="contact_send_message">
+                ارسال پیام در دلتاچت
+            </a>
+
+            <a href="index.html" class="cta-button" 
+               style="background: rgba(255,255,255,0.1); font-size: 0.95em; padding: 12px 20px;" 
+               data-i18n="contact_back_home">
+                برگشت به خانه
+            </a>
+        </div>
+    </div>
+</div>
+
+
+    <footer>
+        DeltaChat Server
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            applyTranslations(document.documentElement.lang || 'fa');
+        });
+    </script>
+</body>
+</html>

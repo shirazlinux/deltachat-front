@@ -28,104 +28,354 @@
     <script src="./translations.js"></script>
     <script src="./qrcode.min.js"></script>
     <script src="./main.js"></script>
-    <link rel="icon" href="/logo.svg">
+    <link rel="icon" href="/webicon320.png">
+    <style>
+        .code-block {
+            background: var(--code-bg);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 16px;
+            border-radius: 12px;
+            border: var(--glass-border);
+            margin: 15px auto;
+            word-break: break-all;
+            color: var(--accent-color);
+            font-family: 'Courier New', monospace;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: all;
+        }
+
+        .code-block:hover {
+            background: rgba(255, 106, 0, 0.08);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 16px rgba(255, 106, 0, 0.15);
+        }
+
+        /* QR Code Box */
+        .qr-wrap {
+            background: var(--glass-bg);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 20px;
+            border-radius: 16px;
+            border: var(--glass-border);
+            display: inline-block;
+            box-shadow: 0 0 20px rgba(255, 106, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .qr-wrap:hover {
+            box-shadow: 0 0 28px rgba(255, 106, 0, 0.2);
+        }
+
+        .qr-wrap img {
+            border-radius: 4px;
+            display: block;
+            pointer-events: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 800;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            text-decoration: none !important;
+            background: var(--glass-bg);
+            color: var(--text-primary);
+            border: var(--glass-border);
+        }
+
+        .btn--primary {
+            background: var(--primary-gradient);
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(230, 85, 0, 0.2);
+            border: none;
+        }
+
+        .btn--primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(230, 85, 0, 0.3);
+        }
+
+        .btn--primary:active:not(:disabled) {
+            transform: translateY(0);
+        }
+
+        .btn--secondary {
+            background: rgba(255, 106, 0, 0.15);
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+
+        .btn--secondary:hover:not(:disabled) {
+            background: rgba(255, 106, 0, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 106, 0, 0.15);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        [lang="fa"] .code-block,
+        [lang="fa"] .btn {
+            direction: rtl;
+        }
+
+        [dir="rtl"] .code-block,
+        [dir="rtl"] ol,
+        [dir="rtl"] ul {
+            text-align: right;
+        }
+
+        [dir="rtl"] .code-block {
+            direction: rtl;
+        }
+
+        [lang="fa"] {
+            font-family: 'IRANSans', 'Vazir', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .alert {
+            padding: 16px;
+            border-radius: 12px;
+            margin: 15px auto;
+            max-width: 600px;
+        }
+
+        .alert--danger {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            color: #ff6b6b;
+        }
+
+        .alert--warning {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            color: #ffc107;
+        }
+
+        .text-start {
+            text-align: start;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-sm {
+            font-size: 0.95rem;
+        }
+
+        .text-muted {
+            color: var(--text-secondary);
+        }
+
+        .mono {
+            font-family: 'Courier New', monospace;
+        }
+
+        .mt-md {
+            margin-top: 20px;
+        }
+
+        .mt-lg {
+            margin-top: 30px;
+        }
+
+        .mt-sm {
+            margin-top: 10px;
+        }
+
+        .mb-md {
+            margin-bottom: 20px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-center {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .gap-sm {
+            gap: 10px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+        }
+
+        .card--centered {
+            text-align: center;
+        }
+
+        .card--danger {
+            background: rgba(255, 0, 0, 0.08);
+            border: 1px solid rgba(255, 0, 0, 0.15);
+        }
+
+        .text-danger {
+            color: #ff6b6b;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <button class="navbar__toggle" onclick="toggleNav()" aria-label="Menu" data-i18n="nav_menu_label">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
-        </button>
-        <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/share" data-i18n="nav_share">Share</a></li>
-            <li><a href="/info.html" data-i18n="nav_info">Info</a></li>
-            <li><a href="/security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="/deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/" data-i18n="nav_applications">applications</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
-    </header>
+    </nav>
 
-    <div class="text-center">
-        <h2><span data-i18n="index_title">Chat Server</span> {{.MailDomain | cleanDomain}}</h2>
-        <p data-i18n-html="index_subtitle">This is a dedicated server for use with <strong>DeltaChat</strong>.</p>
-    </div>
+    <div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 900px; margin: 20px auto; line-height: 1.8;">
+        <h2 style="text-align: center;"><span data-i18n="index_title">Chat Server</span> {{.MailDomain | cleanDomain}}</h2>
+        <p style="text-align: center;" data-i18n-html="index_subtitle">This is a dedicated server for use with <strong>DeltaChat</strong>.</p>
 
-    {{if .RegistrationOpen}}
-    <div class="text-center">
-        <button class="btn btn--primary mt-md" onclick="generateAccount()" id="generate-btn" data-i18n="index_generate">Create New Account</button>
+        {{if .RegistrationOpen}}
+        <div style="margin-top: 30px;">
+            <button class="btn btn--primary" onclick="generateAccount()" id="generate-btn" data-i18n="index_generate">Create New Account</button>
 
-        <div id="qr-container" class="hidden mt-md">
-            <div class="qr-wrap">
-                <img id="result-qr" width="180" alt="QR Code" />
+            <div id="qr-container" class="hidden" style="margin-top: 20px;">
+                <div class="qr-wrap">
+                    <img id="result-qr" width="180" alt="QR Code" />
+                </div>
+            </div>
+
+            <div id="loading-indicator" class="hidden" style="margin-top: 20px; color: var(--text-secondary);" data-i18n="index_loading">
+                Creating account...
+            </div>
+            <div id="error-message" class="alert alert--danger hidden"></div>
+            <div id="deltachat-error" class="alert alert--warning hidden">
+                <strong data-i18n="index_dc_not_installed_title">DeltaChat is not installed</strong>
+                <p class="mt-sm text-sm" data-i18n="index_dc_not_installed_text">Please install the DeltaChat app first, then use the "Copy Link" button.</p>
+            </div>
+
+            <div id="account-result" class="hidden">
+                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
+                    <button class="btn btn--primary" onclick="openDeltaChat()" id="open-deltachat-btn" disabled data-i18n="index_open_dc">Open DeltaChat</button>
+                    <button class="btn btn--secondary" onclick="copyLink()" id="copy-link-btn" disabled data-i18n="index_copy_link">Copy Link</button>
+                </div>
             </div>
         </div>
 
-        <div id="loading-indicator" class="hidden mt-md text-muted" data-i18n="index_loading">
-            Creating account...
+        <div class="glass-panel" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: center;">
+            <strong style="display: block; text-align: center; margin-bottom: 15px;" data-i18n="index_manual_title">Manual setup (if the button didn't work):</strong>
+            <ol style="margin: 10px 0; padding-left: 20px; text-align: start; display: inline-block;">
+                <li style="margin: 10px 0;" data-i18n="index_manual_step1">In DeltaChat, select "Create new profile".</li>
+                <li style="margin: 10px 0;" data-i18n="index_manual_step2">Then tap "Use Other Server".</li>
+                <li style="margin: 10px 0;" data-i18n="index_manual_step3">Copy the text below and in the scan code section, tap "Paste from clipboard":</li>
+            </ol>
+            <div class="code-block" id="manual-link" onclick="copyText(this)"></div>
         </div>
-        <div id="error-message" class="alert alert--danger hidden"></div>
-        <div id="deltachat-error" class="alert alert--warning hidden">
-            <strong data-i18n="index_dc_not_installed_title">DeltaChat is not installed</strong>
-            <p class="mt-sm text-sm" data-i18n="index_dc_not_installed_text">Please install the DeltaChat app first, then use the "Copy Link" button.</p>
+
+        <div class="glass-panel hidden" id="manual-card-ios" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: center;">
+            <strong style="display: block; text-align: center; margin-bottom: 15px;" data-i18n="index_ios_title">iPhone account creation guide:</strong>
+            <p class="mt-sm text-sm" style="text-align: center; margin-bottom: 15px;" data-i18n="index_ios_intro">First copy the link below, then follow these steps in DeltaChat:</p>
+            <div class="code-block" id="manual-link-ios" onclick="copyText(this)"></div>
+            <ol style="margin: 20px 0; padding-left: 20px; text-align: start; display: inline-block;">
+                <li style="margin: 10px 0;">Use Other Server</li>
+                <li style="margin: 10px 0;">Scan Invitation Code</li>
+                <li style="margin: 10px 0;">⋯</li>
+                <li style="margin: 10px 0;">Paste from Clipboard</li>
+                <li style="margin: 10px 0;" data-i18n="index_manual_step1">Enter name and profile picture (optional)</li>
+                <li style="margin: 10px 0;">Agree & Create Profile</li>
+            </ol>
         </div>
 
-        <div id="account-result" class="hidden">
-            <div class="flex flex-center flex-wrap gap-sm mt-md">
-                <button class="btn btn--primary" onclick="openDeltaChat()" id="open-deltachat-btn" disabled data-i18n="index_open_dc">Open DeltaChat</button>
-                <button class="btn btn--secondary" onclick="copyLink()" id="copy-link-btn" disabled data-i18n="index_copy_link">Copy Link</button>
-            </div>
+        <div class="glass-panel" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: center;">
+            <strong data-i18n="index_ios_note_title">Note for iOS (iPhone) users:</strong>
+            <p class="text-sm mt-sm" style="margin-top: 10px;" data-i18n-html="index_ios_note_text">iPhone users should copy the standard link above and during new account creation follow:</p>
+            <p class="text-sm mono" style="margin-top: 10px; font-family: monospace;" data-i18n="index_ios_note_path">new account > use other server > scan > paste</p>
+            <p class="text-sm mt-sm" style="margin-top: 10px;" data-i18n="index_ios_note_detail">Although clicking the login button may work on iOS, due to system limitations, the copy-paste method is recommended.</p>
+        </div>
+
+        <div class="glass-panel" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: center;">
+            <h3 style="text-align: center; margin-top: 0;" data-i18n="index_share_title">Share Your ID</h3>
+            <p style="margin-bottom: 15px;" data-i18n="index_share_text">You can share your DeltaChat ID so others can contact you.</p>
+            <a href="/share.html" class="btn btn--primary" data-i18n="index_share_btn">Share My ID</a>
+        </div>
+        {{else}}
+        <div class="glass-panel" style="background: rgba(255,0,0,0.1); margin-top: 30px; text-align: center;">
+            <h3 style="color: var(--text-danger); text-align: center; margin-top: 0;" data-i18n="index_reg_closed_title">Registration Closed</h3>
+            <p style="color: var(--text-secondary);" data-i18n="index_reg_closed_text">New user registration on this server is temporarily disabled. Please use other servers.</p>
+        </div>
+        {{end}}
+
+
+    <div class="glass-panel fade-in">
+    <h1 data-i18n="contact_admin_title">ارتباط با ادمین</h1>
+    
+    <div class="glass-panel" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: right;">
+        <h3 data-i18n="contact_get_in_touch">📧 تماس با ادمین</h3>
+
+        <p style="color: var(--text-secondary); font-size: 1em; line-height: 1.8;" data-i18n="contact_description">
+            هر گونه پرسش، پاسخ یا گزارش مشکلات
+        </p>
+        
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+            <a href="mailto:https://i.delta.chat/#89EBEFEF4359C9555ABB5BED7469BDCD99C0462B&v=3&i=y_yeBxFUmD4GkTFpHlCPhcfn&s=b1TgipmWl6CX0bC8aI1vz--F&a=mzt9igijtium%40delta.sudoshz.ir&n=sudoshz" class="cta-button" 
+               style="font-size: 0.95em; padding: 12px 20px;" 
+               data-i18n="contact_send_message">
+                ارسال پیام در دلتاچت
+            </a>
         </div>
     </div>
-
-    <div class="card mt-lg text-start" id="manual-card-default">
-        <strong data-i18n="index_manual_title">Manual setup (if the button didn't work):</strong>
-        <ol>
-            <li data-i18n="index_manual_step1">In DeltaChat, select "Create new profile".</li>
-            <li data-i18n="index_manual_step2">Then tap "Use Other Server".</li>
-            <li data-i18n="index_manual_step3">Copy the text below and in the scan code section, tap "Paste from clipboard":</li>
-        </ol>
-        <div class="code-block" id="manual-link" onclick="copyText(this)"></div>
+</div>
     </div>
 
-    <div class="card mt-lg text-start hidden" id="manual-card-ios">
-        <strong data-i18n="index_ios_title">iPhone account creation guide:</strong>
-        <p class="mt-sm" data-i18n="index_ios_intro">First copy the link below, then follow these steps in DeltaChat:</p>
-        <div class="code-block" id="manual-link-ios" onclick="copyText(this)"></div>
-        <ol class="mt-md">
-            <li>Use Other Server</li>
-            <li>Scan Invitation Code</li>
-            <li>⋯</li>
-            <li>Paste from Clipboard</li>
-            <li data-i18n="index_manual_step1">Enter name and profile picture (optional)</li>
-            <li>Agree & Create Profile</li>
-        </ol>
-    </div>
-
-    <div class="card text-start" id="ios-card">
-        <strong data-i18n="index_ios_note_title">Note for iOS (iPhone) users:</strong>
-        <p class="text-sm mt-sm" data-i18n-html="index_ios_note_text">iPhone users should copy the standard link above and during new account creation follow:</p>
-        <p class="text-sm mono" data-i18n="index_ios_note_path">new account > use other server > scan > paste</p>
-        <p class="text-sm mt-sm" data-i18n="index_ios_note_detail">Although clicking the login button may work on iOS, due to system limitations, the copy-paste method is recommended.</p>
-    </div>
-
-    <div class="card card--centered mt-lg">
-        <h3 data-i18n="index_share_title">Share Your ID</h3>
-        <p class="mb-md" data-i18n="index_share_text">You can share your DeltaChat ID so others can contact you.</p>
-        <a href="/share" class="btn btn--primary" data-i18n="index_share_btn">Share My ID</a>
-    </div>
-    {{else}}
-    <div class="card card--danger card--centered mt-lg">
-        <h3 class="text-danger" data-i18n="index_reg_closed_title">Registration Closed</h3>
-        <p data-i18n="index_reg_closed_text">New user registration on this server is temporarily disabled. Please use other servers.</p>
-    </div>
-    {{end}}
+    <footer>
+        <span data-i18n="footer_version">Version</span> {{.Version}}
+    </footer>
 
     <script>
         let currentLink = "";
         const registrationOpen = "{{if .RegistrationOpen}}true{{else}}false{{end}}" === "true";
         const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
         const PAGE_LANG = "{{.Language}}";
+
+        function convertToFarsiNumbers(str) {
+            const farsiDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+            return str.replace(/\d/g, (digit) => farsiDigits[parseInt(digit)]);
+        }
 
         function generateRandomString(length) {
             const charset = "abcdefghijklmnopqrstuvwxyz0123456789";
@@ -166,6 +416,7 @@
 
             currentLink = createDcloginLink(email, password);
 
+            const displayLink = PAGE_LANG === 'fa' ? convertToFarsiNumbers(currentLink) : currentLink;
             document.getElementById('manual-link').innerText = currentLink;
             document.getElementById('manual-link-ios').innerText = currentLink;
             if (!isIOS) {
@@ -246,10 +497,8 @@
 
             if (isIOS) {
                 document.getElementById('open-deltachat-btn').style.display = 'none';
-                document.getElementById('manual-card-default').style.display = 'none';
+                document.getElementById('manual-link').parentElement.parentElement.style.display = 'none';
                 document.getElementById('manual-card-ios').classList.remove('hidden');
-                var iosCard = document.getElementById('ios-card');
-                if (iosCard) iosCard.style.display = 'none';
             }
             updateButtonStates();
             if (registrationOpen) {
@@ -258,7 +507,6 @@
         };
     </script>
 
-    <div class="footer text-center"><span data-i18n="footer_version">Version</span> {{.Version}}</div>
 </body>
 
 </html>

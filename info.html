@@ -30,25 +30,68 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <button class="navbar__toggle" onclick="toggleNav()" aria-label="Menu">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
-        </button>
-        <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/share" data-i18n="nav_share">Share</a></li>
-            <li><a href="/info.html" data-i18n="nav_info">Info</a></li>
-            <li><a href="/security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="/deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/" data-i18n="nav_applications">applications</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
-    </header>
+    </nav>
 
-    <div class="text-center">
+        <div class="glass-panel fade-in"
+        style="text-align: center; display: inline-block; margin: 20px auto; line-height: 1.8;">
+        <h1 style="text-align: center;" data-i18n="what_is_deltachat">What is DeltaChat?</h1>
+        <p style="font-size: 1.05em; color: var(--text-primary); line-height: 1.7;" data-i18n="is_deltachat">
+            Delta Chat یک پیام‌رسان آزاد و متن‌باز است که از زیرساخت ایمیل استفاده می‌کند، اما تجربه‌ای مشابه
+            پیام‌رسان‌های سریع و مدرن ارائه می‌دهد. با Delta Chat:
+        </p>
+        <ul style="list-style: none; padding: 0; margin-top: 20px;">
+            <li style="margin-bottom: 15px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px;">
+                 <strong data-i18n="benefit_no_phone_strong">No phone number needed:</strong>
+                <span data-i18n="benefit_no_phone_text">Use only email for secure communication</span>
+            </li>
+
+            <li style="margin-bottom: 15px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px;">
+                 <strong data-i18n="benefit_encrypted_strong">End-to-end encrypted:</strong>
+                <span data-i18n="benefit_encrypted_text">Your messages are protected with PGP encryption</span>
+            </li>
+
+            <li style="margin-bottom: 15px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px;">
+                 <strong data-i18n="benefit_decentralized_strong">Decentralized:</strong>
+                <span data-i18n="benefit_decentralized_text">Works with any email provider, no single point of failure</span>
+            </li>
+
+            <li style="margin-bottom: 15px; padding: 15px; background: rgba(255,255,255,0.03); border-radius: 10px;">
+                 <strong data-i18n="benefit_open_source_strong">Open source:</strong>
+                <span data-i18n="benefit_open_source_text">Fully transparent and community-driven</span>
+            </li>
+        </ul>
+
+
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="cta-button" data-i18n="cta_create_account">
+                Create Free Account
+            </a>
+        </p>
+
+    </div>
+
+    <div class="text-center glass-panel ">
         <h2 data-i18n="info_title">About This Server</h2>
         <p data-i18n="info_subtitle">This is a node of the DeltaChat network. Its purpose is to provide fast and private communication for users.</p>
     </div>
 
-    <div class="card card--centered text-start">
+    <div class="card card--centered text-start glass-panel ">
         <ul>
             {{if .MessageRetentionLine}}
             <li>{{.MessageRetentionLine}}</li>

@@ -1,0 +1,340 @@
+/* apps-adapter.css */
+
+/* تنظیمات کلی برای هماهنگی با سایت */
+#apps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+}
+
+/* --- Search Bar Style --- */
+/* تبدیل سرچ‌بار WebXDC به استایل Input سایت */
+.search {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 90px; /* پایین‌تر از نوار منوی اصلی */
+  z-index: 90;
+  padding: 10px;
+}
+
+.search input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  background: var(--input-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--glass-shadow);
+}
+
+.search input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+  background: var(--glass-bg);
+}
+
+/* --- App Grid Container --- */
+#app_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 80px; /* فضا برای تب‌های پایین */
+}
+
+/* --- App Card Style (شبیه Glass Panel) --- */
+.app {
+  /* ارث‌بری استایل glass-panel از main.css */
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 16px;
+  padding: 20px;
+  
+  /* چیدمان داخلی */
+  display: flex;
+  align-items: center;
+  text-align: right; /* راست‌چین برای فارسی */
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  direction: ltr; /* محتوا چپ به راست (نام انگلیسی) */
+}
+
+.app:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 210, 255, 0.2);
+  border-color: var(--accent-color);
+  filter: brightness(1.1);
+}
+
+.app img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  margin-right: 15px; /* فاصله آیکون */
+  flex-shrink: 0;
+}
+
+.app .props {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.app .title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+
+.app .description {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app .author {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+/* --- Dialog / Modal Style --- */
+.dialog-backdrop {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.dialog-backdrop.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+[role=dialog] {
+  /* تغییر مهم: در حالت عادی مخفی باشد */
+  display: none; 
+  
+  /* استایل پنجره مودال */
+  background: var(--menu-bg);
+  border: var(--glass-border);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  color: var(--text-primary);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  gap: 20px;
+}
+
+/* این بخش جدید را اضافه کنید: فقط وقتی کلاس active دارد نمایش داده شود */
+[role=dialog].active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* بقیه کدها بدون تغییر... */
+[role=dialog] .app-container {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 20px;
+}
+
+[role=dialog] img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+}
+
+[role=dialog] .button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* دکمه‌های دانلود و بستن */
+[role=dialog] .button, 
+[role=dialog] button.ghost {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  border: var(--glass-border);
+}
+
+[role=dialog] .button {
+  /* دکمه دانلود (استایل CTA) */
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+}
+
+[role=dialog] button.ghost {
+  /* دکمه بستن */
+  background: transparent;
+  color: var(--text-primary);
+}
+
+[role=dialog] button.ghost:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* --- Bottom Tabs Style --- */
+#tabs {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* کانتینر شیشه‌ای برای تب‌ها */
+  background: var(--menu-bg);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 50px;
+  padding: 5px;
+  
+  display: flex;
+  gap: 5px;
+  z-index: 100;
+}
+
+#tabs > button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+#tabs > button svg {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 2px;
+  fill: currentColor;
+}
+
+#tabs > button.active {
+  background: var(--primary-gradient);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+}
+
+#tabs > button:hover:not(.active) {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.05);
+}
+
+/* حذف فوتر پیش فرض WebXDC چون فوتر سایت هست */
+#footer {
+  display: none; 
+}
+
+/* --- Warning Box Style --- */
+.warning-box {
+  border-right: 4px solid #ff9800; /* نوار نارنجی سمت راست برای جلب توجه */
+  background: rgba(255, 152, 0, 0.05) !important; /* پس‌زمینه خیلی محو نارنجی */
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.warning-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 152, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.warning-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  /* استفاده از گرادینت نارنجی برای تیتر */
+  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+}
+
+.warning-content ul {
+  list-style-type: none; /* حذف دایره‌های پیش‌فرض */
+  padding: 0;
+  margin: 0;
+}
+
+.warning-content li {
+  position: relative;
+  padding-right: 20px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* بولت‌های سفارشی */
+.warning-content li::before {
+  content: "•";
+  color: #ff9800;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+
+.warning-content strong {
+  color: #ff9800; /* رنگ نارنجی برای کلمات کلیدی */
+}
+
+.disclaimer {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0.7;
+}

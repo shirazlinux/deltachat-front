@@ -131,15 +131,18 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <button class="navbar__toggle" onclick="toggleNav()" aria-label="Menu">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
-        </button>
-        <ul class="navbar__menu" id="nav-menu">
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
             <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/docs" data-i18n="nav_docs">Docs</a></li>
+            <li><a href="/docs" data-i18n="nav_info">Docs</a></li>
         </ul>
-    </header>
+    </nav>
 
     <div class="doc-container" id="api-docs-root"></div>
 
