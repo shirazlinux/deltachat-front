@@ -35,8 +35,8 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
         </button>
         <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Inicio</a></li>
-            <li><a href="/docs" data-i18n="nav_docs">Documentación</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Documentación</a></li>
         </ul>
     </header>
 
@@ -46,7 +46,7 @@
 
         <div class="info-note"
             style="background: color-mix(in srgb, var(--link) 5%, transparent); border: 1px solid color-mix(in srgb, var(--link) 20%, transparent); border-radius: 8px; padding: 12px 15px; margin-bottom: 20px;">
-            <strong>💡 Consejo:</strong> todas estas operaciones también están disponibles en la <a href="/docs/api"
+            <strong>💡 Consejo:</strong> todas estas operaciones también están disponibles en la <a href="admin_api_docs.html"
                 style="color: var(--link);">interfaz web de administración</a> en <code>/admin/</code>
             — no hace falta usar la línea de órdenes.
         </div>
@@ -180,7 +180,7 @@ maddy accounts ban usuario@example.com ["motivo"] [--yes]</div>
 
         <div class="cmd-info">
             <h3>Tras cambios por CLI con el servidor en marcha</h3>
-            <p>El demonio mantiene copias en memoria de credenciales y cuotas por rendimiento. Si modificó la base en vivo con la CLI, invoque una vez <strong>POST</strong> <code>/admin/cache/reload</code> (mismo token de admin que el resto de la API) para que el proceso vuelva a leer las tablas. Véase la <a href="/docs/api">documentación de la Admin API</a> para el sobre JSON exacto.</p>
+            <p>El demonio mantiene copias en memoria de credenciales y cuotas por rendimiento. Si modificó la base en vivo con la CLI, invoque una vez <strong>POST</strong> <code>/admin/cache/reload</code> (mismo token de admin que el resto de la API) para que el proceso vuelva a leer las tablas. Véase la <a href="admin_api_docs.html">documentación de la Admin API</a> para el sobre JSON exacto.</p>
         </div>
 
         <h2>Servidor de llamadas (TURN/STUN)</h2>
@@ -250,7 +250,7 @@ maddy accounts ban usuario@example.com ["motivo"] [--yes]</div>
                 <li><strong>Configuración:</strong> hostname SMTP, realm/secret/IP/TTL de TURN, URL del relé Iroh,
                     cifrado y contraseña de Shadowsocks</li>
             </ul>
-            <p>Use la <a href="/docs/api" style="color: var(--link);">Admin API</a>.
+            <p>Use la <a href="admin_api_docs.html" style="color: var(--link);">Admin API</a>.
                 Los extremos están en las secciones «Port Settings» y «Configuration Settings» de la documentación de la API.</p>
         </div>
 

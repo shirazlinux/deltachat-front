@@ -35,8 +35,8 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
         </button>
         <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">اصلی</a></li>
-            <li><a href="/docs" data-i18n="nav_docs">مستندات</a></li>
+            <li><a href="index.html" data-i18n="nav_home">اصلی</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">مستندات</a></li>
         </ul>
     </header>
 
@@ -47,7 +47,7 @@
 
         <div class="info-note"
             style="background: color-mix(in srgb, var(--link) 5%, transparent); border: 1px solid color-mix(in srgb, var(--link) 20%, transparent); border-radius: 8px; padding: 12px 15px; margin-bottom: 20px;">
-            <strong>💡 نکته:</strong> تمام این عملیات‌ها از طریق <a href="/docs/api"
+            <strong>💡 نکته:</strong> تمام این عملیات‌ها از طریق <a href="admin_api_docs.html"
                 style="color: var(--link);">رابط وب مدیریت</a> در مسیر <code>/admin/</code> نیز قابل انجام هستند
             — بدون نیاز به خط فرمان.
         </div>
@@ -194,7 +194,7 @@ maddy accounts ban user@example.com ["دلیل"] [--yes]</div>
 
         <div class="cmd-info">
             <h3>پس از تغییر CLI هنگام روشن بودن سرور</h3>
-            <p>سرور برای سرعت نسخه‌ای از اعتبارنامه‌ها و سهمیه‌ها را در حافظه نگه می‌دارد. اگر با CLI دیتابیس زنده را عوض کردید، یک بار <strong>POST</strong> به <code>/admin/cache/reload</code> بزنید (همان توکن admin). جزئیات در <a href="/docs/api">مستندات Admin API</a>.</p>
+            <p>سرور برای سرعت نسخه‌ای از اعتبارنامه‌ها و سهمیه‌ها را در حافظه نگه می‌دارد. اگر با CLI دیتابیس زنده را عوض کردید، یک بار <strong>POST</strong> به <code>/admin/cache/reload</code> بزنید (همان توکن admin). جزئیات در <a href="admin_api_docs.html">مستندات Admin API</a>.</p>
         </div>
 
         <h2>مدیریت سرور تماس (TURN/STUN)</h2>
@@ -269,7 +269,7 @@ maddy accounts ban user@example.com ["دلیل"] [--yes]</div>
                     Shadowsocks
                     cipher/password</li>
             </ul>
-            <p>برای مدیریت این تنظیمات از <a href="/docs/api" style="color: var(--link);">Admin API</a>
+            <p>برای مدیریت این تنظیمات از <a href="admin_api_docs.html" style="color: var(--link);">Admin API</a>
                 استفاده کنید. مسیرهای مربوطه در بخش «تنظیمات پورت‌ها» و «تنظیمات پیکربندی» مستندات API توضیح داده
                 شده‌اند.</p>
         </div>

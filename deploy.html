@@ -3,17 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="deploy_title">Deploy Madmail Server — Install & Update</title>
-    <meta name="description" content="راهنمای نصب و بروزرسانی سرور Madmail روی Debian/Ubuntu با دستورات install و update.">
+    <title data-i18n="deploy_title">How to set up a similar server?</title>
+    <meta name="description" content="Install and update Madmail using this server as a binary source. Commands use the host public IP automatically.">
     <meta name="robots" content="index,follow">
     <meta name="theme-color" content="#FF6A00">
-    <meta property="og:title" content="Deploy Madmail Server — Install & Update">
-    <meta property="og:description" content="راهنمای نصب و بروزرسانی سرور Madmail روی Debian/Ubuntu با دستورات install و update.">
-
-    <link rel="stylesheet" href="./main.css">
-    <script src="./translations.js"></script>
-    <script src="./main.js"></script>
-    <link rel="icon" href="./webicon320.png" type="image/png">
+    <meta property="og:title" content="Deploy Madmail Server">
+    <meta property="og:description" content="Install and update Madmail — binary served from this node.">
+    <link rel="stylesheet" href="/main.css">
+    <script src="/translations.js"></script>
+    <script src="/main.js"></script>
+    <link rel="icon" href="/webicon320.png" type="image/png">
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -34,38 +33,80 @@
         </ul>
     </nav>
 
-    <main class="page-content glass-panel fade-in">
-        <h1 style="text-align: center;" data-i18n="deploy_title"></h1>
-        <p data-i18n-html="deploy_intro"></p>
+    <main class="page-content card card--wide" id="main-content">
+        <h1 data-i18n="deploy_title">How to set up a similar server?</h1>
+        <p data-i18n-html="deploy_intro"><strong>Madmail</strong> (this software) is designed to work easily on all Debian, Ubuntu, and similar distributions.</p>
 
-        <h3 style="margin-top: 30px;" data-i18n="deploy_network_note"></h3>
+        <p class="mt-md" data-i18n="deploy_network_note">Given the state of the internet, each Madmail server can act as a source and provide the program binary to others.</p>
 
-        <h3 style="margin-top: 20px;" data-i18n="deploy_install_title"></h3>
-        <p data-i18n-html="deploy_install_desc"></p>
-        <div class="code-box" style="font-size: 0.9em;" dir="ltr">
-            <pre><code>curl https://chatmail-download.example.com/install.sh | bash</code></pre>
+        <p data-i18n="deploy_channel">For news and new tutorials, join our Telegram channel:</p>
+        <p dir="ltr"><a href="https://t.me/the_madmail" target="_blank" rel="noopener noreferrer">https://t.me/the_madmail</a></p>
+
+        <h2 class="mt-lg" data-i18n="deploy_install_title">Installation command (first time):</h2>
+        <p data-i18n="deploy_install_desc">The command below is designed for simple installation that only needs an IP and open ports:</p>
+        <div class="code-box code-block" dir="ltr">
+            <pre><code>wget http://{{.PublicIP}}/madmail &amp;&amp; chmod +x madmail &amp;&amp; sudo ./madmail install --simple &amp;&amp; sudo systemctl start madmail</code></pre>
         </div>
 
-        <h3 style="margin-top: 20px;" data-i18n="deploy_update_title"></h3>
-        <p data-i18n-html="deploy_update_desc"></p>
-        <div class="code-box" style="font-size: 0.9em;" dir="ltr">
-            <pre><code>curl https://chatmail-download.example.com/update.sh | bash</code></pre>
+        <p data-i18n="deploy_install_note">When running the above command, you will be asked some questions. For example on this server, I entered the server IP for both options:</p>
+        <div class="code-box code-block" dir="ltr">
+            <pre><code>Primary domain (e.g., example.org) [example.org]: {{.PublicIP}}
+Public IP address (for DNS and registration) [127.0.0.1]: {{.PublicIP}}</code></pre>
         </div>
 
-        <h3 style="margin-top: 20px;" data-i18n="deploy_important_title"></h3>
-        <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
-            <p data-i18n-html="deploy_important_ip"></p>
-            <p data-i18n-html="deploy_important_ports"></p>
-            <p data-i18n-html="deploy_important_config"></p>
+        <h2 class="mt-lg" data-i18n="deploy_lang_title">Language option:</h2>
+        <p data-i18n="deploy_lang_desc">You can set the web frontend language during installation using the --lang flag:</p>
+        <div class="code-box code-block" dir="ltr">
+            <pre><code>sudo ./madmail install --simple --lang ru    # Russian
+sudo ./madmail install --simple --lang fa    # Farsi
+sudo ./madmail install --simple --lang en    # English (default)</code></pre>
+        </div>
+
+        <p class="text-sm text-muted">
+            <span data-i18n="deploy_install_tip">Note: For more complex installations, run without simple option:</span>
+            <code dir="ltr">sudo ./madmail install</code>
+        </p>
+
+        <h2 class="mt-lg" data-i18n="deploy_update_title">Update command:</h2>
+        <p data-i18n="deploy_update_desc">To update an existing server, use this command:</p>
+        <div class="code-box code-block" dir="ltr">
+            <pre><code>sudo madmail update http://{{.PublicIP}}/madmail</code></pre>
+        </div>
+        <p class="text-sm text-muted" data-i18n="deploy_update_note">This command downloads the binary (max 100MB), verifies its digital signature, stops the service, replaces the binary, and restarts automatically. Works with both HTTP and HTTPS URLs.</p>
+
+        <div class="alert alert--danger mt-lg">
+            <strong data-i18n="deploy_important_title">Very important notes:</strong>
+            <ul style="text-align: start; margin-top: 12px;">
+                <li data-i18n-html="deploy_important_ip">In the commands above, this server's IP is used. You can use any other Madmail server's IP to download the file.</li>
+                <li data-i18n-html="deploy_important_ports">Make sure ports <strong>HTTP (80)</strong>, <strong>SMTP (25)</strong>, and <strong>IMAP (143/993)</strong> are open on your server's firewall.</li>
+                <li data-i18n-html="deploy_important_config">After installation, the config file is located at <code>/etc/maddy/maddy.conf</code>. You can edit this file to change settings.</li>
+            </ul>
         </div>
     </main>
+
+    {{if .SSURL}}
+    <div class="proxy-box">
+        <strong data-i18n="deploy_proxy_note">Please use this proxy inside the DeltaChat app for faster messaging.</strong>
+        <p data-i18n="deploy_proxy_desc">Note that this proxy only works within this server and only for messaging to this server!</p>
+        <div class="proxy-box__link" onclick="copyToClipboard('{{.SSURL}}')" dir="ltr">{{.SSURL}}</div>
+        <p class="text-muted text-sm" data-i18n="deploy_proxy_usage">How to use: Settings &gt; Advanced &gt; Network &gt; SOCKS5 Proxy</p>
+        <p class="text-muted text-xs mt-sm" data-i18n="deploy_proxy_footer">* This proxy is specific to this Madmail server.</p>
+    </div>
+    {{end}}
+
+    <p class="text-center text-muted text-sm" style="margin-top: 8px;">
+        <a href="docs_serve.html" data-i18n="deploy_custom_footer">Customize appearance</a>
+    </p>
 
     <footer class="site-footer" data-version="{{.Version}}">
         <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
 
     <script>
-        window.onload = function () { applyTranslations("{{.Language}}"); };
+        window.onload = function () {
+            applyTranslations("{{.Language}}");
+            document.title = t('nav_deploy') + ' — {{.MailDomain | cleanDomain}}';
+        };
     </script>
 </body>
 </html>

@@ -184,9 +184,8 @@ function normalizeNavPath(pathOrHref) {
         }
         // Normalize "/foo/index.html" -> "/foo/" and "/index.html" -> "/"
         if (path.endsWith('/index.html')) {
-            path = path.slice(0, -'index.html'.length); // keep trailing slash: "/foo/" or "/"
+            path = path.slice(0, -'index.html'.length);
         }
-        // Collapse multiple slashes and ensure leading slash form from URL
         if (path.length > 1 && path.endsWith('/')) {
             path = path.slice(0, -1);
         }

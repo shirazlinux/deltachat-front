@@ -35,8 +35,8 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
         </button>
         <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/docs" data-i18n="nav_docs">Docs</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </header>
 
@@ -46,7 +46,7 @@
 
         <div class="info-note"
             style="background: color-mix(in srgb, var(--link) 5%, transparent); border: 1px solid color-mix(in srgb, var(--link) 20%, transparent); border-radius: 8px; padding: 12px 15px; margin-bottom: 20px;">
-            <strong>💡 Tip:</strong> All these operations can also be performed through the <a href="/docs/api"
+            <strong>💡 Tip:</strong> All these operations can also be performed through the <a href="admin_api_docs.html"
                 style="color: var(--link);">Web Admin Interface</a> at <code>/admin/</code>
             — no command line required.
         </div>
@@ -180,7 +180,7 @@ maddy accounts ban user@example.com ["reason"] [--yes]</div>
 
         <div class="cmd-info">
             <h3>After CLI changes while the server is running</h3>
-            <p>The daemon keeps in-memory copies of credentials and quotas for speed. If you used CLI tools against the live database, call <strong>POST</strong> <code>/admin/cache/reload</code> once (same admin token as other API calls) so the running process re-reads those tables. See the <a href="/docs/api">Admin API docs</a> for the exact JSON envelope.</p>
+            <p>The daemon keeps in-memory copies of credentials and quotas for speed. If you used CLI tools against the live database, call <strong>POST</strong> <code>/admin/cache/reload</code> once (same admin token as other API calls) so the running process re-reads those tables. See the <a href="admin_api_docs.html">Admin API docs</a> for the exact JSON envelope.</p>
         </div>
 
         <h2>Call Server Management (TURN/STUN)</h2>
@@ -250,7 +250,7 @@ maddy accounts ban user@example.com ["reason"] [--yes]</div>
                 <li><strong>Configuration:</strong> SMTP hostname, TURN realm/secret/relay IP/TTL, Iroh relay URL,
                     Shadowsocks cipher/password</li>
             </ul>
-            <p>To manage these settings, use the <a href="/docs/api" style="color: var(--link);">Admin API</a>.
+            <p>To manage these settings, use the <a href="admin_api_docs.html" style="color: var(--link);">Admin API</a>.
                 The relevant endpoints are documented in the "Port Settings" and "Configuration Settings" sections of the API docs.</p>
         </div>
 

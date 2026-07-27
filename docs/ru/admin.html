@@ -35,8 +35,8 @@
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
         </button>
         <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Главная</a></li>
-            <li><a href="/docs" data-i18n="nav_docs">Документация</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Документация</a></li>
         </ul>
     </header>
 
@@ -46,7 +46,7 @@
 
         <div class="info-note"
             style="background: color-mix(in srgb, var(--link) 5%, transparent); border: 1px solid color-mix(in srgb, var(--link) 20%, transparent); border-radius: 8px; padding: 12px 15px; margin-bottom: 20px;">
-            <strong>💡 Подсказка:</strong> Все эти операции также можно выполнить через <a href="/docs/api"
+            <strong>💡 Подсказка:</strong> Все эти операции также можно выполнить через <a href="admin_api_docs.html"
                 style="color: var(--link);">Веб-панель администратора</a> по адресу <code>/admin/</code>
             — без командной строки.
         </div>
@@ -180,7 +180,7 @@ maddy accounts ban user@example.com ["причина"] [--yes]</div>
 
         <div class="cmd-info">
             <h3>После правок через CLI на работающем сервере</h3>
-            <p>Сервер держит копии учётных данных и квот в памяти. После изменения БД через CLI выполните один раз <strong>POST</strong> <code>/admin/cache/reload</code> (тот же admin-токен). Формат запроса — в <a href="/docs/api">документации Admin API</a>.</p>
+            <p>Сервер держит копии учётных данных и квот в памяти. После изменения БД через CLI выполните один раз <strong>POST</strong> <code>/admin/cache/reload</code> (тот же admin-токен). Формат запроса — в <a href="admin_api_docs.html">документации Admin API</a>.</p>
         </div>
 
         <h2>Управление сервером вызовов (TURN/STUN)</h2>
@@ -250,7 +250,7 @@ maddy accounts ban user@example.com ["причина"] [--yes]</div>
                 <li><strong>Конфигурация:</strong> SMTP hostname, TURN realm/secret/relay IP/TTL, Iroh relay URL,
                     Shadowsocks cipher/password</li>
             </ul>
-            <p>Для управления этими настройками используйте <a href="/docs/api" style="color: var(--link);">Admin API</a>.
+            <p>Для управления этими настройками используйте <a href="admin_api_docs.html" style="color: var(--link);">Admin API</a>.
                 Соответствующие конечные точки описаны в разделах «Настройки портов» и «Настройки конфигурации» документации API.</p>
         </div>
 
