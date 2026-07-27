@@ -26,7 +26,9 @@ var TRANSLATIONS = {
         nav_home: "Home",
         nav_share: "Share",
         nav_info: "Info",
+        nav_privacy: "Privacy",
         nav_security: "Security",
+        nav_applications: "Apps",
         nav_deploy: "Deploy",
         nav_docs: "Docs",
         nav_menu_label: "Menu",
@@ -55,7 +57,51 @@ var TRANSLATIONS = {
         index_reg_closed_title: "Registration Closed",
         index_reg_closed_text: "New user registration on this server is temporarily disabled. Please use other servers.",
         footer_version: "Version",
+        footer_what_is_fs: "What is free software?",
+        footer_fs_movement: "Free software movement",
+        footer_fs_history: "History of free software",
+        footer_delta: "Delta Chat",
+        footer_tagline: "This is a server for connecting with <strong>Delta Chat</strong>.",
+        footer_source_license: '<a href="https://github.com/themadorg" target="_blank" rel="noopener noreferrer">Source code</a> is released under the <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">AGPL-3.0-or-later</a>.',
+        footer_powered: 'Powered by <strong>Madmail</strong> / chatmail for use with <a href="https://delta.chat" target="_blank" rel="noopener noreferrer">Delta Chat</a>.',
+        footer_community: 'Free software community: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).',
         // Info page
+        what_is_deltachat: "What is DeltaChat?",
+        is_deltachat: "Delta Chat is a free and open-source messenger that uses email infrastructure while offering a modern chat experience. With Delta Chat:",
+        benefit_no_phone_strong: "No phone number needed:",
+        benefit_no_phone_text: "Use only email for secure communication",
+        benefit_encrypted_strong: "End-to-end encrypted:",
+        benefit_encrypted_text: "Your messages are protected with PGP encryption",
+        benefit_decentralized_strong: "Decentralized:",
+        benefit_decentralized_text: "Works with any email provider, no single point of failure",
+        benefit_open_source_strong: "Free / open source:",
+        benefit_open_source_text: "Fully transparent and community-driven",
+        cta_create_account: "Create free account",
+        contact_admin_title: "Contact admin",
+        contact_get_in_touch: "📧 Get in touch",
+        contact_description: "Questions, feedback, or problem reports",
+        contact_send_message: "Open in DeltaChat",
+        contact_copy_link: "Copy invite link",
+        contact_qr_caption: "Scan this QR code in DeltaChat to message the admin",
+        contact_back_home: "Back to home",
+        copy_btn: "Copy",
+        download_title: "Download DeltaChat",
+        download_official: "📱 Official DeltaChat downloads",
+        download_desc: "Visit delta.chat for the latest stable releases for Android, iOS, Windows, macOS, and Linux.",
+        apps_store_title: "WebXDC app store",
+        apps_security_title: "WebXDC security & privacy notes",
+        apps_security_intro: "Please read these points before installing apps:",
+        apps_security_code: "<strong>Code execution:</strong> WebXDC files run code on your device (sandboxed). Only open apps from trusted sources such as this store.",
+        apps_security_net: "<strong>Internet access:</strong> Some apps may use the network (e.g. news). That can expose your IP to remote servers or chat peers.",
+        apps_security_unknown: "<strong>Unknown senders:</strong> Never open <code>.xdc</code> files from strangers unless you fully trust the sender.",
+        apps_security_disclaimer: "These apps are written by free software community developers; this chat server only hosts them.",
+        apps_search_placeholder: "Search apps…",
+        apps_loading: "Loading…",
+        apps_download: "Download",
+        apps_close: "Close",
+        apps_published: "Published:",
+        apps_size: "Size:",
+        apps_source: "Source:",
         info_title: "About This Server",
         info_subtitle: "This is a node of the DeltaChat network. Its purpose is to provide fast and private communication for users.",
         info_msg_delete: "Messages are automatically deleted from the server after 20 days.",
@@ -237,6 +283,31 @@ var TRANSLATIONS = {
         index_reg_closed_title: "ثبت‌نام بسته شده است",
         index_reg_closed_text: "ثبت‌نام کاربر جدید در این سرور موقتاً غیرفعال شده است. لطفاً از سرورهای دیگر استفاده کنید.",
         footer_version: "نسخه",
+        footer_what_is_fs: "نرم‌افزار آزاد چیست؟",
+        footer_fs_movement: "جنبش نرم‌افزار آزاد",
+        footer_fs_history: "تاریخچه نرم‌افزار آزاد",
+        footer_delta: "دلتاچت",
+        footer_tagline: "این یک سرور برای ارتباط با <strong>دلتاچت</strong> است.",
+        footer_source_license: '<a href="https://github.com/themadorg" target="_blank" rel="noopener noreferrer">کد منبع</a> تحت مجوز <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">AGPL-3.0-or-later</a> منتشر شده است.',
+        footer_powered: 'قدرت‌گرفته از <strong>Madmail</strong> / chatmail برای استفاده با <a href="https://delta.chat" target="_blank" rel="noopener noreferrer">دلتاچت</a>.',
+        footer_community: 'جامعه نرم‌افزار آزاد: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (شیرازلینوکس).',
+        download_title: "دانلود دلتاچت",
+        download_official: "📱 دانلود رسمی دلتاچت",
+        download_desc: "برای آخرین نسخه پایدار اندروید، iOS، ویندوز، مک و لینوکس به delta.chat مراجعه کنید.",
+        apps_store_title: "فروشگاه برنامه‌های WebXDC",
+        apps_security_title: "نکات امنیتی و حریم خصوصی WebXDC",
+        apps_security_intro: "کاربر گرامی، با توجه به اهمیت حفظ حریم خصوصی، لطفاً قبل از نصب به نکات زیر توجه کنید:",
+        apps_security_code: "<strong>اجرای کد:</strong> فایل‌های WebXDC حاوی کد هستند که روی دستگاه شما اجرا می‌شوند. اگرچه در سندباکس اجرا می‌شوند، فقط از منابع معتبر (مثل همین فروشگاه) نصب کنید.",
+        apps_security_net: "<strong>دسترسی به اینترنت:</strong> برخی برنامه‌ها ممکن است به شبکه نیاز داشته باشند؛ این کار می‌تواند IP شما را برای سرور یا طرف مقابل چت آشکار کند.",
+        apps_security_unknown: "<strong>دریافت از ناشناس:</strong> هرگز فایل‌های <code>.xdc</code> از افراد ناشناس را باز نکنید مگر اینکه فرستنده را کاملاً بشناسید.",
+        apps_security_disclaimer: "این برنامه‌ها توسط توسعه‌دهندگان جامعه نرم‌افزار آزاد نوشته شده‌اند و این سرور چت صرفاً آن‌ها را گردآوری کرده است.",
+        apps_search_placeholder: "جستجوی برنامه…",
+        apps_loading: "در حال بارگذاری…",
+        apps_download: "دانلود",
+        apps_close: "بستن",
+        apps_published: "منتشر شده:",
+        apps_size: "حجم:",
+        apps_source: "منبع:",
         info_title: "درباره این سرور",
         info_subtitle: "این یک گره (Node) از شبکه دلتاچت است. هدف آن فراهم کردن ارتباط سریع و خصوصی برای کاربران است.",
         info_msg_delete: "پیام‌ها بعد از ۲۰ روز به طور خودکار از سرور پاک می‌شوند.",
@@ -444,8 +515,11 @@ var TRANSLATIONS = {
         contact_admin_title: "ارتباط با ادمین",
         contact_get_in_touch: "📧 تماس با ادمین",
         contact_description: "هر گونه پرسش، پاسخ یا گزارش مشکلات",
-        contact_send_message: "ارسال پیام در دلتاچت",
+        contact_send_message: "باز کردن در دلتاچت",
+        contact_copy_link: "کپی لینک دعوت",
+        contact_qr_caption: "این QR را در دلتاچت اسکن کنید تا به ادمین پیام بدهید",
         contact_back_home: "برگشت به خانه",
+        copy_btn: "کپی",
 
 
         benefit_decentralized_strong: "غیرمتمرکز:",
@@ -482,7 +556,9 @@ var TRANSLATIONS = {
         nav_home: "Главная",
         nav_share: "Поделиться",
         nav_info: "Информация",
+        nav_privacy: "Конфиденциальность",
         nav_security: "Безопасность",
+        nav_applications: "Приложения",
         nav_deploy: "Установка",
         nav_docs: "Документация",
         nav_menu_label: "Меню",
@@ -510,6 +586,50 @@ var TRANSLATIONS = {
         index_reg_closed_title: "Регистрация закрыта",
         index_reg_closed_text: "Регистрация новых пользователей на этом сервере временно отключена. Пожалуйста, используйте другие серверы.",
         footer_version: "Версия",
+        footer_what_is_fs: "Что такое свободное ПО?",
+        footer_fs_movement: "Движение свободного ПО",
+        footer_fs_history: "История свободного ПО",
+        footer_delta: "Delta Chat",
+        footer_tagline: "Это сервер для связи через <strong>Delta Chat</strong>.",
+        footer_source_license: '<a href="https://github.com/themadorg" target="_blank" rel="noopener noreferrer">Исходный код</a> распространяется под лицензией <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">AGPL-3.0-or-later</a>.',
+        footer_powered: 'На базе <strong>Madmail</strong> / chatmail для работы с <a href="https://delta.chat" target="_blank" rel="noopener noreferrer">Delta Chat</a>.',
+        footer_community: 'Сообщество свободного ПО: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).',
+        what_is_deltachat: "Что такое DeltaChat?",
+        is_deltachat: "Delta Chat — свободный мессенджер с открытым исходным кодом на базе email, с современным чат-опытом. С Delta Chat:",
+        benefit_no_phone_strong: "Без номера телефона:",
+        benefit_no_phone_text: "Только email для безопасной связи",
+        benefit_encrypted_strong: "Сквозное шифрование:",
+        benefit_encrypted_text: "Сообщения защищены PGP",
+        benefit_decentralized_strong: "Децентрализация:",
+        benefit_decentralized_text: "Работает с любым почтовым провайдером",
+        benefit_open_source_strong: "Свободный / открытый код:",
+        benefit_open_source_text: "Прозрачность и развитие сообществом",
+        cta_create_account: "Создать бесплатный аккаунт",
+        contact_admin_title: "Связь с администратором",
+        contact_get_in_touch: "📧 Связаться",
+        contact_description: "Вопросы, отзывы или сообщения о проблемах",
+        contact_send_message: "Открыть в DeltaChat",
+        contact_copy_link: "Копировать ссылку",
+        contact_qr_caption: "Отсканируйте QR в DeltaChat, чтобы написать администратору",
+        contact_back_home: "На главную",
+        copy_btn: "Копировать",
+        download_title: "Скачать DeltaChat",
+        download_official: "📱 Официальные загрузки DeltaChat",
+        download_desc: "Актуальные стабильные версии для Android, iOS, Windows, macOS и Linux — на delta.chat.",
+        apps_store_title: "Магазин приложений WebXDC",
+        apps_security_title: "Безопасность и приватность WebXDC",
+        apps_security_intro: "Перед установкой приложений учтите следующее:",
+        apps_security_code: "<strong>Выполнение кода:</strong> файлы WebXDC запускают код на устройстве (в песочнице). Открывайте только из доверенных источников.",
+        apps_security_net: "<strong>Сеть:</strong> некоторые приложения могут ходить в интернет и раскрывать ваш IP.",
+        apps_security_unknown: "<strong>Неизвестные отправители:</strong> не открывайте <code>.xdc</code> от незнакомцев, если не доверяете им.",
+        apps_security_disclaimer: "Приложения созданы сообществом свободного ПО; этот сервер лишь размещает их.",
+        apps_search_placeholder: "Поиск приложений…",
+        apps_loading: "Загрузка…",
+        apps_download: "Скачать",
+        apps_close: "Закрыть",
+        apps_published: "Опубликовано:",
+        apps_size: "Размер:",
+        apps_source: "Источник:",
         info_title: "Об этом сервере",
         info_subtitle: "Это узел сети DeltaChat. Его цель — обеспечить быструю и конфиденциальную связь для пользователей.",
         info_msg_delete: "Сообщения автоматически удаляются с сервера через 20 дней.",
@@ -649,8 +769,32 @@ var TRANSLATIONS = {
  * Apply translations to all elements with data-i18n attribute.
  * Elements with data-i18n-html will have innerHTML set instead of textContent.
  */
+/**
+ * Resolve page language from template value, <html lang>, or browser.
+ * Prevents falling back to English when "{{.Language}}" is not expanded
+ * (static preview) or is empty.
+ */
+function resolvePageLang(lang) {
+    function ok(code) {
+        return code && String(code).indexOf('{{') === -1 && TRANSLATIONS[code];
+    }
+    if (ok(lang)) return lang;
+    var htmlLang = (document.documentElement.getAttribute('lang') || '').trim();
+    if (ok(htmlLang)) return htmlLang;
+    var nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+    var short = nav.slice(0, 2);
+    if (ok(short)) return short;
+    return 'en';
+}
+
 function applyTranslations(lang) {
+    lang = resolvePageLang(lang);
     var t = TRANSLATIONS[lang] || TRANSLATIONS['en'];
+
+    // Ensure shared FOSS footer exists before translating its nodes
+    if (typeof ensureSiteFooter === 'function') {
+        ensureSiteFooter();
+    }
 
     // Set document direction
     document.documentElement.dir = t.dir;
@@ -674,6 +818,15 @@ function applyTranslations(lang) {
         }
     }
 
+    // Placeholders
+    var phElements = document.querySelectorAll('[data-i18n-placeholder]');
+    for (var k = 0; k < phElements.length; k++) {
+        var phKey = phElements[k].getAttribute('data-i18n-placeholder');
+        if (t[phKey] !== undefined) {
+            phElements[k].setAttribute('placeholder', t[phKey]);
+        }
+    }
+
     // Update CSS for RTL/LTR
     if (t.dir === 'rtl') {
         document.body.classList.add('is-rtl');
@@ -682,13 +835,19 @@ function applyTranslations(lang) {
         document.body.classList.add('is-ltr');
         document.body.classList.remove('is-rtl');
     }
+
+    // Refresh copy buttons / code-box enhancers after language is known
+    if (typeof enhanceCodeBoxes === 'function') {
+        document.querySelectorAll('.code-box .copy-btn').forEach(function (b) { b.remove(); });
+        enhanceCodeBoxes();
+    }
 }
 
 /**
  * Get a single translation string.
  */
 function t(key) {
-    var lang = document.documentElement.lang || 'en';
+    var lang = resolvePageLang(document.documentElement.lang || 'en');
     var dict = TRANSLATIONS[lang] || TRANSLATIONS['en'];
     return dict[key] || key;
 }

@@ -18,15 +18,22 @@
 -->
 
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="info_title">Info</title>
+    <title data-i18n="info_title">About This Server — DeltaChat Madmail Node</title>
+    <meta name="description" content="درباره این نود دلتاچت: رمزنگاری، سهمیه، نگهداری پیام و پروکسی Shadowsocks اختصاصی سرور.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="About This Server — DeltaChat Madmail Node">
+    <meta property="og:description" content="درباره این نود دلتاچت: رمزنگاری، سهمیه، نگهداری پیام و پروکسی Shadowsocks اختصاصی سرور.">
+
     <link rel="stylesheet" href="./main.css">
     <script src="./translations.js"></script>
     <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 
 <body>
@@ -48,8 +55,7 @@
         </ul>
     </nav>
 
-        <div class="glass-panel fade-in"
-        style="text-align: center; display: inline-block; margin: 20px auto; line-height: 1.8;">
+        <main class="page-content glass-panel fade-in" id="main-content" style="line-height: 1.8;">
         <h1 style="text-align: center;" data-i18n="what_is_deltachat">What is DeltaChat?</h1>
         <p style="font-size: 1.05em; color: var(--text-primary); line-height: 1.7;" data-i18n="is_deltachat">
             Delta Chat یک پیام‌رسان آزاد و متن‌باز است که از زیرساخت ایمیل استفاده می‌کند، اما تجربه‌ای مشابه
@@ -145,6 +151,10 @@
         </p>
     </div>
     {{end}}
+
+    </main>
+
+    <footer class="site-footer" data-version="{{.Version}}"><span data-i18n="footer_version">Version</span> {{.Version}}</footer>
 
     <script>
         window.onload = function() {

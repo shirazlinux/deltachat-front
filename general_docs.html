@@ -18,29 +18,44 @@
 -->
 
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Documentation - {{.WebDomain | cleanDomain}}</title>
-    <link rel="stylesheet" href="/main.css">
-    <script src="/translations.js"></script>
-    <script src="/main.js"></script>
+    <title>General Documentation — Madmail</title>
+    <meta name="description" content="مستندات عمومی Madmail: JIT، TURN، سهمیه، Admin API و یکپارچگی با DeltaChat.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="General Documentation — Madmail">
+    <meta property="og:description" content="مستندات عمومی Madmail: JIT، TURN، سهمیه، Admin API و یکپارچگی با DeltaChat.">
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 
 <body>
-    <header class="navbar">
-        <button class="navbar__toggle" onclick="toggleNav()" aria-label="Menu">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
-        </button>
-        <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/docs" data-i18n="nav_docs">Docs</a></li>
+        <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
-    </header>
+    </nav>
 
-    <div class="card card--wide" id="doc-content-en">
+    <div class="page-content card card--wide" id="doc-content-en">
         <h1>General Documentation</h1>
         <p>Welcome to the general documentation for the <strong>Madmail</strong> server.</p>
 
@@ -106,7 +121,7 @@
     </div>
 
     <!-- Farsi version (hidden by default, shown when lang=fa) -->
-    <div class="card card--wide" id="doc-content-fa" style="display:none;">
+    <div class="page-content card card--wide" id="doc-content-fa" style="display:none;">
         <h1>مستندات عمومی</h1>
         <p>به بخش مستندات عمومی سرور <strong>Madmail</strong> خوش آمدید.</p>
 
@@ -176,14 +191,26 @@
     <script>
         window.onload = function() {
             applyTranslations("{{.Language}}");
-            var lang = "{{.Language}}";
-            // Show the correct language block
-            if (lang === "fa") {
-                document.getElementById('doc-content-en').style.display = 'none';
-                document.getElementById('doc-content-fa').style.display = '';
+            var lang = (typeof resolvePageLang === "function")
+                ? resolvePageLang("{{.Language}}")
+                : "{{.Language}}";
+            var en = document.getElementById("doc-content-en");
+            var fa = document.getElementById("doc-content-fa");
+            var es = document.getElementById("doc-content-es");
+            if (lang === "fa" && fa && en) {
+                en.style.display = "none";
+                fa.style.display = "";
+                if (es) es.style.display = "none";
+            } else if (lang === "es" && es && en) {
+                en.style.display = "none";
+                if (fa) fa.style.display = "none";
+                es.style.display = "";
             }
         };
     </script>
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
+    </footer>
 </body>
 
 </html>

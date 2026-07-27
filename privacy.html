@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Privacy Policy — Madmail DeltaChat Server</title>
+    <meta name="description" content="سیاست حریم خصوصی سرور Madmail: بدون جمع‌آوری داده شخصی، رمزنگاری، نگهداری پیام و حقوق کاربران.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Privacy Policy — Madmail DeltaChat Server">
+    <meta property="og:description" content="سیاست حریم خصوصی سرور Madmail: بدون جمع‌آوری داده شخصی، رمزنگاری، نگهداری پیام و حقوق کاربران.">
+
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
-    <script src="translations.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -21,13 +28,13 @@
             <li><a href="info.html" data-i18n="nav_info">Info</a></li>
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="apps/" data-i18n="nav_applications">applications</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">applications</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
 
-    <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+    <main class="page-content glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_policy_title">🔒 سیاست حریم خصوصی</h3>
 
@@ -64,7 +71,7 @@
 
 </div>
 
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_processing_title">۱. پردازش هنگام استفاده از خدمات ایمیل چت</h3>
 
@@ -76,7 +83,7 @@
 
     <h4 data-i18n="privacy_processing_items_title">داده‌هایی که پردازش می‌کنیم:</h4>
 
-    <ul style="color: var(--text-secondary); text-align: right;">
+    <ul style="color: var(--text-secondary); text-align: start;">
         <li data-i18n="privacy_processing_item1">
             پیام‌های خروجی و ورودی (SMTP) تا زمانی که قابل تحویل باشند ذخیره می‌شوند.
         </li>
@@ -95,7 +102,7 @@
     </ul>
 
 </div>
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_account_title">۱.۱ تنظیم حساب</h3>
 
@@ -103,7 +110,7 @@
         ایجاد حساب به یکی از دو روش روی سرورهای ایمیل ما اتفاق می‌افتد:
     </p>
 
-    <ul style="color: var(--text-secondary); text-align: right;">
+    <ul style="color: var(--text-secondary); text-align: start;">
         <li data-i18n="privacy_account_method1">
             با یک توکن دعوت QR که با استفاده از اپلیکیشن Delta Chat اسکن می‌شود و سپس حساب ایجاد می‌شود.
         </li>
@@ -120,7 +127,7 @@
 
 </div>
 
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_emailproc_title">۱.۲ پردازش پیام‌های ایمیل</h3>
 
@@ -139,7 +146,7 @@
 
     <h4 data-i18n="privacy_emailproc_limits_title">محدودیت‌های حفاظتی:</h4>
 
-    <ul style="color: var(--text-secondary); text-align: right;">
+    <ul style="color: var(--text-secondary); text-align: start;">
         <li data-i18n="privacy_emailproc_limit_rate">محدودیت‌های نرخ</li>
         <li data-i18n="privacy_emailproc_limit_storage">محدودیت‌های ذخیره‌سازی</li>
         <li data-i18n="privacy_emailproc_limit_size">محدودیت‌های اندازه پیام</li>
@@ -155,7 +162,7 @@
     </p>
 
 </div>
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_web_title">۲. پردازش هنگام استفاده از وب‌سایت</h3>
 
@@ -166,7 +173,7 @@
 
     <h4 data-i18n="privacy_web_collect_title">اطلاعات جمع‌آوری‌شده:</h4>
 
-    <ul style="color: var(--text-secondary); text-align: right;">
+    <ul style="color: var(--text-secondary); text-align: start;">
         <li data-i18n="privacy_web_browser">نوع مرورگر استفاده شده</li>
         <li data-i18n="privacy_web_os">سیستم عامل استفاده شده</li>
         <li data-i18n="privacy_web_datetime">تاریخ و زمان دسترسی</li>
@@ -184,7 +191,7 @@
 
     <h4 data-i18n="privacy_web_purpose_title">اهداف پردازش:</h4>
 
-    <ul style="color: var(--text-secondary); text-align: right;">
+    <ul style="color: var(--text-secondary); text-align: start;">
         <li data-i18n="privacy_web_purpose_connection">اطمینان از تنظیم اتصال قابل اعتماد وب‌سایت</li>
         <li data-i18n="privacy_web_purpose_usability">اطمینان از استفاده راحت از وب‌سایت</li>
         <li data-i18n="privacy_web_purpose_security">بررسی و اطمینان از امنیت و پایداری سیستم</li>
@@ -198,7 +205,7 @@
     </p>
 
 </div>
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_transfer_title">۳. انتقال داده‌ها</h3>
 
@@ -207,7 +214,7 @@
         هیچ داده‌ای به طرف‌های سوم منتقل نخواهد شد مگر در موارد زیر:
     </p>
 
-    <ul style="color: var(--text-secondary); text-align: right;">
+    <ul style="color: var(--text-secondary); text-align: start;">
         <li data-i18n="privacy_transfer_case_a">
             شما رضایت صریح خود را داده باشید طبق ماده 6 پاراگراف 1 جمله 1 lit. a GDPR.
         </li>
@@ -226,7 +233,7 @@
     </ul>
 
 </div>
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_rights_title">۴. حقوق موضوع داده</h3>
 
@@ -248,7 +255,7 @@
     </p>
 
 </div>
-<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: right;">
+<div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
 
     <h3 data-i18n="privacy_validity_title">۵. اعتبار این سیاست حریم خصوصی</h3>
 
@@ -259,12 +266,9 @@
         نسخه‌های جدید پس از انتشار، جایگزین نسخه‌های قبلی خواهند شد.
     </p>
 
-</div>
+</main>
 
-
-    <footer>
-        DeltaChat Server
-    </footer>
+    <footer class="site-footer" data-version="{{.Version}}"><span data-i18n="footer_version">Version</span> {{.Version}}</footer>
         <script>
         window.onload = function () { applyTranslations("{{.Language}}"); };
     </script>

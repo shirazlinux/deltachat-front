@@ -19,6 +19,17 @@ dayjs.extend(dayjs_plugin_localizedFormat);
 // without a trailing slash
 const xdcget_export = "./xdcstore";
 
+/** i18n helper — uses global t() from translations.js when available */
+function tr(key, fallback) {
+  try {
+    if (typeof window.t === "function") {
+      const v = window.t(key);
+      if (v && v !== key) return v;
+    }
+  } catch (_) {}
+  return fallback || key;
+}
+
 /*
 Each <App> is implemented as a button that, when clicked, would show
 more details about the webxdc app by showing a <Dialog> 
@@ -77,20 +88,26 @@ const Dialog = ({app, modal, toggleModal}) => {
       </div>
       <div class="additional-info">
         <div>
-          <b>Published: </b>${dayjs(app.date).format("l")} (${app.tag_name})
+          <b>${tr("apps_published", "Published:")} </b>${dayjs(app.date).format("l")} (${app.tag_name})
         </div>
         <div>
-          <b>Size: </b>${size}
+          <b>${tr("apps_size", "Size:")} </b>${size}
         </div>
         <div class="ellipse">
-          <b>Source: </b><a href=${app.source_code_url} target="_blank">${app.source_code_url}</a>
+          <b>${tr("apps_source", "Source:")} </b><a href=${app.source_code_url} target="_blank" rel="noopener noreferrer">${app.source_code_url}</a>
         </div>
       </div>
       <div class="button-container">
-        <a href="${xdcget_export + "/" + app.cache_relname}" target="_blank" class="button">
-          دانلود
+        <a
+          href="${xdcget_export + "/" + app.cache_relname}"
+          class="button"
+          download=${app.cache_relname}
+          rel="noopener">
+          ${tr("apps_download", "Download")}
         </a>
-        <button class="ghost" onClick=${() => toggleModal(false)}>بستن</button>
+        <button type="button" class="ghost" onClick=${() => toggleModal(false)}>
+          ${tr("apps_close", "Close")}
+        </button>
       </div>
     </div>
   `;
@@ -151,7 +168,7 @@ const Search = ({apps, setSearchResults, filterGroup}) => {
     <div class="search">
       <input
         type="search"
-        placeholder="Search"
+        placeholder=${tr("apps_search_placeholder", "Search apps…")}
         id="search_field"
         ref=${searchFieldRef}
         oninput=${updateSearch}
@@ -233,7 +250,7 @@ const MainScreen = () => {
   return html`
     <${Search} apps=${apps} setSearchResults=${setSearchResults} filterGroup=${filterGroup} />
     <div id="app_container">
-      ${loading && html`<div class="loading">Loading ...</div>`}
+      ${loading && html`<div class="loading">${tr("apps_loading", "Loading…")}</div>`}
       ${searchResults &&
         searchResults.map((result) => html`<${App} app=${result.item} toggleModal=${toggleModal} />`)}
     </div>

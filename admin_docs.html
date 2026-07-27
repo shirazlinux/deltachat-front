@@ -18,18 +18,28 @@
 -->
 
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مستندات مدیر سیستم - {{.WebDomain | cleanDomain}}</title>
-    <link rel="stylesheet" href="/main.css">
-    <script src="/main.js"></script>
+    <title>مستندات مدیر سیستم | Madmail Admin Docs — {{.WebDomain | cleanDomain}}</title>
+    <meta name="description" content="راهنمای کامل مدیریت سرور Madmail: سهمیه کاربران، پاکسازی، ثبت‌نام JIT، وضعیت سرویس، Shadowsocks، TURN و دستورات maddy.">
+    <meta name="keywords" content="Madmail, maddy, admin, quota, DeltaChat, chatmail, مستندات ادمین, مدیریت سرور">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <link rel="canonical" href="https://{{.WebDomain | cleanDomain}}/admin_docs.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="مستندات مدیر سیستم Madmail">
+    <meta property="og:description" content="دستورات و راهنمای مدیریت سهمیه، کاربران و سرویس‌های سرور chatmail/Madmail.">
+    <meta property="og:image" content="https://{{.WebDomain | cleanDomain}}/webicon320.png">
+    <link rel="icon" href="./webicon320.png" type="image/png">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
 </head>
-
 <body>
-    <nav class="navbar glass-panel">
+        <nav class="navbar glass-panel">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
         <div class="menu-toggle">
             <span class="bar"></span>
@@ -37,19 +47,25 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-links">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/docs" data-i18n="nav_info">Docs</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
 
-    <div class="card card--wide">
+    <main class="page-content card card--wide" id="main-content">
         <h1>مستندات مدیر سیستم</h1>
-        <p>این راهنما نحوه مدیریت سهمیه (Quota) کاربران و مشاهده آمار سرور را با استفاده از دستورات <code>maddy</code>
-            توضیح می‌دهد.</p>
+        <p>این راهنما نحوه مدیریت <strong>سهمیه (Quota)</strong> کاربران و مشاهده <strong>آمار سرور</strong> را با استفاده از دستورات <code>maddy</code>
+            برای سرور <strong>Madmail / chatmail</strong> توضیح می‌دهد.</p>
+        <p class="text-muted text-sm"><strong>مخاطب:</strong> مدیران سیستم و اپراتورهای نود دلتاچت.</p>
 
         <div class="info-note"
             style="background: rgba(0, 210, 255, 0.05); border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 12px 15px; margin-bottom: 20px;">
-            <strong>💡 نکته:</strong> تمام این عملیات‌ها از طریق <a href="/docs/api"
+            <strong>💡 نکته:</strong> تمام این عملیات‌ها از طریق <a href="admin_api_docs.html"
                 style="color: var(--accent-color);">رابط وب مدیریت</a> در مسیر <code>/admin/</code> نیز قابل انجام هستند
             — بدون نیاز به خط فرمان.
         </div>
@@ -417,7 +433,11 @@ Email servers seen (since last restart):
             </ul>
         </div>
 
-    </div>
+    </main>
+
+    <footer class="site-footer" data-version="{{.Version}}"><span data-i18n="footer_version">Version</span> {{.Version}}</footer>
+    <script>window.onload=function(){ if(typeof applyTranslations==='function') applyTranslations("{{.Language}}"); };</script>
+
 </body>
 
 </html>

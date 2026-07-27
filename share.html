@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Share Your ID</title>
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
-    <script src="translations.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -21,13 +21,13 @@
             <li><a href="info.html" data-i18n="nav_info">Info</a></li>
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="apps/" data-i18n="nav_applications">applications</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">applications</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
     
-    <div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 800px; margin: 20px auto;">
+    <div class="page-content glass-panel fade-in" style="text-align: center; width: 100%; margin: 20px auto;">
         <h1 style="text-align: center;" data-i18n="share_title"></h1>
         <p style="color: var(--text-secondary);" data-i18n="share_subtitle"></p>
 
@@ -56,9 +56,7 @@
         </div>
     </div>
 
-    <footer>
-        DeltaChat Server
-    </footer>
+    <footer class="site-footer" data-version="{{.Version}}"><span data-i18n="footer_version">Version</span> {{.Version}}</footer>
     
     <script>
         function generateRandomSlug() {

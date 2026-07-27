@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language " fa"}}rtl{{else}}ltr{{end}}">
-    <head>
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="deploy_title">Deploy</title>
+    <title data-i18n="deploy_title">Deploy Madmail Server — Install & Update</title>
+    <meta name="description" content="راهنمای نصب و بروزرسانی سرور Madmail روی Debian/Ubuntu با دستورات install و update.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Deploy Madmail Server — Install & Update">
+    <meta property="og:description" content="راهنمای نصب و بروزرسانی سرور Madmail روی Debian/Ubuntu با دستورات install و update.">
+
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
-    <script src="translations.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -21,42 +28,42 @@
             <li><a href="info.html" data-i18n="nav_info">Info</a></li>
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="apps/index.html" data-i18n="nav_applications">applications</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
-    
-    <div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 800px; margin: 20px auto; line-height: 1.8;">
+
+    <main class="page-content glass-panel fade-in">
         <h1 style="text-align: center;" data-i18n="deploy_title"></h1>
         <p data-i18n-html="deploy_intro"></p>
-        
+
         <h3 style="margin-top: 30px;" data-i18n="deploy_network_note"></h3>
-        
+
         <h3 style="margin-top: 20px;" data-i18n="deploy_install_title"></h3>
         <p data-i18n-html="deploy_install_desc"></p>
-        <div class="code-box" style="font-size: 0.85em;">
+        <div class="code-box" style="font-size: 0.9em;" dir="ltr">
             <pre><code>curl https://chatmail-download.example.com/install.sh | bash</code></pre>
         </div>
-        
+
         <h3 style="margin-top: 20px;" data-i18n="deploy_update_title"></h3>
         <p data-i18n-html="deploy_update_desc"></p>
-        <div class="code-box" style="font-size: 0.85em;">
+        <div class="code-box" style="font-size: 0.9em;" dir="ltr">
             <pre><code>curl https://chatmail-download.example.com/update.sh | bash</code></pre>
         </div>
-        
+
         <h3 style="margin-top: 20px;" data-i18n="deploy_important_title"></h3>
-        <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: left;">
+        <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start;">
             <p data-i18n-html="deploy_important_ip"></p>
             <p data-i18n-html="deploy_important_ports"></p>
             <p data-i18n-html="deploy_important_config"></p>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <span data-i18n="footer_version">Version</span> 2.0
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
-    
+
     <script>
         window.onload = function () { applyTranslations("{{.Language}}"); };
     </script>

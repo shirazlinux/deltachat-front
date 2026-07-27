@@ -18,22 +18,21 @@
 -->
 
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Admin API Documentation</title>
-    <link rel="stylesheet" href="/main.css">
+    <title id="page-title">Admin API Documentation — Madmail</title>
+    <meta name="description" content="مستندات Admin API سرور Madmail: endpointها، احراز هویت و مدیریت سرویس‌ها.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Admin API Documentation — Madmail">
+    <meta property="og:description" content="مستندات Admin API سرور Madmail: endpointها، احراز هویت و مدیریت سرویس‌ها.">
+
+    <link rel="stylesheet" href="./main.css">
     <style>
-        .doc-container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background: var(--card);
-            border-radius: 12px;
-            border: 1px solid var(--card-border);
-        }
+        .doc-container { width: 100%; max-width: 100%; margin: 0 auto 24px; }
 
         pre.code-block {
             background: var(--code-bg);
@@ -125,13 +124,14 @@
         .field-desc li { margin: 4px 0; }
         .field-desc code { background: var(--code-bg); padding: 1px 5px; border-radius: 3px; font-size: 0.9em; direction: ltr; display: inline-block; }
     </style>
-    <script src="/translations.js"></script>
-    <script src="/main.js"></script>
-    <script src="/api_data.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <script src="./api_data.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 
 <body>
-    <nav class="navbar glass-panel">
+        <nav class="navbar glass-panel">
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
         <div class="menu-toggle">
             <span class="bar"></span>
@@ -139,20 +139,25 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-links">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/docs" data-i18n="nav_info">Docs</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
 
-    <div class="doc-container" id="api-docs-root"></div>
+    <div class="page-content doc-container" id="api-docs-root"></div>
 
-    <footer style="text-align: center; margin: 40px; color: #888; font-size: 0.8em;">
-        {{.Version}}
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
 
     <script>
     (function() {
-        var LANG = "{{.Language}}";
+        var LANG = (function(l){ if(!l || l.indexOf("{{")>=0){ l=(document.documentElement.lang||"en"); } return l; })("{{.Language}}");
         var D = API_DOCS;
         var root = document.getElementById('api-docs-root');
 

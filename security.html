@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="security_title">Security & Privacy</title>
+    <title data-i18n="security_title">Security & Privacy — DeltaChat / Madmail</title>
+    <meta name="description" content="راهنمای امنیت دلتاچت: غیرفعال‌سازی ایمیل کلاسیک، تشخیص پیام ناامن، شروع چت امن با لینک invite و تفاوت chatmail و Madmail.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Security & Privacy — DeltaChat / Madmail">
+    <meta property="og:description" content="راهنمای امنیت دلتاچت: غیرفعال‌سازی ایمیل کلاسیک، تشخیص پیام ناامن، شروع چت امن با لینک invite و تفاوت chatmail و Madmail.">
+
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
-    <script src="translations.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -21,35 +28,35 @@
             <li><a href="info.html" data-i18n="nav_info">Info</a></li>
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="apps/" data-i18n="nav_applications">applications</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
-    
-    <div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 800px; margin: 20px auto; line-height: 1.8;">
-        <h1 style="text-align: center;" data-i18n="security_title"></h1>
+
+    <main class="page-content glass-panel fade-in">
+        <h1 style="text-align: center;" data-i18n="security_title">Security &amp; Privacy</h1>
         <p style="font-size: 1.1em;" data-i18n-html="security_intro"></p>
-        
-        <h3 style="margin-top: 30px;" data-i18n="security_warning"></h3>
-        
-        <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: left; margin-top: 20px;">
+
+        <h3 style="margin-top: 30px; text-align: center;" data-i18n="security_warning">To maintain full security, follow these guidelines</h3>
+
+        <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start; margin-top: 20px;">
             <p data-i18n-html="security_classic_email"></p>
-            <hr style="border: none; height: 1px; background: rgba(255,255,255,0.1); margin: 15px 0;">
+            <hr class="neon-hr" style="margin: 15px 0;">
             <p data-i18n-html="security_unsafe_msgs"></p>
-            <hr style="border: none; height: 1px; background: rgba(255,255,255,0.1); margin: 15px 0;">
+            <hr class="neon-hr" style="margin: 15px 0;">
             <p data-i18n-html="security_start_chat"></p>
-            <hr style="border: none; height: 1px; background: rgba(255,255,255,0.1); margin: 15px 0;">
+            <hr class="neon-hr" style="margin: 15px 0;">
             <p data-i18n-html="security_server_diff"></p>
-            <hr style="border: none; height: 1px; background: rgba(255,255,255,0.1); margin: 15px 0;">
+            <hr class="neon-hr" style="margin: 15px 0;">
             <p data-i18n-html="security_admin_note"></p>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <span data-i18n="footer_version">Version</span> 2.0
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
-    
+
     <script>
         window.onload = function () { applyTranslations("{{.Language}}"); };
     </script>

@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ارتباط با ادمین</title>
+    <title data-i18n="contact_admin_title">Contact Admin — DeltaChat</title>
+    <meta name="description" content="تماس با ادمین سرور از طریق DeltaChat، لینک دعوت و QR کد.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Contact Admin — DeltaChat">
+    <meta property="og:description" content="تماس با ادمین سرور از طریق DeltaChat، لینک دعوت و QR کد.">
+
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
-    <script src="translations.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -21,46 +28,63 @@
             <li><a href="info.html" data-i18n="nav_info">Info</a></li>
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
-    
-<div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 800px; margin: 20px auto;">
-    <h1 data-i18n="contact_admin_title">ارتباط با ادمین</h1>
-    
-    <div class="glass-panel" style="background: rgba(255,255,255,0.03); margin-top: 30px; text-align: right;">
-        <h3 data-i18n="contact_get_in_touch">📧 تماس با ادمین</h3>
 
-        <p style="color: var(--text-secondary); font-size: 1em; line-height: 1.8;" data-i18n="contact_description">
-            هر گونه پرسش، پاسخ یا گزارش مشکلات
+    <div class="page-content glass-panel fade-in admin-contact">
+        <h1 data-i18n="contact_admin_title">Contact admin</h1>
+        <h3 data-i18n="contact_get_in_touch">📧 Get in touch</h3>
+        <p style="color: var(--text-secondary);" data-i18n="contact_description">
+            Questions, feedback, or problem reports
         </p>
-        
-        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
-            <a href="mailto:admin@example.com" class="cta-button" 
-               style="font-size: 0.95em; padding: 12px 20px;" 
-               data-i18n="contact_send_message">
-                ارسال پیام در دلتاچت
-            </a>
 
-            <a href="index.html" class="cta-button" 
-               style="background: rgba(255,255,255,0.1); font-size: 0.95em; padding: 12px 20px;" 
-               data-i18n="contact_back_home">
-                برگشت به خانه
+        <div class="admin-qr-wrap">
+            <img class="admin-qr" src="./admin-qr.jpg" alt="Admin DeltaChat QR — Scan to chat with sudoshz" />
+        </div>
+        <p class="text-sm text-muted" data-i18n="contact_qr_caption">Scan this QR code in DeltaChat to message the admin</p>
+
+        <div class="admin-contact__actions">
+            <a id="admin-dc-open"
+               href="https://i.delta.chat/#89EBEFEF4359C9555ABB5BED7469BDCD99C0462B&amp;v=3&amp;i=y_yeBxFUmD4GkTFpHlCPhcfn&amp;s=b1TgipmWl6CX0bC8aI1vz--F&amp;a=mzt9igijtium%40delta.sudoshz.ir&amp;n=sudoshz"
+               class="cta-button"
+               data-i18n="contact_send_message"
+               rel="noopener noreferrer">
+                Open in DeltaChat
+            </a>
+            <button type="button" class="btn btn--secondary" id="admin-dc-copy" data-i18n="contact_copy_link">
+                Copy invite link
+            </button>
+            <a href="index.html" class="cta-button" style="background: rgba(255,255,255,0.1);" data-i18n="contact_back_home">
+                Back to home
             </a>
         </div>
     </div>
-</div>
 
-
-    <footer>
-        DeltaChat Server
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
-    
+
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            applyTranslations(document.documentElement.lang || 'fa');
-        });
+        var ADMIN_INVITE = "https://i.delta.chat/#89EBEFEF4359C9555ABB5BED7469BDCD99C0462B&v=3&i=y_yeBxFUmD4GkTFpHlCPhcfn&s=b1TgipmWl6CX0bC8aI1vz--F&a=mzt9igijtium%40delta.sudoshz.ir&n=sudoshz";
+        window.onload = function () {
+            applyTranslations("{{.Language}}");
+            var openBtn = document.getElementById('admin-dc-open');
+            var copyBtn = document.getElementById('admin-dc-copy');
+            if (openBtn) {
+                openBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openDeltaChatUri(ADMIN_INVITE);
+                });
+            }
+            if (copyBtn) {
+                copyBtn.addEventListener('click', function () {
+                    copyToClipboard(ADMIN_INVITE);
+                });
+            }
+        };
     </script>
 </body>
 </html>

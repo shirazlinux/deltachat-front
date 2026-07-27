@@ -18,47 +18,62 @@
 -->
 
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="docs_serve_title">Custom HTML Guide</title>
-    <link rel="stylesheet" href="/main.css">
-    <script src="/translations.js"></script>
-    <script src="/main.js"></script>
+    <title data-i18n="docs_serve_title">Custom HTML Guide — Madmail</title>
+    <meta name="description" content="شخصی‌سازی ظاهر صفحات وب سرور Madmail با www_dir و extract-www.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Custom HTML Guide — Madmail">
+    <meta property="og:description" content="شخصی‌سازی ظاهر صفحات وب سرور Madmail با www_dir و extract-www.">
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 
 <body>
-    <header class="navbar">
-        <button class="navbar__toggle" onclick="toggleNav()" aria-label="Menu">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/></svg>
-        </button>
-        <ul class="navbar__menu" id="nav-menu">
-            <li><a href="/" data-i18n="nav_home">Home</a></li>
-            <li><a href="/docs/" data-i18n="nav_docs">Docs</a></li>
+        <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
-    </header>
+    </nav>
 
-    <div class="card card--wide">
+    <div class="page-content card card--wide">
         <h1 data-i18n="docs_serve_title">Server Appearance Customization Guide (Custom HTML)</h1>
         <p class="mt-md" data-i18n="docs_serve_intro">You can change the appearance of all web pages of your server without modifying the source code or recompiling.</p>
 
         <h3 class="mt-lg" data-i18n="docs_serve_step1_title">Step 1 — Extract original files</h3>
         <p data-i18n-html="docs_serve_step1_text">First, extract the default files into a folder. Our recommended folder is <code>/var/lib/maddy/www</code>.</p>
-        <div class="code-block">sudo maddy extract-www /var/lib/maddy/www</div>
+        <div class="code-box code-block">sudo maddy extract-www /var/lib/maddy/www</div>
 
         <h3 class="mt-lg" data-i18n="docs_serve_step2_title">Step 2 — Set permissions</h3>
         <p data-i18n-html="docs_serve_step2_text">For the server to read the files, change folder ownership to the <code>maddy</code> user.</p>
-        <div class="code-block">sudo chown -R maddy:maddy /var/lib/maddy/www</div>
+        <div class="code-box code-block">sudo chown -R maddy:maddy /var/lib/maddy/www</div>
 
         <h3 class="mt-lg" data-i18n="docs_serve_step3_title">Step 3 — Enable in server</h3>
         <p data-i18n-html="docs_serve_step3_text">Update the server config file (maddy.conf) to use the new folder.</p>
-        <div class="code-block">sudo sed -i '/chatmail.*{/a\    www_dir /var/lib/maddy/www' /etc/maddy/maddy.conf</div>
+        <div class="code-box code-block">sudo sed -i '/chatmail.*{/a\    www_dir /var/lib/maddy/www' /etc/maddy/maddy.conf</div>
 
         <h3 class="mt-lg" data-i18n="docs_serve_step4_title">Step 4 — Apply changes</h3>
         <p data-i18n="docs_serve_step4_text">Finally, restart the service for changes to take effect.</p>
-        <div class="code-block">sudo systemctl restart maddy</div>
+        <div class="code-box code-block">sudo systemctl restart maddy</div>
 
         <div class="alert alert--warning mt-lg" data-i18n-html="docs_serve_warning">
             <strong>Important:</strong> After performing the above steps, you can open files inside <code>/var/lib/maddy/www</code> with an editor (like nano) and modify them. Changes take effect immediately (after page refresh).
@@ -74,7 +89,7 @@
 
         <h3 class="mt-lg" data-i18n="docs_serve_reset_title">Reset to default</h3>
         <p data-i18n="docs_serve_reset_text">If you want to use the program's built-in files again:</p>
-        <div class="code-block">sudo sed -i '/www_dir/d' /etc/maddy/maddy.conf
+        <div class="code-box code-block">sudo sed -i '/www_dir/d' /etc/maddy/maddy.conf
 sudo systemctl restart maddy</div>
     </div>
 
@@ -84,6 +99,9 @@ sudo systemctl restart maddy</div>
             document.title = t('docs_serve_title') + ' - {{.WebDomain | cleanDomain}}';
         };
     </script>
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
+    </footer>
 </body>
 
 </html>

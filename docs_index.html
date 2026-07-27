@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language " fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="docs_index_title">Documentation</title>
+    <title data-i18n="docs_index_title">Documentation — Madmail / DeltaChat</title>
+    <meta name="description" content="فهرست مستندات سرور Madmail: عمومی، مدیر سیستم، Admin API، پایگاه داده، Docker، دامنه و TLS، شخصی‌سازی HTML.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Madmail Documentation">
+    <meta property="og:description" content="Guides for Madmail chatmail server administration and deployment.">
+    <link rel="icon" href="./webicon320.png" type="image/png">
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
-    <script src="translations.js"></script>
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
 </head>
 <body>
     <nav class="navbar glass-panel">
@@ -21,53 +27,52 @@
             <li><a href="info.html" data-i18n="nav_info">Info</a></li>
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
-            <li><a href="apps/index.html" data-i18n="nav_applications">applications</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
-    
-    <div class="glass-panel fade-in" style="text-align: center; display: inline-block; max-width: 800px; margin: 20px auto;">
-        <h1 style="text-align: center;" data-i18n="docs_index_title"></h1>
-        <p data-i18n="docs_index_subtitle"></p>
 
-        <div style="display: grid; gap: 20px; margin-top: 30px;">
-            <div class="glass-panel" style="background: rgba(255,255,255,0.03); cursor: pointer; transition: all 0.3s ease;" onclick="window.location='general_docs.html'">
-                <h3 style="margin-top: 0;" data-i18n="docs_general"></h3>
-                <p style="color: var(--text-secondary);" data-i18n="docs_general_desc"></p>
-            </div>
+    <main class="page-content glass-panel fade-in" id="main-content">
+        <h1 style="text-align: center;" data-i18n="docs_index_title">Documentation</h1>
+        <p style="text-align: center;" data-i18n="docs_index_subtitle">Browse guides for this Madmail / DeltaChat server.</p>
 
-            <div class="glass-panel" style="background: rgba(255,255,255,0.03); cursor: pointer; transition: all 0.3s ease;" onclick="window.location='admin_docs.html'">
-                <h3 style="margin-top: 0;" data-i18n="docs_admin"></h3>
-                <p style="color: var(--text-secondary);" data-i18n="docs_admin_desc"></p>
-            </div>
-
-            <div class="glass-panel" style="background: rgba(255,255,255,0.03); cursor: pointer; transition: all 0.3s ease;" onclick="window.location='admin_api_docs.html'">
-                <h3 style="margin-top: 0;" data-i18n="docs_api"></h3>
-                <p style="color: var(--text-secondary);" data-i18n="docs_api_desc"></p>
-            </div>
-
-            <div class="glass-panel" style="background: rgba(255,255,255,0.03); cursor: pointer; transition: all 0.3s ease;" onclick="window.location='database_docs.html'">
-                <h3 style="margin-top: 0;" data-i18n="docs_database"></h3>
-                <p style="color: var(--text-secondary);" data-i18n="docs_database_desc"></p>
-            </div>
-
-            <div class="glass-panel" style="background: rgba(255,255,255,0.03); cursor: pointer; transition: all 0.3s ease;" onclick="window.location='docker_docs.html'">
-                <h3 style="margin-top: 0;" data-i18n="docs_docker"></h3>
-                <p style="color: var(--text-secondary);" data-i18n="docs_docker_desc"></p>
-            </div>
-
-            <div class="glass-panel" style="background: rgba(255,255,255,0.03); cursor: pointer; transition: all 0.3s ease;" onclick="window.location='relay_docs.html'">
-                <h3 style="margin-top: 0;" data-i18n="docs_relay"></h3>
-                <p style="color: var(--text-secondary);" data-i18n="docs_relay_desc"></p>
-            </div>
+        <div style="display: grid; gap: 16px; margin-top: 30px;" role="navigation" aria-label="Documentation sections">
+            <a class="glass-panel docs-card-link" href="general_docs.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_general">General Documentation</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_general_desc">Basic information for all users.</p>
+            </a>
+            <a class="glass-panel docs-card-link" href="admin_docs.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_admin">System Administrator Documentation</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_admin_desc">Advanced management and CLI commands.</p>
+            </a>
+            <a class="glass-panel docs-card-link" href="admin_api_docs.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_api">Admin API Documentation</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_api_desc">Administrative API — all endpoints and usage.</p>
+            </a>
+            <a class="glass-panel docs-card-link" href="database_docs.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_database">Database Documentation</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_database_desc">How to connect to PostgreSQL and MySQL.</p>
+            </a>
+            <a class="glass-panel docs-card-link" href="docker_docs.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_docker">Docker Setup</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_docker_desc">How to run the server with Docker and docker-compose.</p>
+            </a>
+            <a class="glass-panel docs-card-link" href="relay_docs.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_relay">Domain &amp; TLS Setup</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_relay_desc">Connect a real domain, configure DNS, and Let's Encrypt certificates.</p>
+            </a>
+            <a class="glass-panel docs-card-link" href="docs_serve.html" style="display:block; text-decoration:none; color:inherit; background: rgba(255,255,255,0.03);">
+                <h2 style="margin-top: 0; font-size: 1.25rem;" data-i18n="docs_custom_html">HTML Customization Guide</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 0;" data-i18n="docs_custom_html_desc">How to customize this server's appearance.</p>
+            </a>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <span data-i18n="footer_version">Version</span> 2.0
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
-    
+
     <script>
         window.onload = function () { applyTranslations("{{.Language}}"); };
     </script>

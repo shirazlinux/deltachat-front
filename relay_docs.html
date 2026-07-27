@@ -18,24 +18,23 @@
 -->
 
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>راه‌اندازی دامنه و TLS - {{.WebDomain | cleanDomain}}</title>
-    <link rel="stylesheet" href="/main.css">
-    <script src="/translations.js"></script>
+    <title>Domain & TLS Setup — Madmail</title>
+    <meta name="description" content="تنظیم DNS، MX و گواهی TLS/Let's Encrypt برای دامنه سرور Madmail.">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#FF6A00">
+    <meta property="og:title" content="Domain & TLS Setup — Madmail">
+    <meta property="og:description" content="تنظیم DNS، MX و گواهی TLS/Let's Encrypt برای دامنه سرور Madmail.">
+
+        <link rel="stylesheet" href="./main.css">
+    <script src="./translations.js"></script>
+    <script src="./main.js"></script>
     <style>
-        .doc-container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: var(--card-bg);
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            direction: rtl;
-        }
+        .doc-container { width: 100%; max-width: 100%; margin: 0 auto 24px; }
 
         h2 {
             margin-top: 30px;
@@ -132,8 +131,7 @@
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            direction: rtl;
-        }
+            }
 
         .mode-table th,
         .mode-table td {
@@ -201,15 +199,28 @@
             border: 1px dashed #444 !important;
         }
     </style>
+    <link rel="icon" href="./webicon320.png" type="image/png">
 </head>
 
 <body>
-    <ul id="menu">
-        <li><a href="/" data-i18n="nav_home">Home</a></li>
-        <li><a href="/docs" data-i18n="nav_docs">Docs</a></li>
-    </ul>
-
-    <div class="doc-container">
+    <nav class="navbar glass-panel">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="info.html" data-i18n="nav_info">Info</a></li>
+            <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="security.html" data-i18n="nav_security">Security</a></li>
+            <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
+            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+            <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
+        </ul>
+    </nav>
+    <div class="page-content doc-container">
         <h1>🌐 راه‌اندازی دامنه و TLS</h1>
 
         <h2>مرحله ۱: تنظیم رکوردهای DNS</h2>
@@ -420,6 +431,9 @@ sudo chmod 640 /path/to/cert.pem /path/to/key.pem</pre>
     <script>
         window.onload = function() { applyTranslations("{{.Language}}"); };
     </script>
+    <footer class="site-footer" data-version="{{.Version}}">
+        <span data-i18n="footer_version">Version</span> {{.Version}}
+    </footer>
 </body>
 
 </html>

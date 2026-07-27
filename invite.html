@@ -18,7 +18,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="{{.Language}}" dir="{{if eq .Language "fa"}}rtl{{else}}ltr{{end}}">
+<html lang="{{.Language}}" dir="{{if eq .Language `fa`}}rtl{{else}}ltr{{end}}">
 
 <head>
     <meta charset="utf-8" />
@@ -277,7 +277,7 @@
         };
     </script>
 
-    <div class="footer text-center"><span data-i18n="footer_version">Version</span> {{.Version}}</div>
+    <footer class="site-footer" data-version="{{.Version}}"><span data-i18n="footer_version">Version</span> {{.Version}}</footer>
 </body>
 
 </html>

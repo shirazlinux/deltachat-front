@@ -3,10 +3,35 @@
 /* تنظیمات کلی برای هماهنگی با سایت */
 #apps {
   width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 60vh;
+  box-sizing: border-box;
+}
+
+body .page-content {
+  width: 100%;
+}
+
+.warning-box {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+[dir="ltr"] .warning-box,
+body.is-ltr .warning-box {
+  border-right: none;
+  border-left: 4px solid #ff9800;
+  text-align: left;
+}
+
+[dir="rtl"] .warning-box,
+body.is-rtl .warning-box {
+  border-left: none;
+  border-right: 4px solid #ff9800;
+  text-align: right;
 }
 
 /* --- Search Bar Style --- */
@@ -46,11 +71,20 @@
 /* --- App Grid Container --- */
 #app_container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
   width: 100%;
-  max-width: 1200px;
-  padding-bottom: 80px; /* فضا برای تب‌های پایین */
+  max-width: 100%;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px 10px;
+  font-weight: 700;
 }
 
 /* --- App Card Style (شبیه Glass Panel) --- */

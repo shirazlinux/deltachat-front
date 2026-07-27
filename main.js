@@ -112,14 +112,259 @@ function setQrCodeImage(imgEl, text, cellSize) {
     }
 }
 
-/** nav */
-document.addEventListener('DOMContentLoaded', () => {
-    const cur = location.pathname.split("/").pop() || 'index.html';
-    document.querySelectorAll('.nav-links li a').forEach(a => {
-        if (a.getAttribute('href') === cur) {
+/* ── Free-software site footer (shared across pages) ── */
+
+/**
+ * Resolve displayed app/server version from body/footer attributes or existing text.
+ */
+function resolveSiteVersion() {
+    var body = document.body;
+    if (body && body.getAttribute('data-version')) {
+        return body.getAttribute('data-version');
+    }
+    var marked = document.querySelector('[data-version]');
+    if (marked && marked.getAttribute('data-version')) {
+        return marked.getAttribute('data-version');
+    }
+    var existing = document.querySelector('footer, .footer, .site-footer');
+    if (existing) {
+        var m = existing.textContent.match(/(?:Version|نسخه|Версия)\s*([^\s]+)/i);
+        if (m && m[1] && m[1] !== '{{.Version}}') return m[1];
+        // bare version left in some templates
+        var bare = existing.textContent.replace(/\s+/g, ' ').trim();
+        if (/^[\w.\-]+$/.test(bare) && bare.length < 32) return bare;
+    }
+    return '2.0';
+}
+
+/**
+ * Build a consistent FOSS-oriented footer (inspired by free-software community footers).
+ * Links reference free software education (sudoshz.ir), AGPL, Madmail and Delta Chat.
+ */
+function buildSiteFooterHTML(version) {
+    var ver = version || resolveSiteVersion();
+    return '' +
+        '<div class="site-footer__inner">' +
+        '  <nav aria-label="Free software references">' +
+        '    <ul class="site-footer__nav">' +
+        '      <li><a href="https://sudoshz.ir/what-is-free-software/" target="_blank" rel="noopener noreferrer" data-i18n="footer_what_is_fs">What is free software?</a></li>' +
+        '      <li><a href="https://free.sudoshz.ir" target="_blank" rel="noopener noreferrer" data-i18n="footer_fs_movement">Free software movement</a></li>' +
+        '      <li><a href="https://sudoshz.ir/fsf-history-redirect/" target="_blank" rel="noopener noreferrer" data-i18n="footer_fs_history">History of free software</a></li>' +
+        '      <li><a href="https://delta.chat" target="_blank" rel="noopener noreferrer" data-i18n="footer_delta">Delta Chat</a></li>' +
+        '    </ul>' +
+        '  </nav>' +
+        '  <hr class="site-footer__divider" />' +
+        '  <p class="site-footer__meta" data-i18n-html="footer_tagline">This is a server for connecting with <strong>Delta Chat</strong>.</p>' +
+        '  <p class="site-footer__meta" data-i18n-html="footer_source_license">' +
+        '    <a href="https://github.com/themadorg" target="_blank" rel="noopener noreferrer">Source code</a> is released under the ' +
+        '    <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">AGPL-3.0-or-later</a>.' +
+        '  </p>' +
+        '  <p class="site-footer__meta" data-i18n-html="footer_powered">' +
+        '    Powered by <strong>Madmail</strong> / chatmail for use with <a href="https://delta.chat" target="_blank" rel="noopener noreferrer">Delta Chat</a>.' +
+        '  </p>' +
+        '  <p class="site-footer__meta" data-i18n-html="footer_community">' +
+        '    Free software community: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).' +
+        '  </p>' +
+        '  <p class="site-footer__version"><span data-i18n="footer_version">Version</span> <span dir="ltr">' + ver + '</span></p>' +
+        '</div>';
+}
+
+/**
+ * Normalize a path for nav active-state matching.
+ * Collapses trailing slashes and index.html so /apps and /apps/index.html match,
+ * but / and /apps do not both look like "index.html".
+ */
+function normalizeNavPath(pathOrHref) {
+    try {
+        var url = new URL(pathOrHref, window.location.href);
+        var path = url.pathname || '/';
+        // Drop query/hash; treat directory URLs as their index
+        if (path.endsWith('/')) {
+            path = path + 'index.html';
+        }
+        // Normalize "/foo/index.html" -> "/foo/" and "/index.html" -> "/"
+        if (path.endsWith('/index.html')) {
+            path = path.slice(0, -'index.html'.length); // keep trailing slash: "/foo/" or "/"
+        }
+        // Collapse multiple slashes and ensure leading slash form from URL
+        if (path.length > 1 && path.endsWith('/')) {
+            path = path.slice(0, -1);
+        }
+        return path || '/';
+    } catch (e) {
+        return pathOrHref || '';
+    }
+}
+
+/** Mark the current page link in the navbar (path-based, not bare filename). */
+function highlightActiveNav() {
+    var curPath = normalizeNavPath(window.location.pathname);
+    document.querySelectorAll('.nav-links li a').forEach(function (a) {
+        a.classList.remove('active');
+        var href = a.getAttribute('href') || '';
+        if (!href || href === '#' || href.indexOf('javascript:') === 0) {
+            return;
+        }
+        var linkPath = normalizeNavPath(href);
+        if (linkPath === curPath) {
             a.classList.add('active');
         }
     });
+}
+
+/**
+ * Ensure every public page has one consistent site footer.
+ * Skips app.html-style clients via data-no-site-footer / body.app-shell.
+ */
+function ensureSiteFooter() {
+    if (document.body && (
+        document.body.hasAttribute('data-no-site-footer') ||
+        document.body.classList.contains('app-shell') ||
+        document.documentElement.hasAttribute('data-no-site-footer')
+    )) {
+        return;
+    }
+
+    var version = resolveSiteVersion();
+    var candidates = document.querySelectorAll('footer, .footer.site-footer, .site-footer, div.footer');
+    var target = null;
+
+    if (candidates.length) {
+        // Prefer a real <footer> if present
+        for (var i = 0; i < candidates.length; i++) {
+            if (candidates[i].tagName === 'FOOTER' || candidates[i].classList.contains('site-footer')) {
+                target = candidates[i];
+                break;
+            }
+        }
+        if (!target) target = candidates[0];
+
+        // Remove duplicates
+        for (var j = 0; j < candidates.length; j++) {
+            if (candidates[j] !== target) {
+                candidates[j].parentNode && candidates[j].parentNode.removeChild(candidates[j]);
+            }
+        }
+
+        if (target.tagName !== 'FOOTER') {
+            var replacement = document.createElement('footer');
+            replacement.className = 'site-footer';
+            replacement.setAttribute('data-version', version);
+            replacement.innerHTML = buildSiteFooterHTML(version);
+            target.parentNode.replaceChild(replacement, target);
+        } else {
+            target.classList.add('site-footer');
+            target.setAttribute('data-version', version);
+            target.innerHTML = buildSiteFooterHTML(version);
+        }
+    } else if (document.body) {
+        var footer = document.createElement('footer');
+        footer.className = 'site-footer';
+        footer.setAttribute('data-version', version);
+        footer.innerHTML = buildSiteFooterHTML(version);
+        document.body.appendChild(footer);
+    }
+}
+
+/**
+ * Make .code-box blocks one-click copyable.
+ */
+function enhanceCodeBoxes() {
+    var selectors = '.code-box, .code-block, .one-liner, pre.code-block';
+    document.querySelectorAll(selectors).forEach(function (box) {
+        if (box.querySelector('.copy-btn')) return;
+        // Skip tiny inline codes
+        var text = (box.textContent || '').trim();
+        if (!text || text.length < 8) return;
+
+        var codeEl = box.querySelector('code, pre') || box;
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'copy-btn';
+        btn.setAttribute('aria-label', 'Copy');
+        if (typeof t === 'function' && t('copy_btn') && t('copy_btn') !== 'copy_btn') {
+            btn.textContent = t('copy_btn');
+        } else {
+            btn.textContent = 'Copy';
+        }
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            // Prefer code content; strip the copy button label if present
+            var raw = (codeEl.textContent || '').trim();
+            if (raw) copyToClipboard(raw);
+        });
+        if (window.getComputedStyle(box).position === 'static') {
+            box.style.position = 'relative';
+        }
+        box.appendChild(btn);
+    });
+}
+
+/**
+ * Open a DeltaChat invite / dclogin URI (app deep-link).
+ */
+function openDeltaChatUri(uri) {
+    if (!uri) return;
+    try {
+        window.location.href = uri;
+    } catch (e) {
+        var a = document.createElement('a');
+        a.href = uri;
+        a.rel = 'noopener';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    }
+}
+
+/**
+ * Light SEO helpers: ensure description/theme-color exist, mark up keywords.
+ * Does not overwrite author-provided meta tags.
+ */
+function ensureBasicSeo() {
+    var head = document.head;
+    if (!head) return;
+
+    function ensureMeta(name, content, prop) {
+        if (!content) return;
+        var sel = prop ? 'meta[property="' + prop + '"]' : 'meta[name="' + name + '"]';
+        if (head.querySelector(sel)) return;
+        var m = document.createElement('meta');
+        if (prop) m.setAttribute('property', prop);
+        else m.setAttribute('name', name);
+        m.setAttribute('content', content);
+        head.appendChild(m);
+    }
+
+    ensureMeta('theme-color', '#FF6A00');
+    ensureMeta('robots', 'index,follow');
+
+    // If page has no description, derive from first meaningful paragraph
+    if (!head.querySelector('meta[name="description"]')) {
+        var p = document.querySelector('main p, .page-content p, .card p, body p');
+        if (p) {
+            var txt = (p.textContent || '').replace(/\s+/g, ' ').trim();
+            if (txt.length > 40) {
+                ensureMeta('description', txt.slice(0, 160));
+            }
+        }
+    }
+
+    // Open Graph basics
+    var title = document.title || '';
+    ensureMeta(null, title, 'og:title');
+    var desc = head.querySelector('meta[name="description"]');
+    if (desc) ensureMeta(null, desc.getAttribute('content'), 'og:description');
+    ensureMeta(null, 'website', 'og:type');
+}
+
+/** nav + theme + shared footer */
+document.addEventListener('DOMContentLoaded', () => {
+    ensureSiteFooter();
+    highlightActiveNav();
+    enhanceCodeBoxes();
+    ensureBasicSeo();
 
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -130,9 +375,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Legacy docs menus (navbar__toggle / navbar__menu)
+    document.querySelectorAll('.navbar__toggle').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var menu = document.getElementById('nav-menu') || document.querySelector('.navbar__menu');
+            if (menu) menu.classList.toggle('navbar__menu--open');
+            if (menu) menu.classList.toggle('active');
+        });
+    });
+
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
-    
+
     const sunIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`;
     const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
 
@@ -148,7 +402,7 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.addEventListener('click', () => {
             body.classList.toggle('light-theme');
             const isLight = body.classList.contains('light-theme');
-            
+
             themeToggleBtn.innerHTML = isLight ? sunIcon : moonIcon;
 
             localStorage.setItem('theme', isLight ? 'light' : 'dark');

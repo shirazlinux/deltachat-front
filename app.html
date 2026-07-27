@@ -78,7 +78,8 @@
   <link rel="stylesheet" href="app.css">
 </head>
 
-<body class="dark bg-dc-dark text-dc-text font-sans h-screen overflow-hidden" x-data="{ darkMode: true }"
+<body class="dark bg-dc-dark text-dc-text font-sans h-screen overflow-hidden app-shell" data-no-site-footer
+      x-data="{ darkMode: true }"
       :class="darkMode ? 'dark' : 'light'">
 
 <div x-data="app()" x-init="init()" class="h-full flex flex-col">
