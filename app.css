@@ -25,30 +25,31 @@
  * and custom classes both reference the same tokens.
  */
 
-/* ---- CSS Variables (Dark Mode = default) ---- */
+/* ---- CSS Variables (Dark Mode = default) — Tabarestan GNU ---- */
 :root {
-  --dc-primary: #159b6b;
-  --dc-primary-hover: #0f7d56;
-  --dc-primary-light: rgba(21, 155, 107, 0.15);
-  --dc-accent: #6c5ce7;
+  --dc-primary: #03AC25;
+  --dc-primary-hover: #007618;
+  --dc-primary-light: rgba(3, 172, 37, 0.15);
+  --dc-accent: #00256b;
+  --dc-gold: #ffcd57;
 
-  /* Dark mode surfaces */
-  --dc-bg: #0f0f15;
-  --dc-surface: #16161f;
-  --dc-surface-2: #1e1e2a;
-  --dc-surface-3: #262636;
-  --dc-border: #2a2a3e;
-  --dc-text: #e8e8f4;
-  --dc-text-secondary: #c0c0d8;
-  --dc-muted: #8888a8;
+  /* Dark mode surfaces (green-tinted) */
+  --dc-bg: #0a120e;
+  --dc-surface: #101a14;
+  --dc-surface-2: #162218;
+  --dc-surface-3: #1e2e22;
+  --dc-border: #2a3a30;
+  --dc-text: #f2f5f7;
+  --dc-text-secondary: #c0c8c4;
+  --dc-muted: #889890;
 
   /* Scrollbar */
-  --dc-scrollbar: #2a2a3e;
-  --dc-scrollbar-hover: #8888a8;
+  --dc-scrollbar: #2a3a30;
+  --dc-scrollbar-hover: #889890;
 
   /* Shadows */
   --dc-shadow: rgba(0, 0, 0, 0.4);
-  --dc-shadow-primary: rgba(21, 155, 107, 0.15);
+  --dc-shadow-primary: rgba(3, 172, 37, 0.18);
 
   /* Message bubbles */
   --dc-bubble-out: var(--dc-primary);
@@ -58,9 +59,9 @@
   --dc-bubble-in-border: var(--dc-border);
 
   /* Reactions */
-  --dc-reaction-active-bg: rgba(21, 155, 107, 0.3);
-  --dc-reaction-active-border: rgba(21, 155, 107, 0.6);
-  --dc-reaction-bg: rgba(22, 22, 31, 0.9);
+  --dc-reaction-active-bg: rgba(3, 172, 37, 0.3);
+  --dc-reaction-active-border: rgba(3, 172, 37, 0.6);
+  --dc-reaction-bg: rgba(16, 26, 20, 0.9);
 
   /* Emoji picker */
   --dc-emoji-picker-theme: dark;
@@ -69,31 +70,31 @@
   --dc-overlay: rgba(0, 0, 0, 0.4);
 }
 
-/* ---- Light Mode ---- */
+/* ---- Light Mode (matches tabarestangnu.ir light surfaces) ---- */
 .light {
-  --dc-bg: #f5f5f7;
+  --dc-bg: #F2F5F7;
   --dc-surface: #ffffff;
-  --dc-surface-2: #f0f0f4;
-  --dc-surface-3: #e8e8ee;
-  --dc-border: #d8d8e2;
-  --dc-text: #1a1a2e;
-  --dc-text-secondary: #3a3a52;
-  --dc-muted: #6e6e8a;
+  --dc-surface-2: #f9f6fe;
+  --dc-surface-3: #eceff3;
+  --dc-border: #d8dde4;
+  --dc-text: #1e293b;
+  --dc-text-secondary: #3a4a5c;
+  --dc-muted: #67768e;
 
-  --dc-scrollbar: #d0d0dc;
-  --dc-scrollbar-hover: #a0a0b0;
+  --dc-scrollbar: #d0d6dc;
+  --dc-scrollbar-hover: #a0a8b0;
 
   --dc-shadow: rgba(0, 0, 0, 0.08);
-  --dc-shadow-primary: rgba(21, 155, 107, 0.1);
+  --dc-shadow-primary: rgba(0, 118, 24, 0.12);
 
-  --dc-bubble-out: var(--dc-primary);
+  --dc-bubble-out: var(--dc-primary-hover);
   --dc-bubble-out-text: #ffffff;
   --dc-bubble-in: #ffffff;
   --dc-bubble-in-text: var(--dc-text);
   --dc-bubble-in-border: var(--dc-border);
 
-  --dc-reaction-active-bg: rgba(21, 155, 107, 0.15);
-  --dc-reaction-active-border: rgba(21, 155, 107, 0.4);
+  --dc-reaction-active-bg: rgba(0, 118, 24, 0.15);
+  --dc-reaction-active-border: rgba(0, 118, 24, 0.4);
   --dc-reaction-bg: rgba(255, 255, 255, 0.95);
 
   --dc-emoji-picker-theme: light;

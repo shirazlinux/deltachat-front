@@ -23,16 +23,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title data-i18n="index_title">DeltaChat Server — Madmail</title>
-    <meta name="description" content="سرور اختصاصی دلتاچت (DeltaChat / Madmail). ساخت اکانت امن، ارتباط رمزنگاری‌شده و پیام‌رسانی غیرمتمرکز.">
-    <meta name="keywords" content="DeltaChat, Madmail, chatmail, encrypted chat, دلتاچت, پیام‌رسان امن, openpgp">
+    <title data-i18n="index_title">دلتاچت — طبرستان گنو</title>
+    <meta name="description" content="سرور دلتاچت جامعه نرم‌افزار آزاد طبرستان گنو. ساخت اکانت امن، ارتباط رمزنگاری‌شده و پیام‌رسانی غیرمتمرکز.">
+    <meta name="keywords" content="DeltaChat, طبرستان گنو, Tabarestan GNU, chatmail, دلتاچت, پیام‌رسان امن, openpgp, نرم‌افزار آزاد">
     <meta name="robots" content="index,follow">
-    <meta name="theme-color" content="#FF6A00">
+    <meta name="theme-color" content="#007618">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="DeltaChat Server — Madmail">
-    <meta property="og:description" content="Dedicated chatmail server for secure DeltaChat messaging.">
+    <meta property="og:title" content="دلتاچت — طبرستان گنو">
+    <meta property="og:description" content="سرور دلتاچت جامعه نرم‌افزار آزاد طبرستان گنو — پیام‌رسانی امن و رمزنگاری‌شده.">
     <meta property="og:image" content="/webicon320.png">
     <link rel="icon" href="/webicon320.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <script src="/translations.js"></script>
     <script src="/qrcode.min.js"></script>
@@ -57,9 +60,9 @@
         }
 
         .code-block:hover {
-            background: rgba(255, 106, 0, 0.08);
+            background: rgba(3, 172, 37, 0.08);
             border-color: var(--accent-color);
-            box-shadow: 0 0 16px rgba(255, 106, 0, 0.15);
+            box-shadow: 0 0 16px rgba(3, 172, 37, 0.15);
         }
 
         /* QR Code Box */
@@ -71,12 +74,12 @@
             border-radius: 16px;
             border: var(--glass-border);
             display: inline-block;
-            box-shadow: 0 0 20px rgba(255, 106, 0, 0.1);
+            box-shadow: 0 0 20px rgba(3, 172, 37, 0.1);
             transition: box-shadow 0.3s ease;
         }
 
         .qr-wrap:hover {
-            box-shadow: 0 0 28px rgba(255, 106, 0, 0.2);
+            box-shadow: 0 0 28px rgba(3, 172, 37, 0.2);
         }
 
         .qr-wrap img {
@@ -85,47 +88,9 @@
             pointer-events: none;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 10px;
-            font-weight: 800;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-            transition: all 0.25s ease;
-            text-decoration: none !important;
-            background: var(--glass-bg);
-            color: var(--text-primary);
-            border: var(--glass-border);
-        }
-
-        .btn--primary {
-            background: var(--primary-gradient);
-            color: #fff;
-            box-shadow: 0 8px 24px rgba(230, 85, 0, 0.2);
-            border: none;
-        }
-
-        .btn--primary:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(230, 85, 0, 0.3);
-        }
-
+        /* Buttons: base styles live in main.css (Tabarestan GNU pill theme) */
         .btn--primary:active:not(:disabled) {
             transform: translateY(0);
-        }
-
-        .btn--secondary {
-            background: rgba(255, 106, 0, 0.15);
-            color: var(--accent-color);
-            border: 1px solid var(--accent-color);
-        }
-
-        .btn--secondary:hover:not(:disabled) {
-            background: rgba(255, 106, 0, 0.25);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 106, 0, 0.15);
         }
 
         .btn:disabled {
@@ -347,33 +312,6 @@
             <p style="color: var(--text-secondary);" data-i18n="index_reg_closed_text">New user registration on this server is temporarily disabled. Please use other servers.</p>
         </div>
         {{end}}
-
-
-    <div class="page-content glass-panel fade-in admin-contact">
-        <h1 data-i18n="contact_admin_title">Contact admin</h1>
-        <h3 data-i18n="contact_get_in_touch">📧 Get in touch</h3>
-        <p style="color: var(--text-secondary);" data-i18n="contact_description">
-            Questions, feedback, or problem reports
-        </p>
-
-        <div class="admin-qr-wrap">
-            <img class="admin-qr" src="/admin-qr.jpg" alt="Admin DeltaChat QR — Scan to chat with sudoshz" />
-        </div>
-        <p class="text-sm text-muted" data-i18n="contact_qr_caption">Scan this QR code in DeltaChat to message the admin</p>
-
-        <div class="admin-contact__actions">
-            <a id="admin-dc-open"
-               href="https://i.delta.chat/#89EBEFEF4359C9555ABB5BED7469BDCD99C0462B&amp;v=3&amp;i=y_yeBxFUmD4GkTFpHlCPhcfn&amp;s=b1TgipmWl6CX0bC8aI1vz--F&amp;a=mzt9igijtium%40delta.sudoshz.ir&amp;n=sudoshz"
-               class="cta-button"
-               data-i18n="contact_send_message"
-               rel="noopener noreferrer">
-                Open in DeltaChat
-            </a>
-            <button type="button" class="btn btn--secondary" id="admin-dc-copy" data-i18n="contact_copy_link">
-                Copy invite link
-            </button>
-        </div>
-    </div>
     </div>
 
     <footer class="site-footer" data-version="{{.Version}}">
@@ -504,8 +442,6 @@
             copyToClipboard(el.innerText);
         }
 
-        var ADMIN_INVITE = "https://i.delta.chat/#89EBEFEF4359C9555ABB5BED7469BDCD99C0462B&v=3&i=y_yeBxFUmD4GkTFpHlCPhcfn&s=b1TgipmWl6CX0bC8aI1vz--F&a=mzt9igijtium%40delta.sudoshz.ir&n=sudoshz";
-
         window.onload = function () {
             applyTranslations(PAGE_LANG);
             // Update title with domain
@@ -519,20 +455,6 @@
             updateButtonStates();
             if (registrationOpen) {
                 generateAccount();
-            }
-
-            var adminOpen = document.getElementById('admin-dc-open');
-            var adminCopy = document.getElementById('admin-dc-copy');
-            if (adminOpen) {
-                adminOpen.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    openDeltaChatUri(ADMIN_INVITE);
-                });
-            }
-            if (adminCopy) {
-                adminCopy.addEventListener('click', function () {
-                    copyToClipboard(ADMIN_INVITE);
-                });
             }
         };
     </script>

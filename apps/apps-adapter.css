@@ -23,14 +23,14 @@ body .page-content {
 [dir="ltr"] .warning-box,
 body.is-ltr .warning-box {
   border-right: none;
-  border-left: 4px solid #ff9800;
+  border-left: 4px solid #ffcd57;
   text-align: left;
 }
 
 [dir="rtl"] .warning-box,
 body.is-rtl .warning-box {
   border-left: none;
-  border-right: 4px solid #ff9800;
+  border-right: 4px solid #ffcd57;
   text-align: right;
 }
 
@@ -64,7 +64,7 @@ body.is-rtl .warning-box {
 .search input:focus {
   outline: none;
   border-color: var(--accent-color);
-  box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+  box-shadow: 0 0 15px rgba(3, 172, 37, 0.2);
   background: var(--glass-bg);
 }
 
@@ -111,7 +111,7 @@ body.is-rtl .warning-box {
 
 .app:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 210, 255, 0.2);
+  box-shadow: 0 12px 30px rgba(3, 172, 37, 0.2);
   border-color: var(--accent-color);
   filter: brightness(1.1);
 }
@@ -292,7 +292,7 @@ body.is-rtl .warning-box {
 #tabs > button.active {
   background: var(--primary-gradient);
   color: white;
-  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(3, 172, 37, 0.4);
 }
 
 #tabs > button:hover:not(.active) {
@@ -307,8 +307,8 @@ body.is-rtl .warning-box {
 
 /* --- Warning Box Style --- */
 .warning-box {
-  border-right: 4px solid #ff9800; /* نوار نارنجی سمت راست برای جلب توجه */
-  background: rgba(255, 152, 0, 0.05) !important; /* پس‌زمینه خیلی محو نارنجی */
+  border-right: 4px solid #ffcd57; /* نوار نارنجی سمت راست برای جلب توجه */
+  background: rgba(255, 205, 87, 0.05) !important; /* پس‌زمینه خیلی محو نارنجی */
   text-align: right;
   margin-bottom: 30px;
 }
@@ -318,7 +318,7 @@ body.is-rtl .warning-box {
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 152, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 205, 87, 0.2);
   padding-bottom: 10px;
 }
 
@@ -326,7 +326,7 @@ body.is-rtl .warning-box {
   margin: 0;
   font-size: 1.3rem;
   /* استفاده از گرادینت نارنجی برای تیتر */
-  background: linear-gradient(135deg, #ff9800 0%, #ff5722 100%);
+  background: linear-gradient(135deg, #ffcd57 0%, #007618 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -354,7 +354,7 @@ body.is-rtl .warning-box {
 /* بولت‌های سفارشی */
 .warning-content li::before {
   content: "•";
-  color: #ff9800;
+  color: #ffcd57;
   font-weight: bold;
   font-size: 1.2rem;
   position: absolute;
@@ -363,7 +363,7 @@ body.is-rtl .warning-box {
 }
 
 .warning-content strong {
-  color: #ff9800; /* رنگ نارنجی برای کلمات کلیدی */
+  color: #ffcd57; /* رنگ نارنجی برای کلمات کلیدی */
 }
 
 .disclaimer {

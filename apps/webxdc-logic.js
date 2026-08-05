@@ -16,8 +16,32 @@ dayjs.extend(dayjs_plugin_relativeTime);
 //@ts-ignore
 dayjs.extend(dayjs_plugin_localizedFormat);
 
-// without a trailing slash
-const xdcget_export = "./xdcstore";
+// Absolute path (no trailing slash). Full https URL is built for .xdc links so
+// Delta Chat Android/iOS WebViews reliably intercept navigation to *.xdc.
+const xdcget_export = "/apps/xdcstore";
+
+function absoluteAssetUrl(relPath) {
+  const path = `${xdcget_export}/${relPath}`.replace(/\/{2,}/g, "/");
+  try {
+    return new URL(path, window.location.origin).href;
+  } catch (_) {
+    return path;
+  }
+}
+
+/**
+ * Delta Chat App Picker (Android/iOS) intercepts top-level navigations to *.xdc
+ * and attaches the file to the chat. target="_blank" / download= do NOT work:
+ * those WebViews have no window-open handler, so the click is a no-op.
+ */
+function sendXdcToChat(event, url) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  // Same-window navigation → shouldOverrideUrlLoading / WKNavigationDelegate
+  window.location.assign(url);
+}
 
 /** i18n helper — uses global t() from translations.js when available */
 function tr(key, fallback) {
@@ -58,6 +82,7 @@ downloading the actual webxdc file from the server.
 */
 const Dialog = ({app, modal, toggleModal}) => {
   const [subtitle, description] = [app.description.split('\n').shift(), app.description.split('\n').slice(1).join(' ')];
+  const xdcUrl = absoluteAssetUrl(app.cache_relname);
 
   // Change the title when a dialog is open
   if(modal === app.app_id) {
@@ -99,14 +124,13 @@ const Dialog = ({app, modal, toggleModal}) => {
       </div>
       <div class="button-container">
         <a
-          href="${xdcget_export + "/" + app.cache_relname}"
+          href=${xdcUrl}
           class="button"
-          download=${app.cache_relname}
-          rel="noopener">
-          ${tr("apps_download", "Download")}
+          onClick=${(e) => sendXdcToChat(e, xdcUrl)}>
+          ${tr("apps_add_to_chat", "افزودن به چت")}
         </a>
         <button type="button" class="ghost" onClick=${() => toggleModal(false)}>
-          ${tr("apps_close", "Close")}
+          ${tr("apps_close", "بستن")}
         </button>
       </div>
     </div>

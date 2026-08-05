@@ -138,8 +138,8 @@ function resolveSiteVersion() {
 }
 
 /**
- * Build a consistent FOSS-oriented footer (inspired by free-software community footers).
- * Links reference free software education (sudoshz.ir), AGPL, Madmail and Delta Chat.
+ * Build a consistent FOSS-oriented footer (Tabarestan GNU + free-software community).
+ * Links reference tabarestangnu.ir, AGPL, Madmail and Delta Chat.
  */
 function buildSiteFooterHTML(version) {
     var ver = version || resolveSiteVersion();
@@ -147,9 +147,9 @@ function buildSiteFooterHTML(version) {
         '<div class="site-footer__inner">' +
         '  <nav aria-label="Free software references">' +
         '    <ul class="site-footer__nav">' +
-        '      <li><a href="https://sudoshz.ir/what-is-free-software/" target="_blank" rel="noopener noreferrer" data-i18n="footer_what_is_fs">What is free software?</a></li>' +
-        '      <li><a href="https://free.sudoshz.ir" target="_blank" rel="noopener noreferrer" data-i18n="footer_fs_movement">Free software movement</a></li>' +
-        '      <li><a href="https://sudoshz.ir/fsf-history-redirect/" target="_blank" rel="noopener noreferrer" data-i18n="footer_fs_history">History of free software</a></li>' +
+        '      <li><a href="https://tabarestangnu.ir" target="_blank" rel="noopener noreferrer">طبرستان گنو</a></li>' +
+        '      <li><a href="https://www.gnu.org" target="_blank" rel="noopener noreferrer">GNU</a></li>' +
+        '      <li><a href="https://www.fsf.org" target="_blank" rel="noopener noreferrer">FSF</a></li>' +
         '      <li><a href="https://delta.chat" target="_blank" rel="noopener noreferrer" data-i18n="footer_delta">Delta Chat</a></li>' +
         '    </ul>' +
         '  </nav>' +
@@ -163,7 +163,7 @@ function buildSiteFooterHTML(version) {
         '    Powered by <strong>Madmail</strong> / chatmail for use with <a href="https://delta.chat" target="_blank" rel="noopener noreferrer">Delta Chat</a>.' +
         '  </p>' +
         '  <p class="site-footer__meta" data-i18n-html="footer_community">' +
-        '    Free software community: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).' +
+        '    Free software community: <a href="https://tabarestangnu.ir" target="_blank" rel="noopener noreferrer">طبرستان گنو</a> (Tabarestan GNU).' +
         '  </p>' +
         '  <p class="site-footer__version"><span data-i18n="footer_version">Version</span> <span dir="ltr">' + ver + '</span></p>' +
         '</div>';
@@ -209,6 +209,55 @@ function highlightActiveNav() {
             a.classList.add('active');
         }
     });
+}
+
+/**
+ * Resolve a root asset path that works from / and nested pages like /apps/.
+ */
+function resolveRootAsset(name) {
+    try {
+        var path = window.location.pathname || '/';
+        // Nested under /apps/ (or similar single subdir with its own index)
+        if (/\/apps(\/|$)/.test(path)) {
+            return '../' + name;
+        }
+    } catch (e) { /* fall through */ }
+    return '/' + name;
+}
+
+/**
+ * Inject Tabarestan GNU brand mark into the main navbar when missing.
+ */
+function ensureBrandLogo() {
+    if (document.body && (
+        document.body.hasAttribute('data-no-site-footer') ||
+        document.body.classList.contains('app-shell')
+    )) {
+        return;
+    }
+    var nav = document.querySelector('nav.navbar');
+    if (!nav || nav.querySelector('.brand-logo')) return;
+
+    var homeHref = resolveRootAsset('index.html').replace(/^\//, '') || 'index.html';
+    // Prefer absolute root for home when at site root
+    if (homeHref === 'index.html' || homeHref === '/index.html') {
+        homeHref = 'index.html';
+    }
+    var logoSrc = resolveRootAsset('logo-tabarestan.png');
+
+    var brand = document.createElement('a');
+    brand.className = 'brand-logo';
+    brand.href = homeHref;
+    brand.setAttribute('aria-label', 'طبرستان گنو — Tabarestan GNU');
+    brand.innerHTML =
+        '<img src="' + logoSrc + '" alt="طبرستان گنو" width="40" height="42" />' +
+        '<span class="brand-logo__text">' +
+        '  <strong>طبرستان گنو</strong>' +
+        '  <small>Tabarestan GNU</small>' +
+        '</span>';
+
+    // Place brand before theme toggle / menu (first visual item)
+    nav.insertBefore(brand, nav.firstChild);
 }
 
 /**
@@ -336,7 +385,7 @@ function ensureBasicSeo() {
         head.appendChild(m);
     }
 
-    ensureMeta('theme-color', '#FF6A00');
+    ensureMeta('theme-color', '#007618');
     ensureMeta('robots', 'index,follow');
 
     // If page has no description, derive from first meaningful paragraph
@@ -360,6 +409,7 @@ function ensureBasicSeo() {
 
 /** nav + theme + shared footer */
 document.addEventListener('DOMContentLoaded', () => {
+    ensureBrandLogo();
     ensureSiteFooter();
     highlightActiveNav();
     enhanceCodeBoxes();
