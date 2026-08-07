@@ -407,6 +407,24 @@ function ensureBasicSeo() {
     ensureMeta(null, 'website', 'og:type');
 }
 
+/**
+ * Site analytics (Umami) — loaded once per page for visit stats.
+ * Same as:
+ *   <script defer src="https://umami.sudoshz.ir/script.js"
+ *           data-website-id="844d6169-117f-4ccd-8ad0-faca3737de8e"></script>
+ */
+function loadUmamiAnalytics() {
+    if (typeof document === 'undefined' || !document.head) return;
+    if (document.querySelector('script[data-website-id="844d6169-117f-4ccd-8ad0-faca3737de8e"]')) {
+        return;
+    }
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = 'https://umami.sudoshz.ir/script.js';
+    s.setAttribute('data-website-id', '844d6169-117f-4ccd-8ad0-faca3737de8e');
+    document.head.appendChild(s);
+}
+
 /** nav + theme + shared footer */
 document.addEventListener('DOMContentLoaded', () => {
     ensureBrandLogo();
@@ -414,6 +432,7 @@ document.addEventListener('DOMContentLoaded', () => {
     highlightActiveNav();
     enhanceCodeBoxes();
     ensureBasicSeo();
+    loadUmamiAnalytics();
 
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
