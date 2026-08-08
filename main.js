@@ -165,6 +165,11 @@ function buildSiteFooterHTML(version) {
         '  <p class="site-footer__meta" data-i18n-html="footer_community">' +
         '    Free software community: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).' +
         '  </p>' +
+        '  <div class="site-footer__donate">' +
+        '    <a href="https://donate.sudoshz.ir/u/shirazlinux" target="_blank" rel="noopener noreferrer" title="Support on Yavar">' +
+        '      <img src="https://donate.sudoshz.ir/badge.php?slug=shirazlinux" alt="Support on Yavar" loading="lazy" decoding="async" />' +
+        '    </a>' +
+        '  </div>' +
         '  <p class="site-footer__version"><span data-i18n="footer_version">Version</span> <span dir="ltr">' + ver + '</span></p>' +
         '</div>';
 }

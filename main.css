@@ -694,6 +694,29 @@ body.light-theme .site-footer {
   color: var(--accent-color);
 }
 
+.site-footer__donate {
+  margin: 18px auto 8px;
+  text-align: center;
+}
+
+.site-footer__donate a {
+  display: inline-block;
+  text-decoration: none;
+  filter: none;
+  line-height: 0;
+}
+
+.site-footer__donate img {
+  max-width: min(280px, 90vw);
+  height: auto;
+  border-radius: 8px;
+  vertical-align: middle;
+}
+
+.site-footer__donate a:hover img {
+  filter: brightness(1.05);
+}
+
 .site-footer__version {
   margin-top: 18px;
   font-size: 0.85rem;
