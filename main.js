@@ -165,12 +165,13 @@ function buildSiteFooterHTML(version) {
         '  <p class="site-footer__meta" data-i18n-html="footer_community">' +
         '    Free software community: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).' +
         '  </p>' +
-        '  <div class="site-footer__donate" style="display:flex;justify-content:center;width:100%">' +
+        '  <div class="site-footer__donate">' +
         '    <iframe src="https://donate.sudoshz.ir/embed/widget.php?slug=shirazlinux&amp;theme=dark&amp;lang=fa"' +
         '      title="حمایت با یاور"' +
         '      loading="lazy"' +
+        '      scrolling="no"' +
         '      referrerpolicy="strict-origin-when-cross-origin"' +
-        '      style="width:100%;max-width:420px;height:280px;border:0;border-radius:16px;overflow:hidden;display:block;margin:0 auto"' +
+        '      style="width:100%;max-width:420px;height:400px;border:0;border-radius:16px;overflow:hidden;display:block;margin:0 auto"' +
         '      sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>' +
         '  </div>' +
         '  <p class="site-footer__version"><span data-i18n="footer_version">Version</span> <span dir="ltr">' + ver + '</span></p>' +
