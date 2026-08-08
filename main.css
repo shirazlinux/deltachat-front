@@ -695,26 +695,64 @@ body.light-theme .site-footer {
 }
 
 .site-footer__donate {
-  margin: 18px auto 8px;
-  text-align: center;
+  margin: 20px auto 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.site-footer__donate a {
-  display: inline-block;
-  text-decoration: none;
+.site-footer__donate iframe {
+  width: 100%;
+  max-width: 420px;
+  height: 280px;
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+}
+
+/* Shiraz Linux brand in navbar */
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline-end: auto;
+  padding: 4px 8px 4px 4px;
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: var(--text-primary);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.brand-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.35);
+}
+
+.brand-logo__text {
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent-color);
+}
+
+.brand-logo:hover {
+  background: rgba(255, 106, 0, 0.08);
   filter: none;
-  line-height: 0;
 }
 
-.site-footer__donate img {
-  max-width: min(280px, 90vw);
-  height: auto;
-  border-radius: 8px;
-  vertical-align: middle;
-}
-
-.site-footer__donate a:hover img {
-  filter: brightness(1.05);
+@media (max-width: 520px) {
+  .brand-logo__text { display: none; }
 }
 
 .site-footer__version {

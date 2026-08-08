@@ -165,13 +165,53 @@ function buildSiteFooterHTML(version) {
         '  <p class="site-footer__meta" data-i18n-html="footer_community">' +
         '    Free software community: <a href="https://sudoshz.ir" target="_blank" rel="noopener noreferrer">sudoshz.ir</a> (Shiraz Linux).' +
         '  </p>' +
-        '  <div class="site-footer__donate">' +
-        '    <a href="https://donate.sudoshz.ir/u/shirazlinux" target="_blank" rel="noopener noreferrer" title="Support on Yavar">' +
-        '      <img src="https://donate.sudoshz.ir/badge.php?slug=shirazlinux" alt="Support on Yavar" loading="lazy" decoding="async" />' +
-        '    </a>' +
+        '  <div class="site-footer__donate" style="display:flex;justify-content:center;width:100%">' +
+        '    <iframe src="https://donate.sudoshz.ir/embed/widget.php?slug=shirazlinux&amp;theme=dark&amp;lang=fa"' +
+        '      title="حمایت با یاور"' +
+        '      loading="lazy"' +
+        '      referrerpolicy="strict-origin-when-cross-origin"' +
+        '      style="width:100%;max-width:420px;height:280px;border:0;border-radius:16px;overflow:hidden;display:block;margin:0 auto"' +
+        '      sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>' +
         '  </div>' +
         '  <p class="site-footer__version"><span data-i18n="footer_version">Version</span> <span dir="ltr">' + ver + '</span></p>' +
         '</div>';
+}
+
+/**
+ * Shiraz Linux brand mark in the navbar (delta.sudoshz.ir / sudoshz community).
+ * Never inject Tabarestan or other site branding here.
+ */
+function ensureBrandLogo() {
+    if (document.body && (
+        document.body.hasAttribute('data-no-site-footer') ||
+        document.body.classList.contains('app-shell')
+    )) {
+        return;
+    }
+    var nav = document.querySelector('nav.navbar');
+    if (!nav || nav.querySelector('.brand-logo')) return;
+
+    // Remove any leftover foreign brand marks if present
+    nav.querySelectorAll('.brand-logo--foreign').forEach(function (el) {
+        el.parentNode && el.parentNode.removeChild(el);
+    });
+
+    var brand = document.createElement('a');
+    brand.href = 'https://sudoshz.ir';
+    brand.className = 'brand-logo';
+    brand.target = '_blank';
+    brand.rel = 'noopener noreferrer';
+    brand.setAttribute('aria-label', 'شیرازلینوکس');
+    brand.innerHTML =
+        '<img src="/webicon320.png" alt="شیرازلینوکس — Shiraz Linux" width="40" height="40" />' +
+        '<span class="brand-logo__text">شیرازلینوکس</span>';
+
+    var first = nav.firstElementChild;
+    if (first) {
+        nav.insertBefore(brand, first);
+    } else {
+        nav.appendChild(brand);
+    }
 }
 
 /**
@@ -382,6 +422,7 @@ function loadUmamiAnalytics() {
 
 /** nav + theme + shared footer */
 document.addEventListener('DOMContentLoaded', () => {
+    ensureBrandLogo();
     ensureSiteFooter();
     highlightActiveNav();
     enhanceCodeBoxes();
