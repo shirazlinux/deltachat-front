@@ -178,9 +178,9 @@ function buildSiteFooterHTML(version) {
         '</div>';
 }
 
+
 /**
  * Shiraz Linux brand mark in the navbar (delta.sudoshz.ir / sudoshz community).
- * Never inject Tabarestan or other site branding here.
  */
 function ensureBrandLogo() {
     if (document.body && (
@@ -192,7 +192,6 @@ function ensureBrandLogo() {
     var nav = document.querySelector('nav.navbar');
     if (!nav || nav.querySelector('.brand-logo')) return;
 
-    // Remove any leftover foreign brand marks if present
     nav.querySelectorAll('.brand-logo--foreign').forEach(function (el) {
         el.parentNode && el.parentNode.removeChild(el);
     });
@@ -260,6 +259,7 @@ function highlightActiveNav() {
 /**
  * Ensure every public page has one consistent site footer.
  * Skips app.html-style clients via data-no-site-footer / body.app-shell.
+ * Skips rebuild when the shared footer is already present (faster nav paints).
  */
 function ensureSiteFooter() {
     if (document.body && (
@@ -270,12 +270,16 @@ function ensureSiteFooter() {
         return;
     }
 
+    var existingReady = document.querySelector('footer.site-footer .site-footer__inner');
+    if (existingReady) {
+        return;
+    }
+
     var version = resolveSiteVersion();
     var candidates = document.querySelectorAll('footer, .footer.site-footer, .site-footer, div.footer');
     var target = null;
 
     if (candidates.length) {
-        // Prefer a real <footer> if present
         for (var i = 0; i < candidates.length; i++) {
             if (candidates[i].tagName === 'FOOTER' || candidates[i].classList.contains('site-footer')) {
                 target = candidates[i];
@@ -284,7 +288,6 @@ function ensureSiteFooter() {
         }
         if (!target) target = candidates[0];
 
-        // Remove duplicates
         for (var j = 0; j < candidates.length; j++) {
             if (candidates[j] !== target) {
                 candidates[j].parentNode && candidates[j].parentNode.removeChild(candidates[j]);
@@ -309,6 +312,33 @@ function ensureSiteFooter() {
         footer.innerHTML = buildSiteFooterHTML(version);
         document.body.appendChild(footer);
     }
+}
+
+/** Prefetch same-origin nav targets so the next page paints faster. */
+function prefetchNavLinks() {
+    if (!document.head || !document.createElement) return;
+    // Skip on very slow connections when Network Information API is available
+    try {
+        var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        if (conn && (conn.saveData || (conn.effectiveType && /2g/.test(conn.effectiveType)))) {
+            return;
+        }
+    } catch (e) { /* ignore */ }
+
+    var seen = {};
+    document.querySelectorAll('.nav-links a[href]').forEach(function (a) {
+        var href = a.getAttribute('href');
+        if (!href || href.charAt(0) === '#' || href.indexOf('http') === 0 || href.indexOf('mailto:') === 0) {
+            return;
+        }
+        if (seen[href]) return;
+        seen[href] = true;
+        var link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = href;
+        link.as = 'document';
+        document.head.appendChild(link);
+    });
 }
 
 /**
@@ -404,16 +434,19 @@ function ensureBasicSeo() {
     ensureMeta(null, 'website', 'og:type');
 }
 
+/** nav + theme + shared footer */
+
 /**
  * Site analytics (Umami) — loaded once per page for visit stats.
- *   <script defer src="https://umami.sudoshz.ir/script.js"
- *           data-website-id="844d6169-117f-4ccd-8ad0-faca3737de8e"></script>
  */
 function loadUmamiAnalytics() {
     if (typeof document === 'undefined' || !document.head) return;
     if (document.querySelector('script[data-website-id="844d6169-117f-4ccd-8ad0-faca3737de8e"]')) {
         return;
     }
+    document.querySelectorAll('script[src*="umami.sudoshz.ir/script.js"]').forEach(function (el) {
+        el.parentNode && el.parentNode.removeChild(el);
+    });
     var s = document.createElement('script');
     s.defer = true;
     s.src = 'https://umami.sudoshz.ir/script.js';
@@ -421,14 +454,19 @@ function loadUmamiAnalytics() {
     document.head.appendChild(s);
 }
 
-/** nav + theme + shared footer */
 document.addEventListener('DOMContentLoaded', () => {
     ensureBrandLogo();
     ensureSiteFooter();
+    loadUmamiAnalytics();
     highlightActiveNav();
     enhanceCodeBoxes();
     ensureBasicSeo();
-    loadUmamiAnalytics();
+    // Prefetch after first paint
+    if (typeof requestIdleCallback === 'function') {
+        requestIdleCallback(function () { prefetchNavLinks(); }, { timeout: 2000 });
+    } else {
+        setTimeout(prefetchNavLinks, 400);
+    }
 
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
