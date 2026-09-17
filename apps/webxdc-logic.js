@@ -53,11 +53,27 @@ const App = ({ app, toggleModal }) => {
 };
 
 /*
+Absolute HTTPS URL to a .xdc file.
+Delta Chat intercepts navigation to *.xdc inside its in-app browser and loads
+the mini-app into the chat. Do NOT use the HTML "download" attribute — that
+forces a file-save and breaks DC's interceptor. Prefer target="_blank" with an
+absolute https://…/*.xdc URL (same pattern as apps.testrun.org / original store).
+*/
+function xdcAbsoluteUrl(cacheRelname) {
+  try {
+    return new URL(xdcget_export + "/" + cacheRelname, window.location.href).href;
+  } catch (_) {
+    return xdcget_export + "/" + cacheRelname;
+  }
+}
+
+/*
 <Dialog> creates an overlay that shows the metadata of an app and a button of
 downloading the actual webxdc file from the server.
 */
 const Dialog = ({app, modal, toggleModal}) => {
   const [subtitle, description] = [app.description.split('\n').shift(), app.description.split('\n').slice(1).join(' ')];
+  const xdcUrl = xdcAbsoluteUrl(app.cache_relname);
 
   // Change the title when a dialog is open
   if(modal === app.app_id) {
@@ -99,9 +115,9 @@ const Dialog = ({app, modal, toggleModal}) => {
       </div>
       <div class="button-container">
         <a
-          href="${xdcget_export + "/" + app.cache_relname}"
+          href=${xdcUrl}
           class="button"
-          download=${app.cache_relname}
+          target="_blank"
           rel="noopener">
           ${tr("apps_download", "Download")}
         </a>

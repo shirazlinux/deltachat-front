@@ -26,19 +26,6 @@
     "icon_relname": "sharelist-icon.png"
   },
   {
-    "app_id": "custom-planer-t",
-    "tag_name": "v1.0.0",
-    "url": "/static/apps/planer-t.xdc",
-    "date": "2026-07-22T00:00:00Z",
-    "description": "Planer-T — نسخه سبک‌تر Planner با تمرکز روی تقویم و تایم‌باکسینگ.",
-    "source_code_url": null,
-    "name": "Planer-T",
-    "category": "tool",
-    "cache_relname": "custom-planer-t-v1.0.0.xdc",
-    "size": 88000,
-    "icon_relname": "planer-t-icon.png"
-  },
-  {
     "app_id": "custom-excalidraw",
     "tag_name": "v1.0.0",
     "url": "/static/apps/excalidraw.xdc",
