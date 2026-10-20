@@ -166,6 +166,12 @@ async function onDownloadClick(event, app) {
 <Dialog> creates an overlay that shows the metadata of an app and a button of
 downloading the actual webxdc file from the server.
 */
+const uiDir = () => {
+  const d = document.documentElement.getAttribute("dir");
+  if (d === "rtl" || d === "ltr") return d;
+  return /^fa/.test(document.documentElement.lang || "") ? "rtl" : "auto";
+};
+
 const Dialog = ({app, modal, toggleModal}) => {
   const [subtitle, description] = [app.description.split('\n').shift(), app.description.split('\n').slice(1).join(' ')];
   const xdcUrl = xdcAbsoluteUrl(app.cache_relname);
@@ -183,23 +189,23 @@ const Dialog = ({app, modal, toggleModal}) => {
 
   return html`
     <!-- Only show the modal that matches the app ID that was clicked -->
-    <div id=${app.app_id} role="dialog" aria-labelledby="${app.app_id}_label" aria-describedby="${app.app_id}_desc" aria-modal="true" class="${modal === app.app_id ? 'active' : 'hidden'}">
+    <div id=${app.app_id} dir=${uiDir()} role="dialog" aria-labelledby="${app.app_id}_label" aria-describedby="${app.app_id}_desc" aria-modal="true" class="${modal === app.app_id ? 'active' : 'hidden'}">
       <div class="app-container">
         <img src="${xdcget_export + "/" + app.icon_relname}" loading="lazy" alt="Icon of ${app.name} app" />
         <div class="metadata">
-          <div class="title ellipse">${app.name}</div>
+          <div class="title ellipse" dir="auto">${app.name}</div>
           <div class="description" dir="auto">
             <span class="subtitle" dir="auto" id="${app.app_id}_label">${subtitle}</span>
           </div>
           <div class="author">${extract_author(app.source_code_url)}</div>
         </div>
       </div>
-      <div class="description-full" id="${app.app_id}_desc">
+      <div class="description-full" dir="auto" id="${app.app_id}_desc">
         ${description}
       </div>
       <div class="additional-info">
         <div>
-          <b>${tr("apps_published", "Published:")} </b>${dayjs(app.date).format("l")} (${app.tag_name})
+          <b>${tr("apps_published", "Published:")} </b>${uiDir()==="rtl" ? new Intl.DateTimeFormat("fa-IR-u-ca-persian",{year:"numeric",month:"long",day:"numeric"}).format(new Date(app.date)) : dayjs(app.date).format("l")} (${app.tag_name})
         </div>
         <div>
           <b>${tr("apps_size", "Size:")} </b>${size}

@@ -405,3 +405,10 @@ html, body { max-width: 100%; overflow-x: hidden; }
 .cat-desc { scroll-margin-top: 110px; }
 .app .description { text-align: start; }
 .app .description .subtitle { unicode-bidi: plaintext; }
+
+/* --- جزئیات برنامه: راست‌چین برای فارسی --- */
+[role=dialog] { text-align: start; }
+[role=dialog] .metadata { min-width: 0; text-align: start; }
+[role=dialog] .description { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.8; }
+[role=dialog] .description-full, [role=dialog] .additional-info { text-align: start; overflow-wrap: anywhere; }
+[role=dialog] .additional-info a { direction: ltr; unicode-bidi: isolate; }
