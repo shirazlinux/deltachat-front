@@ -264,6 +264,7 @@ const Search = ({apps, setSearchResults, filterGroup}) => {
           .filter(filterResults)
           .sort(
             (a, b) =>
+              (b.item.app_id === "sudoshz-amoozesh") - (a.item.app_id === "sudoshz-amoozesh") ||
               new Date(b.item.date).getTime() - new Date(a.item.date).getTime()
           )
       );
