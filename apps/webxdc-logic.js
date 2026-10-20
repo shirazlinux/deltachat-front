@@ -188,8 +188,8 @@ const Dialog = ({app, modal, toggleModal}) => {
         <img src="${xdcget_export + "/" + app.icon_relname}" loading="lazy" alt="Icon of ${app.name} app" />
         <div class="metadata">
           <div class="title ellipse">${app.name}</div>
-          <div class="description">
-            <span class="subtitle" id="${app.app_id}_label">${subtitle}</span>
+          <div class="description" dir="auto">
+            <span class="subtitle" dir="auto" id="${app.app_id}_label">${subtitle}</span>
           </div>
           <div class="author">${extract_author(app.source_code_url)}</div>
         </div>
@@ -267,8 +267,6 @@ const Search = ({apps, setSearchResults, filterGroup}) => {
   useEffect(() => {
     // do the initial update or when applist changes
     updateSearch();
-    // If the category filter changes, we scroll to the top
-    window.scrollTo(0,0);
   }, [apps, filterGroup]);
 
   return html`
@@ -296,7 +294,9 @@ const MainScreen = () => {
   const [modal, viewModal] = useState(false); 
   const [appIdMap, setIdMap] = useState({});
   const [searchResults, setSearchResults] = useState();
-  const [filterGroup, setFilterGroup] = useState("home");
+  const [filterGroup, setFilterGroup] = useState(() => {
+    try { return new URLSearchParams(window.location.search).get("cat") || "home"; } catch (e) { return "home"; }
+  });
 
   // Fetch the data that contains all of the apps we have available
   // in the xstore.
@@ -398,13 +398,26 @@ const Categories = ({apps, setFilterGroup, filterGroup}) => {
     apps.forEach((a) => { c[a.group] = (c[a.group] || 0) + 1; });
     return c;
   }, [apps]);
+  const selectCategory = (event, id) => {
+    event.preventDefault();
+    setFilterGroup(id);
+    try {
+      const url = new URL(window.location.href);
+      if (id === "home") url.searchParams.delete("cat"); else url.searchParams.set("cat", id);
+      window.history.replaceState(window.history.state, "", url.href);
+    } catch (e) { /* webxdc sandbox may forbid history changes */ }
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const target = document.querySelector("#categories .cat-desc");
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+  };
   const current = CATEGORIES.find((c) => c.id === filterGroup) || CATEGORIES[0];
   return html`<div id="categories" dir="rtl">
     <div class="cat-chips" role="group" aria-label="دسته‌بندی‌ها">
       ${CATEGORIES.filter((c) => c.id === "home" || counts[c.id]).map((c) => html`
         <button type="button" aria-pressed=${filterGroup === c.id ? "true" : "false"}
           class=${"cat-chip" + (filterGroup === c.id ? " active" : "")}
-          onClick=${() => setFilterGroup(c.id)}>
+          onClick=${(event) => selectCategory(event, c.id)}>
           <span class="cat-icon">${c.icon}</span>${c.name}<span class="cat-count">${counts[c.id] || 0}</span>
         </button>`)}
     </div>

@@ -401,3 +401,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
   .cat-chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
   .cat-chip { padding: 8px 8px; font-size: 0.88rem; border-radius: 14px; justify-content: space-between; }
 }
+
+.cat-desc { scroll-margin-top: 110px; }
+.app .description { text-align: start; }
+.app .description .subtitle { unicode-bidi: plaintext; }
