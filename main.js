@@ -376,6 +376,128 @@ function enhanceCodeBoxes() {
     });
 }
 
+
+/**
+ * Render bots catalog into #bots-grid (or options.gridId).
+ * options: { lang, gridId, openBtnClass, showHow, showAddr, filterReadyOnly }
+ */
+function loadBotsCatalog(options) {
+    options = options || {};
+    var lang = options.lang || (typeof resolvePageLang === 'function' ? resolvePageLang() : 'en');
+    var gridId = options.gridId || 'bots-grid';
+    var openBtnClass = options.openBtnClass || 'btn btn--bots';
+    var showHow = options.showHow !== false;
+    var showAddr = options.showAddr !== false;
+    var filterReadyOnly = !!options.filterReadyOnly;
+    var grid = document.getElementById(gridId);
+    if (!grid) return;
+
+    function statusLabel(status) {
+        var map = {
+            ready: { fa: 'آماده تست', en: 'Ready', ru: 'Готов' },
+            limited: { fa: 'محدود', en: 'Limited', ru: 'Ограничен' },
+            soon: { fa: 'به‌زودی', en: 'Soon', ru: 'Скоро' }
+        };
+        var row = map[status] || map.ready;
+        return row[lang] || row.en;
+    }
+
+    function pickLocalized(obj, fallback) {
+        if (!obj) return fallback || '';
+        if (typeof obj === 'string') return obj;
+        return obj[lang] || obj.fa || obj.en || fallback || '';
+    }
+
+    fetch('/bots-invites.json', { cache: 'no-store' })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function (data) {
+            var bots = (data && data.bots) || [];
+            if (filterReadyOnly) {
+                bots = bots.filter(function (b) { return b.status === 'ready' || b.status === 'limited'; });
+            }
+            if (!bots.length) {
+                grid.innerHTML = '<p class="text-muted">' + (t('bots_empty') || 'No bots listed yet.') + '</p>';
+                return;
+            }
+            grid.innerHTML = '';
+            bots.forEach(function (bot) {
+                var name = pickLocalized(bot.name, bot.displayname || bot.id);
+                var desc = pickLocalized(bot.about, '') || pickLocalized(bot.desc, '');
+                var how = pickLocalized(bot.how, '');
+                var status = bot.status || 'ready';
+                var avatar = bot.avatar || (bot.id ? ('/avatars/' + bot.id + '.png') : '');
+                var card = document.createElement('article');
+                card.className = 'bot-card glass-panel';
+                card.innerHTML =
+                    '<div class="bot-card__head">' +
+                      '<div class="bot-card__identity">' +
+                        (avatar
+                          ? '<img class="bot-card__avatar" src="" alt="" width="56" height="56" loading="lazy" decoding="async" />'
+                          : '<div class="bot-card__avatar bot-card__avatar--fallback" aria-hidden="true"></div>') +
+                        '<h3 class="bot-card__title"></h3>' +
+                      '</div>' +
+                      '<span class="bot-card__badge"></span>' +
+                    '</div>' +
+                    '<p class="bot-card__desc"></p>' +
+                    (showHow ? '<p class="bot-card__how text-sm"></p>' : '') +
+                    (showAddr ? '<p class="bot-card__addr mono text-sm" dir="ltr"></p>' : '') +
+                    '<div class="bot-card__actions"></div>';
+                var avatarEl = card.querySelector('.bot-card__avatar');
+                if (avatarEl && avatarEl.tagName === 'IMG') {
+                    avatarEl.src = avatar;
+                    avatarEl.alt = name;
+                    avatarEl.onerror = function () {
+                        this.onerror = null;
+                        var fb = document.createElement('div');
+                        fb.className = 'bot-card__avatar bot-card__avatar--fallback';
+                        fb.textContent = (name || '?').trim().charAt(0);
+                        this.replaceWith(fb);
+                    };
+                } else if (avatarEl) {
+                    avatarEl.textContent = (name || '?').trim().charAt(0);
+                }
+                card.querySelector('.bot-card__title').textContent = name;
+                var badge = card.querySelector('.bot-card__badge');
+                badge.textContent = statusLabel(status);
+                badge.classList.add('bot-card__badge--' + status);
+                card.querySelector('.bot-card__desc').textContent = desc;
+                var howEl = card.querySelector('.bot-card__how');
+                if (howEl) howEl.textContent = how;
+                var addrEl = card.querySelector('.bot-card__addr');
+                if (addrEl) addrEl.textContent = bot.addr || '';
+                var actions = card.querySelector('.bot-card__actions');
+                if (bot.invite) {
+                    var openBtn = document.createElement('a');
+                    openBtn.className = openBtnClass;
+                    openBtn.href = bot.invite;
+                    openBtn.target = '_blank';
+                    openBtn.rel = 'noopener noreferrer';
+                    openBtn.textContent = t('bots_open') || 'Open in Delta Chat';
+                    openBtn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        openDeltaChatUri(bot.invite);
+                    });
+                    var copyBtn = document.createElement('button');
+                    copyBtn.type = 'button';
+                    copyBtn.className = 'btn btn--secondary';
+                    copyBtn.textContent = t('bots_copy') || 'Copy invite';
+                    copyBtn.addEventListener('click', function () { copyToClipboard(bot.invite); });
+                    actions.appendChild(openBtn);
+                    actions.appendChild(copyBtn);
+                } else {
+                    var soon = document.createElement('span');
+                    soon.className = 'text-muted text-sm';
+                    soon.textContent = t('bots_unavailable') || 'Invite not available yet';
+                    actions.appendChild(soon);
+                }
+                grid.appendChild(card);
+            });
+        })
+        .catch(function () {
+            grid.innerHTML = '<p class="text-muted">' + (t('bots_load_error') || 'Could not load bots list.') + '</p>';
+        });
+}
+
 /**
  * Open a DeltaChat invite / dclogin URI (app deep-link).
  */

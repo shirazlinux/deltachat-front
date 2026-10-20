@@ -271,6 +271,7 @@
             <li><a href="apps/index.html" data-i18n="nav_applications">applications</a></li>
             <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
+            <li><a href="bots.html" data-i18n="nav_bots" class="nav-bots-link">Bots</a></li>
         </ul>
     </nav>
 
@@ -348,6 +349,22 @@
         </div>
         {{end}}
 
+
+    <div id="bots" class="page-content glass-panel fade-in bots-section">
+        <h2 style="text-align:center;margin-top:0;" data-i18n="bots_title">Bots on this server</h2>
+        <p style="text-align:center;color:var(--text-secondary);max-width:46rem;margin:0 auto 1.25rem;" data-i18n-html="bots_intro">
+            چیستی هر ربات روی همین سرور مدمیل. دعوت را در دلتاچت باز کن و برای راهنما <code>/help</code> بفرست.
+        </p>
+        <div id="bots-grid" class="bots-grid" aria-live="polite">
+            <p class="bots-loading" data-i18n="bots_loading">Loading bots…</p>
+        </div>
+        <div class="bots-home-cta">
+            <a href="bots.html" class="btn btn--bots" data-i18n="bots_view_all">مشاهده همه ربات‌ها</a>
+        </div>
+        <p class="text-sm text-muted" style="text-align:center;margin-top:1rem;" data-i18n="bots_note">
+            Invite tokens may rotate after bot restarts. If a link fails, ask the admin for a fresh one.
+        </p>
+    </div>
 
     <div class="page-content glass-panel fade-in admin-contact">
         <h1 data-i18n="contact_admin_title">Contact admin</h1>
@@ -534,7 +551,10 @@
                     copyToClipboard(ADMIN_INVITE);
                 });
             }
+
+            loadBotsCatalog({ lang: PAGE_LANG, openBtnClass: 'btn btn--bots', showHow: true, showAddr: true });
         };
+
     </script>
 
 </body>

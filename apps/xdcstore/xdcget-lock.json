@@ -1,5 +1,19 @@
 [
   {
+    "app_id": "deltachat-bot-webxdcbot",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/deltachat-bot/webxdcbot",
+    "date": "2026-10-12T18:35:28Z",
+    "description": "Webxdc+Bot — نمونه مینی‌اپ همراه بات از سازمان deltachat-bot (چت ساده مبتنی بر webxdc).",
+    "source_code_url": "https://github.com/deltachat-bot/webxdcbot",
+    "name": "Webxdc+Bot",
+    "category": "tool",
+    "cache_relname": "deltachat-bot-webxdcbot-v1.0.0.xdc",
+    "size": 2004,
+    "icon_relname": "deltachat-bot-webxdcbot-icon.png",
+    "group": "media"
+  },
+  {
     "app_id": "custom-planner",
     "tag_name": "v1.0.0",
     "url": "/static/apps/planner.xdc",
@@ -10,7 +24,8 @@
     "category": "tool",
     "cache_relname": "custom-planner-v1.0.0.xdc",
     "size": 774000,
-    "icon_relname": "planner-icon.png"
+    "icon_relname": "planner-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "custom-sharelist",
@@ -23,7 +38,8 @@
     "category": "tool",
     "cache_relname": "custom-sharelist-v1.0.0.xdc",
     "size": 80000,
-    "icon_relname": "sharelist-icon.png"
+    "icon_relname": "sharelist-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "custom-excalidraw",
@@ -36,7 +52,8 @@
     "category": "tool",
     "cache_relname": "custom-excalidraw-v1.0.0.xdc",
     "size": 619000,
-    "icon_relname": "excalidraw-icon.png"
+    "icon_relname": "excalidraw-icon.png",
+    "group": "create"
   },
   {
     "app_id": "link2xt-count",
@@ -49,20 +66,22 @@
     "category": "game",
     "cache_relname": "link2xt-count-v1.xdc",
     "size": 1886,
-    "icon_relname": "link2xt-count-icon.png"
+    "icon_relname": "link2xt-count-icon.png",
+    "group": "social"
   },
   {
     "app_id": "nelson9608-calculator-xdc",
     "tag_name": "V1.0.0",
     "url": "https://github.com/nelson9608/Calculator-xdc/releases/download/V1.0.0/Calculator-2.xdc",
     "date": "2023-08-26T05:20:39Z",
-    "description": "ماشین‌حساب ساده و سریع که بدون نصب برنامهٔ اضافی کار می‌کند.\nمی‌توانید آن را در Saved Messages ذخیره کنید و مثل یک اپ معمولی استفاده کنید.",
+    "description": "ماشین‌حساب ساده و سریع که بدون نصب برنامه اضافی کار می‌کند.\nمی‌توانید آن را در Saved Messages ذخیره کنید و مثل یک اپ معمولی استفاده کنید.",
     "source_code_url": "https://github.com/nelson9608/Calculator-xdc",
     "name": "Calculator",
     "category": "tool",
     "cache_relname": "nelson9608-calculator-xdc-V1.0.0.xdc",
     "size": 66332,
-    "icon_relname": "nelson9608-calculator-xdc-icon.png"
+    "icon_relname": "nelson9608-calculator-xdc-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "webratte-event-countdown",
@@ -75,7 +94,8 @@
     "category": "tool",
     "cache_relname": "webratte-event-countdown-v1.1.1.xdc",
     "size": 10097,
-    "icon_relname": "webratte-event-countdown-icon.png"
+    "icon_relname": "webratte-event-countdown-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "webratte-i-got-time",
@@ -88,7 +108,8 @@
     "category": "tool",
     "cache_relname": "webratte-i-got-time-v1.0.1.xdc",
     "size": 11988,
-    "icon_relname": "webratte-i-got-time-icon.png"
+    "icon_relname": "webratte-i-got-time-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "webratte-shared-memo",
@@ -101,7 +122,8 @@
     "category": "tool",
     "cache_relname": "webratte-shared-memo-v2.1.xdc",
     "size": 8015,
-    "icon_relname": "webratte-shared-memo-icon.png"
+    "icon_relname": "webratte-shared-memo-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "webxdc-calendar",
@@ -114,7 +136,8 @@
     "category": "tool",
     "cache_relname": "webxdc-calendar-v1.1.0.xdc",
     "size": 43815,
-    "icon_relname": "webxdc-calendar-icon.png"
+    "icon_relname": "webxdc-calendar-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "webxdc-checklist",
@@ -127,7 +150,8 @@
     "category": "tool",
     "cache_relname": "webxdc-checklist-v0.0.3.xdc",
     "size": 98838,
-    "icon_relname": "webxdc-checklist-icon.png"
+    "icon_relname": "webxdc-checklist-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "webxdc-clocksync",
@@ -140,7 +164,8 @@
     "category": "tool",
     "cache_relname": "webxdc-clocksync-v1.xdc",
     "size": 6301,
-    "icon_relname": "webxdc-clocksync-icon.png"
+    "icon_relname": "webxdc-clocksync-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "webxdc-corkboard",
@@ -153,7 +178,8 @@
     "category": "tool",
     "cache_relname": "webxdc-corkboard-v0.0.2.xdc",
     "size": 13851,
-    "icon_relname": "webxdc-corkboard-icon.jpg"
+    "icon_relname": "webxdc-corkboard-icon.jpg",
+    "group": "plan"
   },
   {
     "app_id": "webxdc-editor",
@@ -166,7 +192,8 @@
     "category": "tool",
     "cache_relname": "webxdc-editor-v3.2.0.xdc",
     "size": 151366,
-    "icon_relname": "webxdc-editor-icon.png"
+    "icon_relname": "webxdc-editor-icon.png",
+    "group": "create"
   },
   {
     "app_id": "webxdc-pixel",
@@ -179,33 +206,36 @@
     "category": "tool",
     "cache_relname": "webxdc-pixel-v2.xdc",
     "size": 3905,
-    "icon_relname": "webxdc-pixel-icon.png"
+    "icon_relname": "webxdc-pixel-icon.png",
+    "group": "create"
   },
   {
     "app_id": "webxdc-poll",
     "tag_name": "1.0.2",
     "url": "https://codeberg.org/webxdc/poll/releases/download/1.0.2/poll.xdc",
     "date": "2025-04-12T01:03:37+02:00",
-    "description": "ساخت نظرسنجی ساده با یک سؤال و چند گزینهٔ قابل رأی‌دادن.",
+    "description": "ساخت نظرسنجی ساده با یک سؤال و چند گزینه قابل رأی‌دادن.",
     "source_code_url": "https://codeberg.org/webxdc/poll",
     "name": "Poll",
     "category": "tool",
     "cache_relname": "webxdc-poll-1.0.2.xdc",
     "size": 7044,
-    "icon_relname": "webxdc-poll-icon.png"
+    "icon_relname": "webxdc-poll-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "webxdc-pong",
     "tag_name": "v4",
     "url": "https://codeberg.org/webxdc/pong/releases/download/v4/pong.xdc",
     "date": "2024-11-17T04:34:46+01:00",
-    "description": "نسخهٔ کلاسیک بازی پینگ‌پنگ به‌صورت دو نفره.\nحرکت راکت‌ها در زمان واقعی و امکان تماشا توسط اعضای گروه.",
+    "description": "نسخه کلاسیک بازی پینگ‌پنگ به‌صورت دو نفره.\nحرکت راکت‌ها در زمان واقعی و امکان تماشا توسط اعضای گروه.",
     "source_code_url": "https://codeberg.org/webxdc/pong",
     "name": "Pong",
     "category": "game",
     "cache_relname": "webxdc-pong-v4.xdc",
     "size": 4599,
-    "icon_relname": "webxdc-pong-icon.png"
+    "icon_relname": "webxdc-pong-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "webxdc-realtime-check",
@@ -218,7 +248,8 @@
     "category": "tool",
     "cache_relname": "webxdc-realtime-check-v1.0.6.xdc",
     "size": 226378,
-    "icon_relname": "webxdc-realtime-check-icon.png"
+    "icon_relname": "webxdc-realtime-check-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "webxdc-test",
@@ -231,7 +262,8 @@
     "category": "tool",
     "cache_relname": "webxdc-test-1.5.0.xdc",
     "size": 164148,
-    "icon_relname": "webxdc-test-icon.png"
+    "icon_relname": "webxdc-test-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "arcanecircle-amazingtrack",
@@ -244,20 +276,22 @@
     "category": "game",
     "cache_relname": "arcanecircle-amazingtrack-v0.1.0.xdc",
     "size": 6031553,
-    "icon_relname": "arcanecircle-amazingtrack-icon.png"
+    "icon_relname": "arcanecircle-amazingtrack-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-arkanoid",
     "tag_name": "v3.10.0",
     "url": "https://github.com/ArcaneCircle/arkanoid/releases/download/v3.10.0/app.xdc",
     "date": "2024-12-13T18:37:26Z",
-    "description": "نسخهٔ بازسازی‌شدهٔ بازی کلاسیک Arkanoid.\nتوپ را هدایت کنید تا آجرها را بشکنید و مرحله‌ها را پشت سر بگذارید.",
+    "description": "نسخه بازسازی‌شده بازی کلاسیک Arkanoid.\nتوپ را هدایت کنید تا آجرها را بشکنید و مرحله‌ها را پشت سر بگذارید.",
     "source_code_url": "https://github.com/ArcaneCircle/arkanoid",
     "name": "Arkanoid",
     "category": "game",
     "cache_relname": "arcanecircle-arkanoid-v3.10.0.xdc",
     "size": 73165,
-    "icon_relname": "arcanecircle-arkanoid-icon.png"
+    "icon_relname": "arcanecircle-arkanoid-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-audiodash",
@@ -270,7 +304,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-audiodash-v1.1.0.xdc",
     "size": 19148,
-    "icon_relname": "arcanecircle-audiodash-icon.png"
+    "icon_relname": "arcanecircle-audiodash-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-back-up",
@@ -283,7 +318,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-back-up-v1.2.0.xdc",
     "size": 57528,
-    "icon_relname": "arcanecircle-back-up-icon.jpg"
+    "icon_relname": "arcanecircle-back-up-icon.jpg",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-backread",
@@ -296,33 +332,36 @@
     "category": "game",
     "cache_relname": "arcanecircle-backread-v2.2.0.xdc",
     "size": 86925,
-    "icon_relname": "arcanecircle-backread-icon.png"
+    "icon_relname": "arcanecircle-backread-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-bejeweled",
     "tag_name": "v1.4.0",
     "url": "https://github.com/ArcaneCircle/bejeweled/releases/download/v1.4.0/app.xdc",
     "date": "2024-12-13T18:50:47Z",
-    "description": "نسخهٔ Match‑3 شبیه Bejeweled.\nسه یا بیشتر از جواهرات مشابه را کنار هم قرار دهید تا امتیاز بگیرید.\nدارای رقابت گروهی.",
+    "description": "نسخه Match‑3 شبیه Bejeweled.\nسه یا بیشتر از جواهرات مشابه را کنار هم قرار دهید تا امتیاز بگیرید.\nدارای رقابت گروهی.",
     "source_code_url": "https://github.com/ArcaneCircle/bejeweled",
     "name": "Dejeweled",
     "category": "game",
     "cache_relname": "arcanecircle-bejeweled-v1.4.0.xdc",
     "size": 518084,
-    "icon_relname": "arcanecircle-bejeweled-icon.png"
+    "icon_relname": "arcanecircle-bejeweled-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-c4",
     "tag_name": "v1.2.0",
     "url": "https://github.com/ArcaneCircle/c4/releases/download/v1.2.0/app.xdc",
     "date": "2024-12-13T18:53:31Z",
-    "description": "نسخهٔ دیجیتال بازی کلاسیک چهارخانه (Connect Four).\nدو نفره، قابل مشاهده برای همهٔ اعضای گروه.",
+    "description": "نسخه دیجیتال بازی کلاسیک چهارخانه (Connect Four).\nدو نفره، قابل مشاهده برای همه اعضای گروه.",
     "source_code_url": "https://github.com/ArcaneCircle/c4",
     "name": "Connect4",
     "category": "game",
     "cache_relname": "arcanecircle-c4-v1.2.0.xdc",
     "size": 90687,
-    "icon_relname": "arcanecircle-c4-icon.png"
+    "icon_relname": "arcanecircle-c4-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-casual-crusade",
@@ -335,7 +374,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-casual-crusade-v1.2.0.xdc",
     "size": 72848,
-    "icon_relname": "arcanecircle-casual-crusade-icon.png"
+    "icon_relname": "arcanecircle-casual-crusade-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-chess",
@@ -348,33 +388,36 @@
     "category": "game",
     "cache_relname": "arcanecircle-chess-v2.4.0.xdc",
     "size": 108548,
-    "icon_relname": "arcanecircle-chess-icon.png"
+    "icon_relname": "arcanecircle-chess-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-color-lines",
     "tag_name": "v3.2.0",
     "url": "https://github.com/ArcaneCircle/color-lines/releases/download/v3.2.0/app.xdc",
     "date": "2024-12-13T19:07:30Z",
-    "description": "نسخهٔ بازسازی‌شدهٔ بازی Color Lines.\nتوپ‌ها را طوری جابه‌جا کنید که پنج توپ هم‌رنگ در یک خط قرار بگیرند.\nدارای رقابت گروهی.",
+    "description": "نسخه بازسازی‌شده بازی Color Lines.\nتوپ‌ها را طوری جابه‌جا کنید که پنج توپ هم‌رنگ در یک خط قرار بگیرند.\nدارای رقابت گروهی.",
     "source_code_url": "https://github.com/ArcaneCircle/color-lines",
     "name": "Color Lines",
     "category": "game",
     "cache_relname": "arcanecircle-color-lines-v3.2.0.xdc",
     "size": 69916,
-    "icon_relname": "arcanecircle-color-lines-icon.png"
+    "icon_relname": "arcanecircle-color-lines-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-coloron",
     "tag_name": "v0.3.0",
     "url": "https://github.com/ArcaneCircle/coloron/releases/download/v0.3.0/app.xdc",
     "date": "2024-12-13T19:10:02Z",
-    "description": "بازی توپ جهندهٔ رنگی.\nتوپ باید روی سکوهایی با رنگ مشابه فرود بیاید.\nریتم سریع و چالش‌برانگیز.",
+    "description": "بازی توپ جهنده رنگی.\nتوپ باید روی سکوهایی با رنگ مشابه فرود بیاید.\nریتم سریع و چالش‌برانگیز.",
     "source_code_url": "https://github.com/ArcaneCircle/coloron",
     "name": "Coloron",
     "category": "game",
     "cache_relname": "arcanecircle-coloron-v0.3.0.xdc",
     "size": 115435,
-    "icon_relname": "arcanecircle-coloron-icon.png"
+    "icon_relname": "arcanecircle-coloron-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-coupahoo",
@@ -387,111 +430,120 @@
     "category": "game",
     "cache_relname": "arcanecircle-coupahoo-v0.3.0.xdc",
     "size": 70351,
-    "icon_relname": "arcanecircle-coupahoo-icon.png"
+    "icon_relname": "arcanecircle-coupahoo-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-crappybird",
     "tag_name": "v1.5.0",
     "url": "https://github.com/ArcaneCircle/CrappyBird/releases/download/v1.5.0/app.xdc",
     "date": "2024-12-14T19:19:33Z",
-    "description": "نسخهٔ Flappy Bird.\nپرنده را هدایت کنید تا به لوله‌ها برخورد نکند.",
+    "description": "نسخه Flappy Bird.\nپرنده را هدایت کنید تا به لوله‌ها برخورد نکند.",
     "source_code_url": "https://github.com/ArcaneCircle/CrappyBird",
     "name": "CrappyBird",
     "category": "game",
     "cache_relname": "arcanecircle-crappybird-v1.5.0.xdc",
     "size": 110207,
-    "icon_relname": "arcanecircle-crappybird-icon.png"
+    "icon_relname": "arcanecircle-crappybird-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-dino",
     "tag_name": "v1.3.0",
     "url": "https://github.com/ArcaneCircle/Dino/releases/download/v1.3.0/app.xdc",
     "date": "2024-12-13T19:28:43Z",
-    "description": "نسخهٔ بازی دایناسور گوگل.\nاز کاکتوس‌ها و پرنده‌ها بپرید و رکورد بزنید.\nدارای رقابت گروهی.",
+    "description": "نسخه بازی دایناسور گوگل.\nاز کاکتوس‌ها و پرنده‌ها بپرید و رکورد بزنید.\nدارای رقابت گروهی.",
     "source_code_url": "https://github.com/ArcaneCircle/Dino",
     "name": "Dino",
     "category": "game",
     "cache_relname": "arcanecircle-dino-v1.3.0.xdc",
     "size": 70700,
-    "icon_relname": "arcanecircle-dino-icon.png"
+    "icon_relname": "arcanecircle-dino-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-forgottendepths",
     "tag_name": "v1.4.0",
     "url": "https://github.com/ArcaneCircle/ForgottenDepths/releases/download/v1.4.0/app.xdc",
     "date": "2024-12-14T19:29:12Z",
-    "description": "نسخهٔ ساده‌شدهٔ یک بازی کارتی Rogue‑lite.\nکارت بسازید، دِک را شخصی‌سازی کنید و با دشمنان مرده مبارزه کنید.\nدر موبایل باید صفحه را افقی کنید",
+    "description": "نسخه ساده‌شده یک بازی کارتی Rogue‑lite.\nکارت بسازید، دک را شخصی‌سازی کنید و با دشمنان مرده مبارزه کنید.\nدر موبایل باید صفحه را افقی کنید",
     "source_code_url": "https://github.com/ArcaneCircle/ForgottenDepths",
     "name": "Forgotten Depths",
     "category": "game",
     "cache_relname": "arcanecircle-forgottendepths-v1.4.0.xdc",
     "size": 70335,
-    "icon_relname": "arcanecircle-forgottendepths-icon.png"
+    "icon_relname": "arcanecircle-forgottendepths-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-fspider",
     "tag_name": "v1.4.0",
     "url": "https://github.com/ArcaneCircle/fSpider/releases/download/v1.4.0/app.xdc",
     "date": "2024-12-13T19:30:38Z",
-    "description": "نسخهٔ بازی Spider Solitaire.\nدارای انواع صفحه، راهنمایی، Undo و ثبت بهترین رکوردها.",
+    "description": "نسخه بازی Spider Solitaire.\nدارای انواع صفحه، راهنمایی، Undo و ثبت بهترین رکوردها.",
     "source_code_url": "https://github.com/ArcaneCircle/fSpider",
     "name": "fSpider",
     "category": "game",
     "cache_relname": "arcanecircle-fspider-v1.4.0.xdc",
     "size": 299871,
-    "icon_relname": "arcanecircle-fspider-icon.jpg"
+    "icon_relname": "arcanecircle-fspider-icon.jpg",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-gibbonacci",
     "tag_name": "v1.3.0",
     "url": "https://github.com/ArcaneCircle/gibbonacci/releases/download/v1.3.0/app.xdc",
     "date": "2024-12-13T19:50:07Z",
-    "description": "بازی Idle دربارهٔ پیدا کردن اعداد دنبالهٔ فیبوناچی.\nمیمون‌ها برای شما عددها را بررسی می‌کنند و بازی به‌صورت خودکار پیش می‌رود.",
+    "description": "بازی Idle درباره پیدا کردن اعداد دنباله فیبوناچی.\nمیمون‌ها برای شما عددها را بررسی می‌کنند و بازی به‌صورت خودکار پیش می‌رود.",
     "source_code_url": "https://github.com/ArcaneCircle/gibbonacci",
     "name": "Gibbonacci",
     "category": "game",
     "cache_relname": "arcanecircle-gibbonacci-v1.3.0.xdc",
     "size": 51161,
-    "icon_relname": "arcanecircle-gibbonacci-icon.png"
+    "icon_relname": "arcanecircle-gibbonacci-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-knight-arena",
     "tag_name": "v1.3.0",
     "url": "https://github.com/ArcaneCircle/knight-arena/releases/download/v1.3.0/app.xdc",
     "date": "2024-12-13T19:50:47Z",
-    "description": "بازی سادهٔ شبیه Rogue-like.\nیک بازی ساده با اتاق‌های تصادفی که در آن سلاح‌های مختلف با الگوهای حملهٔ خاص را علیه دشمنان ترکیب می‌کنید.\nشایستگی خود را برای شوالیه‌شدن ثابت کنید و ببینید تا کجا می‌توانید پیش بروید!",
+    "description": "بازی ساده شبیه Rogue-like.\nیک بازی ساده با اتاق‌های تصادفی که در آن سلاح‌های مختلف با الگوهای حمله خاص را علیه دشمنان ترکیب می‌کنید.\nشایستگی خود را برای شوالیه‌شدن ثابت کنید و ببینید تا کجا می‌توانید پیش بروید!",
     "source_code_url": "https://github.com/ArcaneCircle/knight-arena",
     "name": "Knight Arena",
     "category": "game",
     "cache_relname": "arcanecircle-knight-arena-v1.3.0.xdc",
     "size": 52165,
-    "icon_relname": "arcanecircle-knight-arena-icon.png"
+    "icon_relname": "arcanecircle-knight-arena-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-livechat",
     "tag_name": "v0.5.0",
     "url": "https://github.com/ArcaneCircle/live-chat/releases/download/v0.5.0/app.xdc",
     "date": "2024-12-13T19:55:36Z",
-    "description": "بازی Rogue‑like با اتاق‌های تصادفی.\nسلاح‌ها را ترکیب کنید و با الگوهای حملهٔ مختلف دشمنان را شکست دهید.",
+    "description": "چت زنده داخل گروه با پیام‌های لحظه‌ای، تایپینگ، آنلاین بودن و موضوع‌بندی.\nمناسب برای بحث‌های سریع بدون شلوغ کردن گروه اصلی.",
     "source_code_url": "https://github.com/ArcaneCircle/live-chat",
     "name": "Live Chat",
     "category": "tool",
     "cache_relname": "arcanecircle-livechat-v0.5.0.xdc",
     "size": 197373,
-    "icon_relname": "arcanecircle-livechat-icon.png"
+    "icon_relname": "arcanecircle-livechat-icon.png",
+    "group": "media"
   },
   {
     "app_id": "arcanecircle-mah",
     "tag_name": "v1.7.0",
     "url": "https://github.com/ArcaneCircle/mah/releases/download/v1.7.0/mah.xdc",
     "date": "2024-12-13T20:06:06Z",
-    "description": "نسخهٔ Mahjong Solitaire.\nدارای انواع صفحه، تولید تصادفی، راهنمایی، Undo و ثبت رکورد.",
+    "description": "نسخه Mahjong Solitaire.\nدارای انواع صفحه، تولید تصادفی، راهنمایی، Undo و ثبت رکورد.",
     "source_code_url": "https://github.com/ArcaneCircle/mah",
     "name": "Mahjong",
     "category": "game",
     "cache_relname": "arcanecircle-mah-v1.7.0.xdc",
     "size": 454317,
-    "icon_relname": "arcanecircle-mah-icon.png"
+    "icon_relname": "arcanecircle-mah-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-mood",
@@ -504,20 +556,22 @@
     "category": "tool",
     "cache_relname": "arcanecircle-mood-v0.2.0.xdc",
     "size": 7206,
-    "icon_relname": "arcanecircle-mood-icon.png"
+    "icon_relname": "arcanecircle-mood-icon.png",
+    "group": "social"
   },
   {
     "app_id": "arcanecircle-musasquest",
     "tag_name": "v2.2.0",
     "url": "https://github.com/ArcaneCircle/MusasQuest/releases/download/v2.2.0/app.xdc",
     "date": "2025-04-26T19:13:36Z",
-    "description": "چت زنده داخل گروه با پیام‌های لحظه‌ای، تایپینگ، آنلاین بودن و موضوع‌بندی.\nمناسب برای بحث‌های سریع بدون شلوغ کردن گروه اصلی.",
+    "description": "بازی Rogue‑like با اتاق‌های تصادفی.\nسلاح‌ها را ترکیب کنید و با الگوهای حمله مختلف دشمنان را شکست دهید.",
     "source_code_url": "https://github.com/ArcaneCircle/MusasQuest",
     "name": "Musa's Quest",
     "category": "game",
     "cache_relname": "arcanecircle-musasquest-v2.2.0.xdc",
     "size": 23078,
-    "icon_relname": "arcanecircle-musasquest-icon.png"
+    "icon_relname": "arcanecircle-musasquest-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-necroticcommander",
@@ -530,7 +584,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-necroticcommander-v1.2.0.xdc",
     "size": 58640,
-    "icon_relname": "arcanecircle-necroticcommander-icon.png"
+    "icon_relname": "arcanecircle-necroticcommander-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-numberknight",
@@ -543,20 +598,22 @@
     "category": "game",
     "cache_relname": "arcanecircle-numberknight-v0.3.0.xdc",
     "size": 50323,
-    "icon_relname": "arcanecircle-numberknight-icon.png"
+    "icon_relname": "arcanecircle-numberknight-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-othello",
     "tag_name": "v2.2.0",
     "url": "https://github.com/ArcaneCircle/Othello/releases/download/v2.2.0/app.xdc",
     "date": "2024-12-13T20:10:37Z",
-    "description": "نسخهٔ دیجیتال بازی Othello/Reversi.\nدو نفره، قابل مشاهده برای اعضای گروه، با امکان بازی در زمان واقعی.",
+    "description": "نسخه دیجیتال بازی Othello/Reversi.\nدو نفره، قابل مشاهده برای اعضای گروه، با امکان بازی در زمان واقعی.",
     "source_code_url": "https://github.com/ArcaneCircle/Othello",
     "name": "Othello",
     "category": "game",
     "cache_relname": "arcanecircle-othello-v2.2.0.xdc",
     "size": 67743,
-    "icon_relname": "arcanecircle-othello-icon.png"
+    "icon_relname": "arcanecircle-othello-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-pixel",
@@ -569,7 +626,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-pixel-v0.5.0.xdc",
     "size": 44765,
-    "icon_relname": "arcanecircle-pixel-icon.png"
+    "icon_relname": "arcanecircle-pixel-icon.png",
+    "group": "create"
   },
   {
     "app_id": "arcanecircle-pixelrickroll",
@@ -582,7 +640,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-pixelrickroll-v0.4.0.xdc",
     "size": 399586,
-    "icon_relname": "arcanecircle-pixelrickroll-icon.png"
+    "icon_relname": "arcanecircle-pixelrickroll-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-power-crisis",
@@ -595,7 +654,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-power-crisis-v0.4.0.xdc",
     "size": 875590,
-    "icon_relname": "arcanecircle-power-crisis-icon.png"
+    "icon_relname": "arcanecircle-power-crisis-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-rainbow",
@@ -608,7 +668,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-rainbow-v1.3.0.xdc",
     "size": 90066,
-    "icon_relname": "arcanecircle-rainbow-icon.png"
+    "icon_relname": "arcanecircle-rainbow-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-runekeeper",
@@ -621,7 +682,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-runekeeper-v1.2.0.xdc",
     "size": 49201,
-    "icon_relname": "arcanecircle-runekeeper-icon.png"
+    "icon_relname": "arcanecircle-runekeeper-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-sector13",
@@ -634,20 +696,22 @@
     "category": "game",
     "cache_relname": "arcanecircle-sector13-v0.3.0.xdc",
     "size": 57830,
-    "icon_relname": "arcanecircle-sector13-icon.png"
+    "icon_relname": "arcanecircle-sector13-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-snake",
     "tag_name": "v1.3.0",
     "url": "https://github.com/ArcaneCircle/snake/releases/download/v1.3.0/app.xdc",
     "date": "2024-12-14T19:47:52Z",
-    "description": "نسخهٔ کلاسیک Snake.\nغذا بخورید، بزرگ شوید و مراقب باشید خودتان را نخورید.",
+    "description": "نسخه کلاسیک Snake.\nغذا بخورید، بزرگ شوید و مراقب باشید خودتان را نخورید.",
     "source_code_url": "https://github.com/ArcaneCircle/snake",
     "name": "Snake",
     "category": "game",
     "cache_relname": "arcanecircle-snake-v1.3.0.xdc",
     "size": 43556,
-    "icon_relname": "arcanecircle-snake-icon.png"
+    "icon_relname": "arcanecircle-snake-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-spirit-dungeons",
@@ -660,7 +724,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-spirit-dungeons-v1.2.0.xdc",
     "size": 46514,
-    "icon_relname": "arcanecircle-spirit-dungeons-icon.png"
+    "icon_relname": "arcanecircle-spirit-dungeons-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-stolen-sword",
@@ -673,7 +738,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-stolen-sword-v1.3.0.xdc",
     "size": 17214,
-    "icon_relname": "arcanecircle-stolen-sword-icon.png"
+    "icon_relname": "arcanecircle-stolen-sword-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-sudoku",
@@ -686,7 +752,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-sudoku-v1.3.0.xdc",
     "size": 117862,
-    "icon_relname": "arcanecircle-sudoku-icon.png"
+    "icon_relname": "arcanecircle-sudoku-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-super-bunny",
@@ -699,7 +766,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-super-bunny-v0.12.0.xdc",
     "size": 19699,
-    "icon_relname": "arcanecircle-super-bunny-icon.png"
+    "icon_relname": "arcanecircle-super-bunny-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-super-castle",
@@ -712,7 +780,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-super-castle-v1.3.0.xdc",
     "size": 60234,
-    "icon_relname": "arcanecircle-super-castle-icon.png"
+    "icon_relname": "arcanecircle-super-castle-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-takuzu",
@@ -725,7 +794,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-takuzu-v2.2.0.xdc",
     "size": 124587,
-    "icon_relname": "arcanecircle-takuzu-icon.png"
+    "icon_relname": "arcanecircle-takuzu-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-templarsfinalstand",
@@ -738,7 +808,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-templarsfinalstand-v0.4.0.xdc",
     "size": 63006,
-    "icon_relname": "arcanecircle-templarsfinalstand-icon.png"
+    "icon_relname": "arcanecircle-templarsfinalstand-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-terraformers",
@@ -751,7 +822,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-terraformers-v2.2.0.xdc",
     "size": 83059,
-    "icon_relname": "arcanecircle-terraformers-icon.png"
+    "icon_relname": "arcanecircle-terraformers-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-tetris",
@@ -764,7 +836,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-tetris-v2.3.0.xdc",
     "size": 106979,
-    "icon_relname": "arcanecircle-tetris-icon.png"
+    "icon_relname": "arcanecircle-tetris-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-textcards",
@@ -777,7 +850,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-textcards-v0.6.0.xdc",
     "size": 58884,
-    "icon_relname": "arcanecircle-textcards-icon.png"
+    "icon_relname": "arcanecircle-textcards-icon.png",
+    "group": "social"
   },
   {
     "app_id": "arcanecircle-the-cube",
@@ -790,20 +864,22 @@
     "category": "game",
     "cache_relname": "arcanecircle-the-cube-v1.3.0.xdc",
     "size": 227561,
-    "icon_relname": "arcanecircle-the-cube-icon.png"
+    "icon_relname": "arcanecircle-the-cube-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-tiny-yurts",
     "tag_name": "v1.2.0",
     "url": "https://github.com/ArcaneCircle/tiny-yurts/releases/download/v1.2.0/app.xdc",
     "date": "2024-12-13T21:00:22Z",
-    "description": "بازی شبیه‌ساز مزرعه کوچک.\nچادرها (Yurt) را به مزارع وصل کنید!\nضربه‌بزنید و بکشید تا مسیرها را بسازید. در موبایل، بازی در حالت افقی اکیداً توصیه می‌شود.",
+    "description": "بازی شبیه‌ساز مزرعه کوچک.\nچادرها (Yurt) را به مزارع وصل کنید!\nضربه‌بزنید و بکشید تا مسیرها را بسازید. در موبایل، بازی در حالت افقی اکیدا توصیه می‌شود.",
     "source_code_url": "https://github.com/ArcaneCircle/tiny-yurts",
     "name": "Tiny Yurts",
     "category": "game",
     "cache_relname": "arcanecircle-tiny-yurts-v1.2.0.xdc",
     "size": 60616,
-    "icon_relname": "arcanecircle-tiny-yurts-icon.png"
+    "icon_relname": "arcanecircle-tiny-yurts-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-triska",
@@ -816,7 +892,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-triska-v2.2.0.xdc",
     "size": 50617,
-    "icon_relname": "arcanecircle-triska-icon.png"
+    "icon_relname": "arcanecircle-triska-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-whack-a-ninja",
@@ -829,20 +906,22 @@
     "category": "game",
     "cache_relname": "arcanecircle-whack-a-ninja-v1.2.0.xdc",
     "size": 43571,
-    "icon_relname": "arcanecircle-whack-a-ninja-icon.png"
+    "icon_relname": "arcanecircle-whack-a-ninja-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-wonster",
     "tag_name": "v3.3.0",
     "url": "https://github.com/ArcaneCircle/wonster/releases/download/v3.3.0/wonster.xdc",
     "date": "2024-12-13T21:03:39Z",
-    "description": "پازل کلمه روزانه.\nانسان‌ها قبلاً با هیولاها می‌جنگیدند، اما دوست شدن با آن‌ها کاربردی‌تر شد.\nبرای دوستی با هیولا باید کلمه موردعلاقه‌اش را حدس بزنید.",
+    "description": "پازل کلمه روزانه.\nانسان‌ها قبلا با هیولاها می‌جنگیدند، اما دوست شدن با آن‌ها کاربردی‌تر شد.\nبرای دوستی با هیولا باید کلمه موردعلاقه‌اش را حدس بزنید.",
     "source_code_url": "https://github.com/ArcaneCircle/wonster",
     "name": "Wonster",
     "category": "game",
     "cache_relname": "arcanecircle-wonster-v3.3.0.xdc",
     "size": 324795,
-    "icon_relname": "arcanecircle-wonster-icon.png"
+    "icon_relname": "arcanecircle-wonster-icon.png",
+    "group": "board"
   },
   {
     "app_id": "r10s-pac-1d",
@@ -855,7 +934,8 @@
     "category": "game",
     "cache_relname": "r10s-pac-1d-1.1.0.xdc",
     "size": 192893,
-    "icon_relname": "r10s-pac-1d-icon.png"
+    "icon_relname": "r10s-pac-1d-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-2048",
@@ -868,7 +948,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-2048-v2.4.0.xdc",
     "size": 37139,
-    "icon_relname": "arcanecircle-2048-icon.png"
+    "icon_relname": "arcanecircle-2048-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-draw",
@@ -881,7 +962,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-draw-v3.4.0.xdc",
     "size": 46629,
-    "icon_relname": "arcanecircle-draw-icon.png"
+    "icon_relname": "arcanecircle-draw-icon.png",
+    "group": "create"
   },
   {
     "app_id": "arcanecircle-stackup",
@@ -894,7 +976,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-stackup-v1.3.1.xdc",
     "size": 344040,
-    "icon_relname": "arcanecircle-stackup-icon.png"
+    "icon_relname": "arcanecircle-stackup-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "r10s-hextris",
@@ -907,7 +990,8 @@
     "category": "game",
     "cache_relname": "r10s-hextris-1.4.0.xdc",
     "size": 55931,
-    "icon_relname": "r10s-hextris-icon.png"
+    "icon_relname": "r10s-hextris-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "r10s-packabunchas",
@@ -920,7 +1004,8 @@
     "category": "game",
     "cache_relname": "r10s-packabunchas-1.0.0.xdc",
     "size": 21099,
-    "icon_relname": "r10s-packabunchas-icon.png"
+    "icon_relname": "r10s-packabunchas-icon.png",
+    "group": "board"
   },
   {
     "app_id": "r10s-tower-builder",
@@ -933,7 +1018,8 @@
     "category": "game",
     "cache_relname": "r10s-tower-builder-1.1.1.xdc",
     "size": 524638,
-    "icon_relname": "r10s-tower-builder-icon.png"
+    "icon_relname": "r10s-tower-builder-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "s427-marl",
@@ -946,7 +1032,8 @@
     "category": "tool",
     "cache_relname": "s427-marl-v2.13.xdc",
     "size": 129986,
-    "icon_relname": "s427-marl-icon.png"
+    "icon_relname": "s427-marl-icon.png",
+    "group": "media"
   },
   {
     "app_id": "arcanecircle-tictactoe",
@@ -959,7 +1046,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-tictactoe-v2.2.0.xdc",
     "size": 7373,
-    "icon_relname": "arcanecircle-tictactoe-icon.png"
+    "icon_relname": "arcanecircle-tictactoe-icon.png",
+    "group": "board"
   },
   {
     "app_id": "simon-timetracking",
@@ -972,7 +1060,8 @@
     "category": "tool",
     "cache_relname": "simon-timetracking-v0.10.1.xdc",
     "size": 216219,
-    "icon_relname": "simon-timetracking-icon.png"
+    "icon_relname": "simon-timetracking-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "arcanecircle-screen-message",
@@ -985,7 +1074,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-screen-message-v1.0.0.xdc",
     "size": 24340,
-    "icon_relname": "arcanecircle-screen-message-icon.png"
+    "icon_relname": "arcanecircle-screen-message-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "rtn-totp",
@@ -998,7 +1088,8 @@
     "category": "tool",
     "cache_relname": "rtn-totp-v1.1.0.xdc",
     "size": 99042,
-    "icon_relname": "rtn-totp-icon.png"
+    "icon_relname": "rtn-totp-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "arcanecircle-minesweeper",
@@ -1011,7 +1102,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-minesweeper-v1.0.1.xdc",
     "size": 16964,
-    "icon_relname": "arcanecircle-minesweeper-icon.png"
+    "icon_relname": "arcanecircle-minesweeper-icon.png",
+    "group": "board"
   },
   {
     "app_id": "rtn-decker",
@@ -1024,7 +1116,8 @@
     "category": "tool",
     "cache_relname": "rtn-decker-v1.5.0.xdc",
     "size": 179332,
-    "icon_relname": "rtn-decker-icon.png"
+    "icon_relname": "rtn-decker-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "guile-hoot-meta-repl",
@@ -1037,7 +1130,8 @@
     "category": "tool",
     "cache_relname": "guile-hoot-meta-repl-0.2.0.xdc",
     "size": 362474,
-    "icon_relname": "guile-hoot-meta-repl-icon.png"
+    "icon_relname": "guile-hoot-meta-repl-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "r10s-asc-to-vcard",
@@ -1050,7 +1144,8 @@
     "category": "tool",
     "cache_relname": "r10s-asc-to-vcard-1.0.1.xdc",
     "size": 5148,
-    "icon_relname": "r10s-asc-to-vcard-icon.png"
+    "icon_relname": "r10s-asc-to-vcard-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "r10s-congrats",
@@ -1063,7 +1158,8 @@
     "category": "tool",
     "cache_relname": "r10s-congrats-1.0.1.xdc",
     "size": 14990,
-    "icon_relname": "r10s-congrats-icon.png"
+    "icon_relname": "r10s-congrats-icon.png",
+    "group": "social"
   },
   {
     "app_id": "dice-box",
@@ -1076,7 +1172,8 @@
     "category": "tool",
     "cache_relname": "dice-box-v2.0.1.xdc",
     "size": 2715744,
-    "icon_relname": "dice-box-icon.png"
+    "icon_relname": "dice-box-icon.png",
+    "group": "social"
   },
   {
     "app_id": "arcanecircle-babeldungeon",
@@ -1089,7 +1186,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-v3.7.0.xdc",
     "size": 3058793,
-    "icon_relname": "arcanecircle-babeldungeon-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "durian-rain",
@@ -1102,7 +1200,8 @@
     "category": "tool",
     "cache_relname": "durian-rain-v1.15.xdc",
     "size": 543228,
-    "icon_relname": "durian-rain-icon.png"
+    "icon_relname": "durian-rain-icon.png",
+    "group": "health"
   },
   {
     "app_id": "durian-realtime-editor",
@@ -1115,7 +1214,8 @@
     "category": "tool",
     "cache_relname": "durian-realtime-editor-v4.0.4.xdc",
     "size": 179201,
-    "icon_relname": "durian-realtime-editor-icon.png"
+    "icon_relname": "durian-realtime-editor-icon.png",
+    "group": "create"
   },
   {
     "app_id": "durian-splitbill",
@@ -1128,7 +1228,8 @@
     "category": "tool",
     "cache_relname": "durian-splitbill-1.2.xdc",
     "size": 66920,
-    "icon_relname": "durian-splitbill-icon.png"
+    "icon_relname": "durian-splitbill-icon.png",
+    "group": "biz"
   },
   {
     "app_id": "durian-todolist",
@@ -1141,7 +1242,8 @@
     "category": "tool",
     "cache_relname": "durian-todolist-v0.0.9.xdc",
     "size": 125697,
-    "icon_relname": "durian-todolist-icon.png"
+    "icon_relname": "durian-todolist-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "durian-river",
@@ -1154,7 +1256,8 @@
     "category": "tool",
     "cache_relname": "durian-river-v1.xdc",
     "size": 592942,
-    "icon_relname": "durian-river-icon.png"
+    "icon_relname": "durian-river-icon.png",
+    "group": "health"
   },
   {
     "app_id": "arcanecircle-babeldungeon-de-es",
@@ -1167,7 +1270,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-de-es-v3.7.0.xdc",
     "size": 2444956,
-    "icon_relname": "arcanecircle-babeldungeon-de-es-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-de-es-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "arcanecircle-babeldungeon-eo-en",
@@ -1180,7 +1284,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-eo-en-v3.7.0.xdc",
     "size": 2920974,
-    "icon_relname": "arcanecircle-babeldungeon-eo-en-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-eo-en-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "arcanecircle-babeldungeon-fr-en",
@@ -1193,7 +1298,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-fr-en-v3.7.0.xdc",
     "size": 2800463,
-    "icon_relname": "arcanecircle-babeldungeon-fr-en-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-fr-en-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "arcanecircle-babeldungeon-it-en",
@@ -1206,7 +1312,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-it-en-v3.7.0.xdc",
     "size": 1923949,
-    "icon_relname": "arcanecircle-babeldungeon-it-en-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-it-en-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "arcanecircle-babeldungeon-jp-en",
@@ -1219,7 +1326,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-jp-en-v3.7.0.xdc",
     "size": 2806041,
-    "icon_relname": "arcanecircle-babeldungeon-jp-en-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-jp-en-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "arcanecircle-babeldungeon-pt-en",
@@ -1232,7 +1340,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-pt-en-v3.6.0.xdc",
     "size": 2550434,
-    "icon_relname": "arcanecircle-babeldungeon-pt-en-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-pt-en-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "wofwca-quake3",
@@ -1245,20 +1354,22 @@
     "category": "game",
     "cache_relname": "wofwca-quake3-v4.0.3.xdc",
     "size": 5823965,
-    "icon_relname": "wofwca-quake3-icon.png"
+    "icon_relname": "wofwca-quake3-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-filesync",
     "tag_name": "v0.1.0",
     "url": "https://github.com/ArcaneCircle/filesync/releases/download/v0.1.0/app.xdc",
     "date": "2025-05-28T19:04:30Z",
-    "description": "همگام‌سازی فایل P2P.\nفایل‌ها را مستقیماً و هم‌زمان بین دستگاه‌های خود یا دوستان در چت همگام‌سازی کنید.",
+    "description": "همگام‌سازی فایل P2P.\nفایل‌ها را مستقیما و هم‌زمان بین دستگاه‌های خود یا دوستان در چت همگام‌سازی کنید.",
     "source_code_url": "https://github.com/ArcaneCircle/filesync",
     "name": "File Sync",
     "category": "tool",
     "cache_relname": "arcanecircle-filesync-v0.1.0.xdc",
     "size": 50860,
-    "icon_relname": "arcanecircle-filesync-icon.png"
+    "icon_relname": "arcanecircle-filesync-icon.png",
+    "group": "media"
   },
   {
     "app_id": "durian-moments",
@@ -1271,7 +1382,8 @@
     "category": "tool",
     "cache_relname": "durian-moments-0.2.30.1.xdc",
     "size": 103402,
-    "icon_relname": "durian-moments-icon.png"
+    "icon_relname": "durian-moments-icon.png",
+    "group": "social"
   },
   {
     "app_id": "arcanecircle-ruffle",
@@ -1284,7 +1396,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-ruffle-v1.0.0.xdc",
     "size": 4787347,
-    "icon_relname": "arcanecircle-ruffle-icon.png"
+    "icon_relname": "arcanecircle-ruffle-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "maplediss-quiet-journal",
@@ -1297,7 +1410,8 @@
     "category": "tool",
     "cache_relname": "maplediss-quiet-journal-1.1.xdc",
     "size": 138233,
-    "icon_relname": "maplediss-quiet-journal-icon.png"
+    "icon_relname": "maplediss-quiet-journal-icon.png",
+    "group": "social"
   },
   {
     "app_id": "durian-colors",
@@ -1310,7 +1424,8 @@
     "category": "tool",
     "cache_relname": "durian-colors-0.1.17.xdc",
     "size": 101468,
-    "icon_relname": "durian-colors-icon.png"
+    "icon_relname": "durian-colors-icon.png",
+    "group": "create"
   },
   {
     "app_id": "memory-blocks",
@@ -1323,7 +1438,8 @@
     "category": "game",
     "cache_relname": "memory-blocks-v0.0.1.xdc",
     "size": 59388,
-    "icon_relname": "memory-blocks-icon.png"
+    "icon_relname": "memory-blocks-icon.png",
+    "group": "board"
   },
   {
     "app_id": "arcanecircle-babeldungeon-en-es",
@@ -1336,7 +1452,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-babeldungeon-en-es-v3.7.0.xdc",
     "size": 2904832,
-    "icon_relname": "arcanecircle-babeldungeon-en-es-icon.png"
+    "icon_relname": "arcanecircle-babeldungeon-en-es-icon.png",
+    "group": "learn"
   },
   {
     "app_id": "arcanecircle-crashdown",
@@ -1349,7 +1466,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-crashdown-v1.0.0.xdc",
     "size": 6758,
-    "icon_relname": "arcanecircle-crashdown-icon.png"
+    "icon_relname": "arcanecircle-crashdown-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "webxdc-calc",
@@ -1362,7 +1480,8 @@
     "category": "tool",
     "cache_relname": "webxdc-calc-v1.0.xdc",
     "size": 869456,
-    "icon_relname": "webxdc-calc-icon.png"
+    "icon_relname": "webxdc-calc-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "arcanecircle-pixel-dungeon",
@@ -1375,7 +1494,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-pixel-dungeon-v1.5.0.xdc",
     "size": 3264230,
-    "icon_relname": "arcanecircle-pixel-dungeon-icon.png"
+    "icon_relname": "arcanecircle-pixel-dungeon-icon.png",
+    "group": "board"
   },
   {
     "app_id": "the-wandering-wraith",
@@ -1388,20 +1508,22 @@
     "category": "game",
     "cache_relname": "the-wandering-wraith-v1.0.2.xdc",
     "size": 29459,
-    "icon_relname": "the-wandering-wraith-icon.jpg"
+    "icon_relname": "the-wandering-wraith-icon.jpg",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-pixelsocial",
     "tag_name": "v0.14.0",
     "url": "https://github.com/ArcaneCircle/pixelsocial/releases/download/v0.14.0/app.xdc",
     "date": "2025-12-24T19:26:05Z",
-    "description": "شبکه اجتماعی خصوصی و پیکسلی.\nبدون نیاز به سرور، یک شبکه اجتماعی کاملاً خصوصی با اعضای گروه داشته باشید!",
+    "description": "شبکه اجتماعی خصوصی و پیکسلی.\nبدون نیاز به سرور، یک شبکه اجتماعی کاملا خصوصی با اعضای گروه داشته باشید!",
     "source_code_url": "https://github.com/ArcaneCircle/pixelsocial",
     "name": "PixelSocial",
     "category": "tool",
     "cache_relname": "arcanecircle-pixelsocial-v0.14.0.xdc",
     "size": 124882,
-    "icon_relname": "arcanecircle-pixelsocial-icon.png"
+    "icon_relname": "arcanecircle-pixelsocial-icon.png",
+    "group": "social"
   },
   {
     "app_id": "arcanecircle-workitout",
@@ -1414,7 +1536,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-workitout-v1.6.0.xdc",
     "size": 95368,
-    "icon_relname": "arcanecircle-workitout-icon.png"
+    "icon_relname": "arcanecircle-workitout-icon.png",
+    "group": "health"
   },
   {
     "app_id": "muslim-prayer-times",
@@ -1427,7 +1550,8 @@
     "category": "tool",
     "cache_relname": "muslim-prayer-times-v0.8.0.xdc",
     "size": 124107,
-    "icon_relname": "muslim-prayer-times-icon.png"
+    "icon_relname": "muslim-prayer-times-icon.png",
+    "group": "poetry"
   },
   {
     "app_id": "bespinas-conviu",
@@ -1440,7 +1564,8 @@
     "category": "tool",
     "cache_relname": "bespinas-conviu-v1.0.0.xdc",
     "size": 39926,
-    "icon_relname": "bespinas-conviu-icon.png"
+    "icon_relname": "bespinas-conviu-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "hupf-shopping-list",
@@ -1453,7 +1578,8 @@
     "category": "tool",
     "cache_relname": "hupf-shopping-list-v1.4.xdc",
     "size": 253592,
-    "icon_relname": "hupf-shopping-list-icon.png"
+    "icon_relname": "hupf-shopping-list-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "jooray-d21poll",
@@ -1466,7 +1592,8 @@
     "category": "tool",
     "cache_relname": "jooray-d21poll-v1.0.xdc",
     "size": 21392,
-    "icon_relname": "jooray-d21poll-icon.png"
+    "icon_relname": "jooray-d21poll-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "simon-event-planner",
@@ -1479,7 +1606,8 @@
     "category": "tool",
     "cache_relname": "simon-event-planner-v0.0.0.xdc",
     "size": 264584,
-    "icon_relname": "simon-event-planner-icon.jpg"
+    "icon_relname": "simon-event-planner-icon.jpg",
+    "group": "plan"
   },
   {
     "app_id": "zerosum-table",
@@ -1492,7 +1620,8 @@
     "category": "tool",
     "cache_relname": "zerosum-table-v1.0.xdc",
     "size": 46591,
-    "icon_relname": "zerosum-table-icon.png"
+    "icon_relname": "zerosum-table-icon.png",
+    "group": "biz"
   },
   {
     "app_id": "durian-time",
@@ -1505,7 +1634,8 @@
     "category": "tool",
     "cache_relname": "durian-time-0.2.11.3.xdc",
     "size": 100784,
-    "icon_relname": "durian-time-icon.png"
+    "icon_relname": "durian-time-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "bespinas-divvy-bill",
@@ -1518,7 +1648,8 @@
     "category": "tool",
     "cache_relname": "bespinas-divvy-bill-v1.0.0.xdc",
     "size": 50932,
-    "icon_relname": "bespinas-divvy-bill-icon.png"
+    "icon_relname": "bespinas-divvy-bill-icon.png",
+    "group": "biz"
   },
   {
     "app_id": "image-album",
@@ -1531,7 +1662,8 @@
     "category": "tool",
     "cache_relname": "image-album-1.4.xdc",
     "size": 2344212,
-    "icon_relname": "image-album-icon.png"
+    "icon_relname": "image-album-icon.png",
+    "group": "media"
   },
   {
     "app_id": "arcanecircle-dogspinner",
@@ -1544,7 +1676,8 @@
     "category": "game",
     "cache_relname": "arcanecircle-dogspinner-v0.1.0.xdc",
     "size": 2335139,
-    "icon_relname": "arcanecircle-dogspinner-icon.png"
+    "icon_relname": "arcanecircle-dogspinner-icon.png",
+    "group": "arcade"
   },
   {
     "app_id": "arcanecircle-yo",
@@ -1557,7 +1690,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-yo-v1.0.0.xdc",
     "size": 24217,
-    "icon_relname": "arcanecircle-yo-icon.png"
+    "icon_relname": "arcanecircle-yo-icon.png",
+    "group": "social"
   },
   {
     "app_id": "arcanecircle-tic80",
@@ -1570,7 +1704,8 @@
     "category": "tool",
     "cache_relname": "arcanecircle-tic80-v1.2.0-beta.xdc",
     "size": 2302527,
-    "icon_relname": "arcanecircle-tic80-icon.png"
+    "icon_relname": "arcanecircle-tic80-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "ms702-traero",
@@ -1583,7 +1718,8 @@
     "category": "tool",
     "cache_relname": "ms702-traero-v0.8.13.xdc",
     "size": 49692,
-    "icon_relname": "ms702-traero-icon.png"
+    "icon_relname": "ms702-traero-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "ms702-v86emu",
@@ -1596,7 +1732,8 @@
     "category": "tool",
     "cache_relname": "ms702-v86emu-v0.8.1.xdc",
     "size": 679162,
-    "icon_relname": "ms702-v86emu-icon.png"
+    "icon_relname": "ms702-v86emu-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "davidsm10-crypto-whisper",
@@ -1609,7 +1746,8 @@
     "category": "tool",
     "cache_relname": "davidsm10-crypto-whisper-v1.2.0.xdc",
     "size": 18692,
-    "icon_relname": "davidsm10-crypto-whisper-icon.png"
+    "icon_relname": "davidsm10-crypto-whisper-icon.png",
+    "group": "media"
   },
   {
     "app_id": "davidsm10-cryptotext",
@@ -1622,7 +1760,8 @@
     "category": "tool",
     "cache_relname": "davidsm10-cryptotext-v3.2.1.xdc",
     "size": 13408,
-    "icon_relname": "davidsm10-cryptotext-icon.png"
+    "icon_relname": "davidsm10-cryptotext-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "davidsm10-email-composer",
@@ -1635,7 +1774,8 @@
     "category": "tool",
     "cache_relname": "davidsm10-email-composer-v1.3.4.xdc",
     "size": 193415,
-    "icon_relname": "davidsm10-email-composer-icon.png"
+    "icon_relname": "davidsm10-email-composer-icon.png",
+    "group": "media"
   },
   {
     "app_id": "davidsm10-poll",
@@ -1648,7 +1788,8 @@
     "category": "tool",
     "cache_relname": "davidsm10-poll-v1.3.xdc",
     "size": 35623,
-    "icon_relname": "davidsm10-poll-icon.png"
+    "icon_relname": "davidsm10-poll-icon.png",
+    "group": "plan"
   },
   {
     "app_id": "davidsm10-sharer",
@@ -1661,7 +1802,8 @@
     "category": "tool",
     "cache_relname": "davidsm10-sharer-v2.3.0.xdc",
     "size": 39356,
-    "icon_relname": "davidsm10-sharer-icon.png"
+    "icon_relname": "davidsm10-sharer-icon.png",
+    "group": "media"
   },
   {
     "app_id": "davidsm10-webxdc-code-playground",
@@ -1674,7 +1816,8 @@
     "category": "tool",
     "cache_relname": "davidsm10-webxdc-code-playground-v0.3.0.xdc",
     "size": 1968692,
-    "icon_relname": "davidsm10-webxdc-code-playground-icon.png"
+    "icon_relname": "davidsm10-webxdc-code-playground-icon.png",
+    "group": "dev"
   },
   {
     "app_id": "realtime-chat",
@@ -1687,7 +1830,8 @@
     "category": "tool",
     "cache_relname": "realtime-chat-1.1.xdc",
     "size": 2371391,
-    "icon_relname": "realtime-chat-icon.png"
+    "icon_relname": "realtime-chat-icon.png",
+    "group": "media"
   },
   {
     "app_id": "link2xt-skedz",
@@ -1700,6 +1844,1911 @@
     "category": "tool",
     "cache_relname": "link2xt-skedz-v1.xdc",
     "size": 580081,
-    "icon_relname": "link2xt-skedz-icon.png"
+    "icon_relname": "link2xt-skedz-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "experintellia-md-docs",
+    "tag_name": "v0.4.0",
+    "url": "https://github.com/experintellia/md-docs/releases/download/v0.4.0/md-docs.xdc",
+    "date": "2026-10-14T00:12:05Z",
+    "description": "ویرایشگر مارک‌داون گروهی، شبیه Obsidian.\nیک متن مشترک را در چت می‌نویسید و بخش‌بندی می‌کنید.",
+    "source_code_url": "https://github.com/experintellia/md-docs",
+    "name": "MD-Docs",
+    "category": "tool",
+    "cache_relname": "experintellia-md-docs-v0.4.0.xdc",
+    "size": 462403,
+    "icon_relname": "experintellia-md-docs-icon.png",
+    "group": "create"
+  },
+  {
+    "app_id": "yosvanyalain-creator-studio",
+    "tag_name": "v3.0.0",
+    "url": "https://github.com/YosvanyAlain/creator-studio/releases/download/v3.0.0/creator-studio.xdc",
+    "date": "2026-10-15T07:48:14Z",
+    "description": "ساخت مینی‌اپ داخل چت، با بلوک یا با کد.\nقالب را عوض می‌کنید، همان‌جا با چند نفر امتحان می‌کنید و فایل را می‌سازید.",
+    "source_code_url": "https://github.com/YosvanyAlain/creator-studio",
+    "name": "Webxdc Creator Studio",
+    "category": "tool",
+    "cache_relname": "yosvanyalain-creator-studio-v3.0.0.xdc",
+    "size": 820760,
+    "icon_relname": "yosvanyalain-creator-studio-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "maphouse-pomodoros",
+    "tag_name": "v1.5.2",
+    "url": "https://github.com/maphouse/pomodoros/releases/download/v1.5.2/pomodoros.xdc",
+    "date": "2026-09-27T18:09:31Z",
+    "description": "تایمر پومودورو مشترک.\nگروه یک بازه تمرکز را با هم شروع می‌کند.",
+    "source_code_url": "https://github.com/maphouse/pomodoros",
+    "name": "Pomodoros",
+    "category": "tool",
+    "cache_relname": "maphouse-pomodoros-v1.5.2.xdc",
+    "size": 18820,
+    "icon_relname": "maphouse-pomodoros-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "freddi301-sondaggio-webxdc",
+    "tag_name": "v0.7.0",
+    "url": "https://github.com/freddi301/sondaggio-webxdc/releases/download/v0.7.0/sondaggio.xdc",
+    "date": "2026-09-12T21:25:23Z",
+    "description": "نظرسنجی زنده با گزینه‌های قابل ویرایش.\nرای‌ها همان موقع دیده می‌شود و گزینه‌ها را بعدا هم می‌شود عوض کرد.",
+    "source_code_url": "https://github.com/freddi301/sondaggio-webxdc",
+    "name": "Sondaggio",
+    "category": "tool",
+    "cache_relname": "freddi301-sondaggio-webxdc-v0.7.0.xdc",
+    "size": 72632,
+    "icon_relname": "freddi301-sondaggio-webxdc-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "useroqqq-spoilerapp",
+    "tag_name": "1.0.0",
+    "url": "https://github.com/useroqqq/SpoilerApp/releases/download/1.0.0/dist.xdc",
+    "date": "2026-09-01T17:17:00Z",
+    "description": "فرستادن تصویر مخفی.\nتصویر را طوری می‌فرستید که تا باز شدنش معلوم نباشد.",
+    "source_code_url": "https://github.com/useroqqq/SpoilerApp",
+    "name": "Spoiler App",
+    "category": "tool",
+    "cache_relname": "useroqqq-spoilerapp-1.0.0.xdc",
+    "size": 116964,
+    "icon_relname": "useroqqq-spoilerapp-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "befrost-ignota",
+    "tag_name": "v1.0.1",
+    "url": "https://codeberg.org/befrost/ignota/releases/download/v1.0.1/ignota.xdc",
+    "date": "2026-08-31T21:56:52Z",
+    "description": "بازی شناخت نت موسیقی.\nنت‌ها را از هم تشخیص می‌دهید.",
+    "source_code_url": "https://codeberg.org/befrost/ignota",
+    "name": "Ignota",
+    "category": "game",
+    "cache_relname": "befrost-ignota-v1.0.1.xdc",
+    "size": 121041,
+    "icon_relname": "befrost-ignota-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "maplediss-quiet-checklists",
+    "tag_name": "v1.18",
+    "url": "https://github.com/MapleDiss/quiet-checklists/releases/download/v1.18/Quiet_Checklists_1.18.xdc",
+    "date": "2026-08-29T17:16:54Z",
+    "description": "چک‌لیست شخصی یا مشترک.\nبرای هر مورد اولویت و تاریخ سررسید می‌گذارید.",
+    "source_code_url": "https://github.com/MapleDiss/quiet-checklists",
+    "name": "Quiet Checklists",
+    "category": "tool",
+    "cache_relname": "maplediss-quiet-checklists-v1.18.xdc",
+    "size": 28739,
+    "icon_relname": "maplediss-quiet-checklists-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "breisa-betterlist",
+    "tag_name": "v1.1.2",
+    "url": "https://github.com/breisa/betterlist/releases/download/v1.1.2/betterlist.xdc",
+    "date": "2026-08-28T11:43:32Z",
+    "description": "فهرست کار و خرید مشترک.\nاعضا مورد اضافه می‌کنند و انجام‌شده را تیک می‌زنند.",
+    "source_code_url": "https://github.com/breisa/betterlist",
+    "name": "BetterList",
+    "category": "tool",
+    "cache_relname": "breisa-betterlist-v1.1.2.xdc",
+    "size": 32702,
+    "icon_relname": "breisa-betterlist-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "davidsm10-docs-browser",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/davidsm10/docs-browser/releases/download/v1.0.0/app.xdc",
+    "date": "2026-08-21T21:07:12Z",
+    "description": "مرورگر آفلاین مستندات وب و WebXDC.\nراهنماها را داخل چت و بدون اینترنت باز می‌کنید.",
+    "source_code_url": "https://github.com/davidsm10/docs-browser",
+    "name": "Docs browser",
+    "category": "tool",
+    "cache_relname": "davidsm10-docs-browser-v1.0.0.xdc",
+    "size": 8887125,
+    "icon_relname": "davidsm10-docs-browser-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "maplediss-quiet-bible-reader",
+    "tag_name": "v1.2",
+    "url": "https://github.com/MapleDiss/quiet-bible-reader/releases/download/v1.2/Quiet_Bible_Reader_1.2_GitHub_Release.xdc",
+    "date": "2026-07-26T19:27:45Z",
+    "description": "مطالعه آفلاین کتاب مقدس، با یادداشت.\nمتن را بدون اینترنت می‌خوانید و برای خودتان یادداشت می‌گذارید.",
+    "source_code_url": "https://github.com/MapleDiss/quiet-bible-reader",
+    "name": "Quiet Bible Reader",
+    "category": "tool",
+    "cache_relname": "maplediss-quiet-bible-reader-v1.2.xdc",
+    "size": 2975204,
+    "icon_relname": "maplediss-quiet-bible-reader-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "mestermim-delta-dots-boxes",
+    "tag_name": "1.0.1",
+    "url": "https://github.com/MesterMiM/delta-dots-boxes/releases/download/1.0.1/dots-boxes.xdc",
+    "date": "2026-07-26T09:25:32Z",
+    "description": "بازی نقطه و خط.\nنوبتی خط می‌کشید تا مربع را ببندید.",
+    "source_code_url": "https://github.com/MesterMiM/delta-dots-boxes",
+    "name": "Dots and Boxes",
+    "category": "game",
+    "cache_relname": "mestermim-delta-dots-boxes-1.0.1.xdc",
+    "size": 773500,
+    "icon_relname": "mestermim-delta-dots-boxes-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "mestermim-delta-favorite-player",
+    "tag_name": "1.0.0",
+    "url": "https://github.com/MesterMiM/Delta-Favorite-Player/releases/download/1.0.0/Favorite-Player.xdc",
+    "date": "2026-07-26T08:55:56Z",
+    "description": "پخش‌کننده آهنگ با اکولایزر و فهرست پخش.\nآهنگ را روی همین دستگاه پخش می‌کنید و آهنگ‌های محبوب را در چت می‌گذارید.",
+    "source_code_url": "https://github.com/MesterMiM/Delta-Favorite-Player",
+    "name": "Favorite Player",
+    "category": "tool",
+    "cache_relname": "mestermim-delta-favorite-player-1.0.0.xdc",
+    "size": 2236943,
+    "icon_relname": "mestermim-delta-favorite-player-icon.png",
+    "group": "media"
+  },
+  {
+    "app_id": "mestermim-delta-scientific-calculator",
+    "tag_name": "1.0.1",
+    "url": "https://github.com/MesterMiM/Delta-Scientific-Calculator/releases/download/1.0.1/Scientific-Calculator.xdc",
+    "date": "2026-07-22T07:38:41Z",
+    "description": "ماشین‌حساب علمی با تاریخچه محاسبه.\nنتیجه را به‌صورت متن یا تصویر در چت می‌فرستید.",
+    "source_code_url": "https://github.com/MesterMiM/Delta-Scientific-Calculator",
+    "name": "Scientific Calculator",
+    "category": "tool",
+    "cache_relname": "mestermim-delta-scientific-calculator-1.0.1.xdc",
+    "size": 249214,
+    "icon_relname": "mestermim-delta-scientific-calculator-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "experintellia-ordered-shopping-list",
+    "tag_name": "v0.4.0",
+    "url": "https://github.com/experintellia/ordered-shopping-list/releases/download/v0.4.0/app.xdc",
+    "date": "2026-07-20T19:14:27Z",
+    "description": "فهرست خرید بر اساس راهروی فروشگاه.\nاقلام را به ترتیب قفسه می‌چینید.",
+    "source_code_url": "https://github.com/experintellia/ordered-shopping-list",
+    "name": "Grocery Board",
+    "category": "tool",
+    "cache_relname": "experintellia-ordered-shopping-list-v0.4.0.xdc",
+    "size": 107877,
+    "icon_relname": "experintellia-ordered-shopping-list-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "jloima-mirkutin",
+    "tag_name": "v1.0.0",
+    "url": "https://codeberg.org/jloima/mirkutin/releases/download/v1.0.0/mirkutin.xdc",
+    "date": "2026-07-02T21:59:15Z",
+    "description": "بازی تک‌نفره پروانه.\nپروانه را در مسیر بازی هدایت می‌کنید.",
+    "source_code_url": "https://codeberg.org/jloima/mirkutin",
+    "name": "Mirkutin",
+    "category": "game",
+    "cache_relname": "jloima-mirkutin-v1.0.0.xdc",
+    "size": 282640,
+    "icon_relname": "jloima-mirkutin-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "audiodude-crate-diggers",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/audiodude/crate-diggers/releases/download/v1.0.0/crate-diggers.xdc",
+    "date": "2026-06-27T14:49:42Z",
+    "description": "حدس سلیقه موسیقی دوستان.\nاز روی سرنخ‌ها حدس می‌زنید هر کس چه سبکی گوش می‌دهد.",
+    "source_code_url": "https://github.com/audiodude/crate-diggers",
+    "name": "Crate Diggers",
+    "category": "game",
+    "cache_relname": "audiodude-crate-diggers-v1.0.0.xdc",
+    "size": 1960884,
+    "icon_relname": "audiodude-crate-diggers-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "canteen-featherwiki-webxdc",
+    "tag_name": "1.0",
+    "url": "https://codeberg.org/canteen/featherwiki--webxdc/releases/download/1.0/FeatherWiki.xdc",
+    "date": "2026-06-21T17:00:32Z",
+    "description": "ویکی کوچک داخل چت.\nصفحه می‌سازید و با اعضای گروه شریک می‌شوید.",
+    "source_code_url": "https://codeberg.org/canteen/featherwiki--webxdc",
+    "name": "FeatherWiki",
+    "category": "tool",
+    "cache_relname": "canteen-featherwiki-webxdc-1.0.xdc",
+    "size": 32588,
+    "icon_relname": "canteen-featherwiki-webxdc-icon.png",
+    "group": "create"
+  },
+  {
+    "app_id": "pea-webxdcfishing",
+    "tag_name": "v1.3.4",
+    "url": "https://codeberg.org/pea/webxdcfishing/releases/download/v1.3.4/webxdcfishing.xdc",
+    "date": "2026-06-16T18:30:07Z",
+    "description": "ماهیگیری سه‌بعدی چندنفره.\nبا هم ماهی می‌گیرید. این نسخه هنوز کامل نشده.",
+    "source_code_url": "https://codeberg.org/pea/webxdcfishing",
+    "name": "webxdcfishing",
+    "category": "game",
+    "cache_relname": "pea-webxdcfishing-v1.3.4.xdc",
+    "size": 1814351,
+    "icon_relname": "pea-webxdcfishing-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "zalexanninev15-kojios-xdc",
+    "tag_name": "v2.0-port",
+    "url": "https://codeberg.org/Zalexanninev15/KojiOS-XDC/releases/download/v2.0-port/KojiOS.xdc",
+    "date": "2026-06-11T16:12:54Z",
+    "description": "ترمینال وب با چند ابزار.\nدستورها را داخل چت اجرا می‌کنید.",
+    "source_code_url": "https://codeberg.org/Zalexanninev15/KojiOS-XDC",
+    "name": "KojiOS",
+    "category": "tool",
+    "cache_relname": "zalexanninev15-kojios-xdc-v2.0-port.xdc",
+    "size": 626373,
+    "icon_relname": "zalexanninev15-kojios-xdc-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "zalexanninev15-next-tools",
+    "tag_name": "v1.9.6",
+    "url": "https://codeberg.org/Zalexanninev15/Next-Tools/releases/download/v1.9.6/Next-Tools.xdc",
+    "date": "2026-06-11T15:17:59Z",
+    "description": "ابزارهای برنامه‌نویسی.\nچند ابزار توسعه را در یک مینی‌اپ جمع کرده است.",
+    "source_code_url": "https://codeberg.org/Zalexanninev15/Next-Tools",
+    "name": "Next-Tools",
+    "category": "tool",
+    "cache_relname": "zalexanninev15-next-tools-v1.9.6.xdc",
+    "size": 8413114,
+    "icon_relname": "zalexanninev15-next-tools-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "zalexanninev15-it-tools",
+    "tag_name": "v2024.10.22-7ca5933-r2",
+    "url": "https://codeberg.org/Zalexanninev15/IT-Tools/releases/download/v2024.10.22-7ca5933-r2/IT-Tools.xdc",
+    "date": "2026-06-11T13:52:16Z",
+    "description": "جعبه ابزار کوچک برنامه‌نویسی.\nکارهای ریز مثل تبدیل و قالب‌بندی متن را یک‌جا انجام می‌دهید.",
+    "source_code_url": "https://codeberg.org/Zalexanninev15/IT-Tools",
+    "name": "IT-Tools",
+    "category": "tool",
+    "cache_relname": "zalexanninev15-it-tools-v2024.10.22-7ca5933-r2.xdc",
+    "size": 3817713,
+    "icon_relname": "zalexanninev15-it-tools-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "arcanecircle-kleptokitty",
+    "tag_name": "v1.4.0",
+    "url": "https://github.com/ArcaneCircle/kleptokitty/releases/download/v1.4.0/app.xdc",
+    "date": "2026-05-04T20:23:36Z",
+    "description": "پازل مخفی‌کاری با گربه دزد.\nگربه را آرام و بی‌صدا جلو می‌برید.",
+    "source_code_url": "https://github.com/ArcaneCircle/kleptokitty",
+    "name": "KleptoKitty",
+    "category": "game",
+    "cache_relname": "arcanecircle-kleptokitty-v1.4.0.xdc",
+    "size": 205782,
+    "icon_relname": "arcanecircle-kleptokitty-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-balance-fish",
+    "tag_name": "v1.0.1",
+    "url": "https://github.com/ArcaneCircle/balance-fish/releases/download/v1.0.1/balance-fish.xdc",
+    "date": "2026-04-29T14:06:07Z",
+    "description": "ماجراجویی ماهی در عمق دریا.\nماهی را در دریا جلو می‌برید.",
+    "source_code_url": "https://github.com/ArcaneCircle/balance-fish",
+    "name": "Balance Fish",
+    "category": "game",
+    "cache_relname": "arcanecircle-balance-fish-v1.0.1.xdc",
+    "size": 1165793,
+    "icon_relname": "arcanecircle-balance-fish-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-sub13",
+    "tag_name": "v1.0.1",
+    "url": "https://github.com/ArcaneCircle/sub13/releases/download/v1.0.1/app.xdc",
+    "date": "2026-04-25T22:24:30Z",
+    "description": "مسابقه با فضای سایکدلیک.\nماشین را در مسیر رنگی جلو می‌برید.",
+    "source_code_url": "https://github.com/ArcaneCircle/sub13",
+    "name": "SUB13",
+    "category": "game",
+    "cache_relname": "arcanecircle-sub13-v1.0.1.xdc",
+    "size": 29685,
+    "icon_relname": "arcanecircle-sub13-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-blackcat",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/ArcaneCircle/blackcat/releases/download/v1.0.0/app.xdc",
+    "date": "2026-04-24T22:59:49Z",
+    "description": "پلتفرمر کوتاه.\nگربه سیاه را روی شیروانی داغ جلو می‌برید. هر دور حدود یک دقیقه است.",
+    "source_code_url": "https://github.com/ArcaneCircle/blackcat",
+    "name": "Black Cat on a Hot Tin Roof",
+    "category": "game",
+    "cache_relname": "arcanecircle-blackcat-v1.0.0.xdc",
+    "size": 20166,
+    "icon_relname": "arcanecircle-blackcat-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-idlenecromancer",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/ArcaneCircle/IdleNecromancer/releases/download/v1.0.0/app.xdc",
+    "date": "2026-04-24T21:13:02Z",
+    "description": "بازی idle با موضوع احضار مردگان.\nارتقایی می‌خرید و بقیه کار، حتی بدون دست زدن شما، پیش می‌رود.",
+    "source_code_url": "https://github.com/ArcaneCircle/IdleNecromancer",
+    "name": "Idle Necromancer",
+    "category": "game",
+    "cache_relname": "arcanecircle-idlenecromancer-v1.0.0.xdc",
+    "size": 13841,
+    "icon_relname": "arcanecircle-idlenecromancer-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "arcanecircle-snakes-and-ladders",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/ArcaneCircle/snakes-and-ladders/releases/download/v1.0.0/snakes-and-ladders.xdc",
+    "date": "2026-04-24T20:08:17Z",
+    "description": "پلتفرمر سریع با شخصیت Drillo.\nDrillo را جلو می‌برید تا گوی اشعه ایکس را از بین ببرد.",
+    "source_code_url": "https://github.com/ArcaneCircle/snakes-and-ladders",
+    "name": "Snakes And Ladders",
+    "category": "game",
+    "cache_relname": "arcanecircle-snakes-and-ladders-v1.0.0.xdc",
+    "size": 46515,
+    "icon_relname": "arcanecircle-snakes-and-ladders-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-just-go-straight",
+    "tag_name": "v1.1.0",
+    "url": "https://github.com/ArcaneCircle/just-go-straight/releases/download/v1.1.0/app.xdc",
+    "date": "2026-04-23T21:22:35Z",
+    "description": "پازل گنج دزدان دریایی.\nدر جزیره دنبال گنج می‌گردید.",
+    "source_code_url": "https://github.com/ArcaneCircle/just-go-straight",
+    "name": "Treasure Island",
+    "category": "game",
+    "cache_relname": "arcanecircle-just-go-straight-v1.1.0.xdc",
+    "size": 21309,
+    "icon_relname": "arcanecircle-just-go-straight-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "arcanecircle-po-12",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/ArcaneCircle/po-12/releases/download/v1.0.0/app.xdc",
+    "date": "2026-04-21T21:42:29Z",
+    "description": "شبیه‌ساز ماشین درام جیبی PO-12.\nالگوی ضرب می‌سازید و پخش می‌کنید.",
+    "source_code_url": "https://github.com/ArcaneCircle/po-12",
+    "name": "PO-12",
+    "category": "tool",
+    "cache_relname": "arcanecircle-po-12-v1.0.0.xdc",
+    "size": 509769,
+    "icon_relname": "arcanecircle-po-12-icon.png",
+    "group": "media"
+  },
+  {
+    "app_id": "arcanecircle-balance",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/ArcaneCircle/balance/releases/download/v1.0.0/app.xdc",
+    "date": "2026-04-21T21:23:29Z",
+    "description": "بازی حفظ تعادل کار و زندگی.\nچند کار را هم‌زمان جلو می‌برید تا هیچ‌کدام زمین نماند.",
+    "source_code_url": "https://github.com/ArcaneCircle/balance",
+    "name": "Work-Life Balance",
+    "category": "game",
+    "cache_relname": "arcanecircle-balance-v1.0.0.xdc",
+    "size": 2288434,
+    "icon_relname": "arcanecircle-balance-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-ricochlime",
+    "tag_name": "v1.13.1",
+    "url": "https://github.com/ArcaneCircle/ricochlime/releases/download/v1.13.1/app.xdc",
+    "date": "2026-04-19T12:47:17Z",
+    "description": "تیراندازی با گلوله کمانه‌ای.\nگلوله از دیوار برمی‌گردد و به هیولا می‌خورد.",
+    "source_code_url": "https://github.com/ArcaneCircle/ricochlime",
+    "name": "Ricochlime",
+    "category": "game",
+    "cache_relname": "arcanecircle-ricochlime-v1.13.1.xdc",
+    "size": 5020934,
+    "icon_relname": "arcanecircle-ricochlime-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-breakout71",
+    "tag_name": "v1.0.1",
+    "url": "https://github.com/ArcaneCircle/breakout71/releases/download/v1.0.1/app.xdc",
+    "date": "2026-04-16T22:26:30Z",
+    "description": "بریک‌اوت مرحله‌ای.\nآجرها را می‌شکنید و هر دور یک توانایی تازه می‌گیرید.",
+    "source_code_url": "https://github.com/ArcaneCircle/breakout71",
+    "name": "Breakout 71",
+    "category": "game",
+    "cache_relname": "arcanecircle-breakout71-v1.0.1.xdc",
+    "size": 298612,
+    "icon_relname": "arcanecircle-breakout71-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "arcanecircle-babel-dungeon-eu-en",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/ArcaneCircle/babel-dungeon-eu-en/releases/download/v1.0.0/app.xdc",
+    "date": "2026-02-25T15:09:52Z",
+    "description": "تمرین واژه باسکی و انگلیسی.\nواژه‌ها را در قالب یک بازی دخمه یاد می‌گیرید.",
+    "source_code_url": "https://github.com/ArcaneCircle/babel-dungeon-eu-en",
+    "name": "Babel Dungeon (EU/EN)",
+    "category": "game",
+    "cache_relname": "arcanecircle-babel-dungeon-eu-en-v1.0.0.xdc",
+    "size": 208651,
+    "icon_relname": "arcanecircle-babel-dungeon-eu-en-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "amzd-radio-station-webxdc",
+    "tag_name": "0.1.1",
+    "url": "https://github.com/Amzd/radio-station-webxdc/releases/download/0.1.1/app.xdc",
+    "date": "2026-04-17T17:06:47Z",
+    "description": "پخش هم‌زمان mp3 برای گروه.\nیک فایل صوتی برای همه با هم پخش می‌شود.",
+    "source_code_url": "https://github.com/Amzd/radio-station-webxdc",
+    "name": "Radio Station",
+    "category": "tool",
+    "cache_relname": "amzd-radio-station-webxdc-0.1.1.xdc",
+    "size": 126621,
+    "icon_relname": "amzd-radio-station-webxdc-icon.png",
+    "group": "media"
+  },
+  {
+    "app_id": "jooray-nowhere-webxdc",
+    "tag_name": "v0.1.0",
+    "url": "https://github.com/jooray/nowhere-webxdc/releases/download/v0.1.0/nowhere.xdc",
+    "date": "2026-04-21T19:22:04Z",
+    "description": "نمایش آفلاین صفحه‌های nowhr.xyz.\nلینک‌های nowhr را بدون اینترنت باز می‌کنید.",
+    "source_code_url": "https://github.com/jooray/nowhere-webxdc",
+    "name": "Nowhere",
+    "category": "tool",
+    "cache_relname": "jooray-nowhere-webxdc-v0.1.0.xdc",
+    "size": 439079,
+    "icon_relname": "jooray-nowhere-webxdc-icon.png",
+    "group": "media"
+  },
+  {
+    "app_id": "anedroid-webxdc-birthday-order",
+    "tag_name": "1.2.1",
+    "url": "https://codeberg.org/anedroid/webxdc-birthday-order/releases/download/1.2.1/birthday-order-1.2.1.xdc",
+    "date": "2026-04-08T18:57:43Z",
+    "description": "فهرست هدیه تولد.\nهدیه‌های گروه را یک‌جا می‌نویسید.",
+    "source_code_url": "https://codeberg.org/anedroid/webxdc-birthday-order",
+    "name": "Birthday order",
+    "category": "tool",
+    "cache_relname": "anedroid-webxdc-birthday-order-1.2.1.xdc",
+    "size": 24818,
+    "icon_relname": "anedroid-webxdc-birthday-order-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "wginolas-deltatiddly",
+    "tag_name": "v0.0.2",
+    "url": "https://codeberg.org/wginolas/deltatiddly/releases/download/v0.0.2/deltatiddly.xdc",
+    "date": "2026-04-04T10:43:07Z",
+    "description": "تیدلی‌ویکی همگام در چت.\nیادداشت‌های TiddlyWiki بین اعضا به‌روز می‌شود.",
+    "source_code_url": "https://codeberg.org/wginolas/deltatiddly",
+    "name": "DeltaTiddly",
+    "category": "tool",
+    "cache_relname": "wginolas-deltatiddly-v0.0.2.xdc",
+    "size": 545832,
+    "icon_relname": "wginolas-deltatiddly-icon.png",
+    "group": "create"
+  },
+  {
+    "app_id": "stbaeumer-meet-up",
+    "tag_name": "0.0.12",
+    "url": "https://github.com/stbaeumer/meet-up/releases/download/0.0.12/meet-up-0.0.12.xdc",
+    "date": "2026-03-28T18:32:54Z",
+    "description": "دعوت جلسه با فایل ics و لینک Jitsi.\nیک قرار می‌سازید و دعوت‌نامه تقویم را می‌گیرید.",
+    "source_code_url": "https://github.com/stbaeumer/meet-up",
+    "name": "meet up",
+    "category": "tool",
+    "cache_relname": "stbaeumer-meet-up-0.0.12.xdc",
+    "size": 127687,
+    "icon_relname": "stbaeumer-meet-up-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "davidsm10-checkers-webxdc",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/davidsm10/checkers-webxdc/releases/download/v1.0.0/app.xdc",
+    "date": "2026-03-20T20:15:58Z",
+    "description": "بازی چکرز برای دو نفر.\nنوبتی مهره‌ها را حرکت می‌دهید.",
+    "source_code_url": "https://github.com/davidsm10/checkers-webxdc",
+    "name": "Checkers",
+    "category": "game",
+    "cache_relname": "davidsm10-checkers-webxdc-v1.0.0.xdc",
+    "size": 29348,
+    "icon_relname": "davidsm10-checkers-webxdc-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "lil5-myswap",
+    "tag_name": "1.0.7",
+    "url": "https://codeberg.org/lil5/myswap/releases/download/1.0.7/myswap.xdc",
+    "date": "2026-03-17T17:05:57Z",
+    "description": "معاوضه وسیله با همسایه‌ها.\nوسیله‌ای را برای تعویض می‌گذارید و پیشنهاد دیگران را می‌بینید.",
+    "source_code_url": "https://codeberg.org/lil5/myswap",
+    "name": "My Swap",
+    "category": "tool",
+    "cache_relname": "lil5-myswap-1.0.7.xdc",
+    "size": 172743,
+    "icon_relname": "lil5-myswap-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "durian-found-ice",
+    "tag_name": "0.1.4",
+    "url": "https://codeberg.org/durian/found-ice/releases/download/0.1.4/salute.xdc",
+    "date": "2026-03-12T16:59:02Z",
+    "description": "ثبت مشاهده احتمالی ماموران ICE.\nاعضا یک مشاهده را برای همان گروه می‌نویسند.",
+    "source_code_url": "https://codeberg.org/durian/found-ice",
+    "name": "Found ICE",
+    "category": "tool",
+    "cache_relname": "durian-found-ice-0.1.4.xdc",
+    "size": 93301,
+    "icon_relname": "durian-found-ice-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "acbn-nick-webxdc-scramble",
+    "tag_name": "v1.0.4",
+    "url": "https://github.com/Acbn-Nick/webxdc-scramble/releases/download/v1.0.4/scramble.xdc",
+    "date": "2026-03-09T16:56:39Z",
+    "description": "بازی دو نفره با کاشی حرف.\nحرف‌ها را جابه‌جا می‌کنید تا کلمه ساخته شود.",
+    "source_code_url": "https://github.com/Acbn-Nick/webxdc-scramble",
+    "name": "Scramble",
+    "category": "game",
+    "cache_relname": "acbn-nick-webxdc-scramble-v1.0.4.xdc",
+    "size": 294741,
+    "icon_relname": "acbn-nick-webxdc-scramble-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "darkcat09-dclogin",
+    "tag_name": "v1.1.0",
+    "url": "https://codeberg.org/DarkCat09/dclogin/releases/download/v1.1.0/dclogin.xdc",
+    "date": "2026-02-18T19:42:45Z",
+    "description": "ساخت پیوند ورود dclogin.\nیک لینک dclogin برای ورود به Delta Chat می‌سازید.",
+    "source_code_url": "https://codeberg.org/DarkCat09/dclogin",
+    "name": "dclogin:// generator",
+    "category": "tool",
+    "cache_relname": "darkcat09-dclogin-v1.1.0.xdc",
+    "size": 11677,
+    "icon_relname": "darkcat09-dclogin-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "grzegorz-fundit",
+    "tag_name": "v1.0.1",
+    "url": "https://codeberg.org/Grzegorz/FundIt/releases/download/v1.0.1/fund-it_v1.0.1.xdc",
+    "date": "2026-02-08T20:12:10Z",
+    "description": "بازی رومیزی برای ۲ تا ۴ نفر.\nبازیکن‌ها داشته‌هایشان را با هم قسمت می‌کنند.",
+    "source_code_url": "https://codeberg.org/Grzegorz/FundIt",
+    "name": "Fund It!",
+    "category": "game",
+    "cache_relname": "grzegorz-fundit-v1.0.1.xdc",
+    "size": 125548,
+    "icon_relname": "grzegorz-fundit-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "sbkaf-wishlist",
+    "tag_name": "v1.0",
+    "url": "https://codeberg.org/sbkaf/wishlist/releases/download/v1.0/wishlist.xdc",
+    "date": "2025-12-02T17:11:01Z",
+    "description": "فهرست آرزو با رزرو هدیه.\nیک مورد را رزرو می‌کنید تا کس دیگری همان را نخرد.",
+    "source_code_url": "https://codeberg.org/sbkaf/wishlist",
+    "name": "My Wishlist",
+    "category": "tool",
+    "cache_relname": "sbkaf-wishlist-v1.0.xdc",
+    "size": 11882,
+    "icon_relname": "sbkaf-wishlist-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "experintellia-halvsies",
+    "tag_name": "v0.3.0",
+    "url": "https://github.com/experintellia/Halvsies/releases/download/v0.3.0/halvsies.xdc",
+    "date": "2026-10-14T03:34:40Z",
+    "description": "تقسیم هزینه داخل چت.\nخرج‌ها را وارد می‌کنید تا سهم هر نفر جدا شود.",
+    "source_code_url": "https://github.com/experintellia/Halvsies",
+    "name": "Halvsies",
+    "category": "tool",
+    "cache_relname": "experintellia-halvsies-v0.3.0.xdc",
+    "size": 99879,
+    "icon_relname": "experintellia-halvsies-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "alr-rashidi-dont-miss-the-lyrics-webxdc",
+    "tag_name": "v1.0",
+    "url": "https://github.com/alr-rashidi/dont-miss-the-lyrics-webxdc/releases/download/v1.0/dont-miss-the-lyrics-1.0.xdc",
+    "date": "2026-10-02T15:34:08Z",
+    "description": "چالش متن آهنگ.\nجای خالی شعر را پر می‌کنید.",
+    "source_code_url": "https://github.com/alr-rashidi/dont-miss-the-lyrics-webxdc",
+    "name": "Don't Miss the Lyrics",
+    "category": "game",
+    "cache_relname": "alr-rashidi-dont-miss-the-lyrics-webxdc-v1.0.xdc",
+    "size": 512015,
+    "icon_relname": "alr-rashidi-dont-miss-the-lyrics-webxdc-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "alr-rashidi-crab-fit-webxdc",
+    "tag_name": "v1.0",
+    "url": "https://github.com/alr-rashidi/crab-fit-webxdc/releases/download/v1.0/crab-fit-1.0.xdc",
+    "date": "2026-10-01T14:01:07Z",
+    "description": "پیدا کردن وقت مشترک برای جلسه.\nهر کس ساعت‌های آزادش را علامت می‌زند.",
+    "source_code_url": "https://github.com/alr-rashidi/crab-fit-webxdc",
+    "name": "Crab Fit",
+    "category": "tool",
+    "cache_relname": "alr-rashidi-crab-fit-webxdc-v1.0.xdc",
+    "size": 28268,
+    "icon_relname": "alr-rashidi-crab-fit-webxdc-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "alr-rashidi-md-xdc-webxdc",
+    "tag_name": "v1.0",
+    "url": "https://github.com/alr-rashidi/md-xdc-webxdc/releases/download/v1.0/md-xdc-1.0.xdc",
+    "date": "2026-10-01T10:32:51Z",
+    "description": "تبدیل یادداشت مارک‌داون به فایل xdc.\nیک متن md را به مینی‌اپ WebXDC تبدیل می‌کنید.",
+    "source_code_url": "https://github.com/alr-rashidi/md-xdc-webxdc",
+    "name": "md-xdc",
+    "category": "tool",
+    "cache_relname": "alr-rashidi-md-xdc-webxdc-v1.0.xdc",
+    "size": 57092,
+    "icon_relname": "alr-rashidi-md-xdc-webxdc-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "alr-rashidi-nonograms-webxdc",
+    "tag_name": "v1.1",
+    "url": "https://github.com/alr-rashidi/nonograms-webxdc/releases/download/v1.1/nonograms-1.1.xdc",
+    "date": "2026-09-08T16:56:44Z",
+    "description": "جدول نونوگرام.\nاز روی عددهای کنار جدول، خانه‌ها را پر می‌کنید.",
+    "source_code_url": "https://github.com/alr-rashidi/nonograms-webxdc",
+    "name": "Nonograms",
+    "category": "game",
+    "cache_relname": "alr-rashidi-nonograms-webxdc-v1.1.xdc",
+    "size": 395703,
+    "icon_relname": "alr-rashidi-nonograms-webxdc-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "alr-rashidi-where-are-you-all-webxdc",
+    "tag_name": "v1.1",
+    "url": "https://github.com/alr-rashidi/where-are-you-all-webxdc/releases/download/v1.1/where-are-you-all-1.1.xdc",
+    "date": "2026-09-04T17:03:37Z",
+    "description": "نقشه جمعیتی گروه.\nهر کس جایگاهش را روی نقشه قاره‌ها مشخص می‌کند.",
+    "source_code_url": "https://github.com/alr-rashidi/where-are-you-all-webxdc",
+    "name": "Where Are You All",
+    "category": "tool",
+    "cache_relname": "alr-rashidi-where-are-you-all-webxdc-v1.1.xdc",
+    "size": 4816303,
+    "icon_relname": "alr-rashidi-where-are-you-all-webxdc-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "alr-rashidi-dartic-webxdc",
+    "tag_name": "v1.1",
+    "url": "https://github.com/alr-rashidi/dartic-webxdc/releases/download/v1.1/dartic-phone-1.1.xdc",
+    "date": "2026-09-04T16:49:12Z",
+    "description": "بازی نقاشی نوبتی، شبیه Gartic Phone.\nیکی نقاشی می‌کند و نفر بعد حدس می‌زند.",
+    "source_code_url": "https://github.com/alr-rashidi/dartic-webxdc",
+    "name": "Dartic",
+    "category": "game",
+    "cache_relname": "alr-rashidi-dartic-webxdc-v1.1.xdc",
+    "size": 28578,
+    "icon_relname": "alr-rashidi-dartic-webxdc-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "th2tran-gomoku-webxdc",
+    "tag_name": "release-0.6.199",
+    "url": "https://github.com/th2tran/gomoku-webxdc/releases/download/release-0.6.199/gomoku-0.6.199.xdc",
+    "date": "2026-09-12T04:00:23Z",
+    "description": "بازی گوموکو.\nنوبتی مهره می‌گذارید تا پنج مهره در یک ردیف شود.",
+    "source_code_url": "https://github.com/th2tran/gomoku-webxdc",
+    "name": "Gomoku",
+    "category": "game",
+    "cache_relname": "th2tran-gomoku-webxdc-release-0.6.199.xdc",
+    "size": 4326304,
+    "icon_relname": "th2tran-gomoku-webxdc-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "jskitty-vectosis",
+    "tag_name": "v3.1.2",
+    "url": "https://github.com/JSKitty/Vectosis/releases/download/v3.1.2/vectosis.xdc",
+    "date": "2026-09-06T13:20:59Z",
+    "description": "بازی چندنفره خوردن سلول.\nسلول را بزرگ می‌کنید، تقسیم می‌شوید و با دوست یا ربات بازی می‌کنید.",
+    "source_code_url": "https://github.com/JSKitty/Vectosis",
+    "name": "Vectosis",
+    "category": "game",
+    "cache_relname": "jskitty-vectosis-v3.1.2.xdc",
+    "size": 309739,
+    "icon_relname": "jskitty-vectosis-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "trosel-webxdc-color-match",
+    "tag_name": "0.1.1",
+    "url": "https://github.com/trosel/webxdc-color-match/releases/download/0.1.1/color-match.xdc",
+    "date": "2026-09-04T15:38:35Z",
+    "description": "بازی جور کردن رنگ.\nرنگ‌های مثل هم را پیدا می‌کنید.",
+    "source_code_url": "https://github.com/trosel/webxdc-color-match",
+    "name": "Color Match",
+    "category": "game",
+    "cache_relname": "trosel-webxdc-color-match-0.1.1.xdc",
+    "size": 25651,
+    "icon_relname": "trosel-webxdc-color-match-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "freddi301-facilitatore-riunioni-webxdc",
+    "tag_name": "v0.2.0",
+    "url": "https://github.com/freddi301/facilitatore-riunioni-webxdc/releases/download/v0.2.0/facilitatore-riunioni.xdc",
+    "date": "2026-09-02T20:04:00Z",
+    "description": "ابزار گرداندن جلسه.\nدستور جلسه و نوبت حرف را نگه می‌دارید. رابط برنامه ایتالیایی است.",
+    "source_code_url": "https://github.com/freddi301/facilitatore-riunioni-webxdc",
+    "name": "Facilitatore Riunioni",
+    "category": "tool",
+    "cache_relname": "freddi301-facilitatore-riunioni-webxdc-v0.2.0.xdc",
+    "size": 56610,
+    "icon_relname": "freddi301-facilitatore-riunioni-webxdc-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "experintellia-data-dealer",
+    "tag_name": "v0.5.0",
+    "url": "https://github.com/experintellia/data_dealer/releases/download/v0.5.0/data-dealer-casual.xdc",
+    "date": "2026-10-14T18:53:54Z",
+    "description": "بازی بیکار خرید و فروش داده شخصی.\nداده جمع می‌کنید و به مشتری می‌فروشید.",
+    "source_code_url": "https://github.com/experintellia/data_dealer",
+    "name": "Data Dealer",
+    "category": "game",
+    "cache_relname": "experintellia-data-dealer-v0.5.0.xdc",
+    "size": 5653814,
+    "icon_relname": "experintellia-data-dealer-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "tompatulpan-contactcard",
+    "tag_name": "045de4f",
+    "url": "https://raw.githubusercontent.com/tompatulpan/contactcard/main/dist/contactcard.xdc",
+    "date": "2026-10-06T09:01:17Z",
+    "description": "کارت تماس مشترک در چت.\nکارت خود را برای گروه منتشر می‌کنید و از کارت دیگران فایل vCard می‌گیرید.",
+    "source_code_url": "https://github.com/tompatulpan/contactcard",
+    "name": "Contact Card",
+    "category": "tool",
+    "cache_relname": "tompatulpan-contactcard-045de4f.xdc",
+    "size": 9872,
+    "icon_relname": "tompatulpan-contactcard-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "trosel-webxdc-moodboard",
+    "tag_name": "0.3.2",
+    "url": "https://github.com/trosel/webxdc-moodboard/releases/download/0.3.2/webxdc-moodboard.xdc",
+    "date": "2026-06-02T21:14:43Z",
+    "description": "تخته مشترک عکس، رنگ و نوشته.\nعکس و رنگ و کلمه کوتاه را کنار هم می‌چینید.",
+    "source_code_url": "https://github.com/trosel/webxdc-moodboard",
+    "name": "Mood Board",
+    "category": "tool",
+    "cache_relname": "trosel-webxdc-moodboard-0.3.2.xdc",
+    "size": 10888,
+    "icon_relname": "trosel-webxdc-moodboard-icon.png",
+    "group": "create"
+  },
+  {
+    "app_id": "trosel-webxdc-plan",
+    "tag_name": "0.3.1",
+    "url": "https://github.com/trosel/webxdc-plan/releases/download/0.3.1/webxdc-plan.xdc",
+    "date": "2026-05-27T18:14:22Z",
+    "description": "هماهنگی سریع یک قرار گروهی.\nزمان‌ها را به رأی می‌گذارید و علامت می‌زنید که می‌آیید یا نه.",
+    "source_code_url": "https://github.com/trosel/webxdc-plan",
+    "name": "Plan",
+    "category": "tool",
+    "cache_relname": "trosel-webxdc-plan-0.3.1.xdc",
+    "size": 23387,
+    "icon_relname": "trosel-webxdc-plan-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "trosel-webxdc-word-challenge",
+    "tag_name": "0.3.3",
+    "url": "https://github.com/trosel/webxdc-word-challenge/releases/download/0.3.3/webxdc-daily-word.xdc",
+    "date": "2026-09-04T15:41:39Z",
+    "description": "چالش روزانه کلمه پنج‌حرفی.\nحدس می‌زنید و امتیازتان در جدول گروه می‌آید.",
+    "source_code_url": "https://github.com/trosel/webxdc-word-challenge",
+    "name": "Daily Word Challenge",
+    "category": "game",
+    "cache_relname": "trosel-webxdc-word-challenge-0.3.3.xdc",
+    "size": 40326,
+    "icon_relname": "trosel-webxdc-word-challenge-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "trosel-webxdc-habit",
+    "tag_name": "0.1.0",
+    "url": "https://github.com/trosel/webxdc-habit/releases/download/0.1.0/webxdc-habit.xdc",
+    "date": "2026-06-10T23:31:06Z",
+    "description": "ثبت عادت مشترک در گروه.\nهر بار انجامش را تیک می‌زنید و نمودار پیشرفت را می‌بینید.",
+    "source_code_url": "https://github.com/trosel/webxdc-habit",
+    "name": "Habit Tracker",
+    "category": "tool",
+    "cache_relname": "trosel-webxdc-habit-0.1.0.xdc",
+    "size": 9686,
+    "icon_relname": "trosel-webxdc-habit-icon.png",
+    "group": "health"
+  },
+  {
+    "app_id": "trosel-webxdc-brainstorm",
+    "tag_name": "0.1.0",
+    "url": "https://github.com/trosel/webxdc-brainstorm/releases/download/0.1.0/webxdc-brainstorm.xdc",
+    "date": "2026-06-02T21:00:56Z",
+    "description": "جمع ایده و رأی در گروه.\nایده می‌نویسید و فهرست با رأی بیشتر بالا می‌آید.",
+    "source_code_url": "https://github.com/trosel/webxdc-brainstorm",
+    "name": "Brainstorm",
+    "category": "tool",
+    "cache_relname": "trosel-webxdc-brainstorm-0.1.0.xdc",
+    "size": 10780,
+    "icon_relname": "trosel-webxdc-brainstorm-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "sudoshz-jalali-calendar",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-15T16:46:03Z",
+    "description": "تقویم شمسی گروه، با مناسبت‌های رسمی.\nروز را باز می‌کنید، قرار و ساعت می‌گذارید و تاریخ میلادی همان روز را می‌بینید.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "تقویم شمسی",
+    "category": "tool",
+    "cache_relname": "sudoshz-jalali-calendar-v1.0.0.xdc",
+    "size": 240259,
+    "icon_relname": "sudoshz-jalali-calendar-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "sudoshz-dang",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-15T16:46:02Z",
+    "description": "حساب دنگ گروه، به تومان.\nخرج را ثبت می‌کنید و برنامه می‌گوید هر کس به چه کسی چقدر بدهد.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "دنگ",
+    "category": "tool",
+    "cache_relname": "sudoshz-dang-v1.0.0.xdc",
+    "size": 203225,
+    "icon_relname": "sudoshz-dang-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-hafez",
+    "tag_name": "v1.1.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "فال حافظ با «نیت کن»، برداشت و معنای هر غزل (خلاصه‌ی گنجور) و ارسال فال برای دوستان یا گروه؛ به‌اضافه‌ی مشاعره در گروه.\nنیت شما فقط روی دستگاه خودتان می‌ماند.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "فال حافظ",
+    "category": "game",
+    "cache_relname": "sudoshz-hafez-v1.1.0.xdc",
+    "size": 530545,
+    "icon_relname": "sudoshz-hafez-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-esm-famil",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-15T16:46:00Z",
+    "description": "اسم‌فامیل و واژه‌سازی گروهی.\nبا یک حرف، اسم و شهر و غذا می‌نویسید. در واژه‌سازی حرف وسط باید داخل واژه باشد.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "اسم‌فامیل",
+    "category": "game",
+    "cache_relname": "sudoshz-esm-famil-v1.0.0.xdc",
+    "size": 209000,
+    "icon_relname": "sudoshz-esm-famil-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "th2tran-chess-webxdc",
+    "tag_name": "0.4.0.23",
+    "url": "https://github.com/th2tran/chess-webxdc",
+    "date": "2026-10-15T05:30:07Z",
+    "description": "شطرنج با رایانه یا با حریف چت.\nپنج سطح دارد، دو نفر می‌توانند در چت بازی کنند، و می‌شود مسابقه‌ی یک‌ساعته گذاشت.",
+    "source_code_url": "https://github.com/th2tran/chess-webxdc",
+    "name": "XDC-Chess",
+    "category": "game",
+    "cache_relname": "th2tran-chess-webxdc-0.4.0.23.xdc",
+    "size": 59954,
+    "icon_relname": "th2tran-chess-webxdc-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "th2tran-aurum-chess-xdc",
+    "tag_name": "0.0.2.10",
+    "url": "https://github.com/th2tran/aurum-chess-xdc",
+    "date": "2026-09-29T20:22:58Z",
+    "description": "شطرنج سه‌بعدی برای گروه.\nبا رایانه، دونفره روی یک دستگاه، یا نوبتی در چت بازی می‌کنید. بقیه می‌توانند تماشا کنند.",
+    "source_code_url": "https://github.com/th2tran/aurum-chess-xdc",
+    "name": "Aurum Chess",
+    "category": "game",
+    "cache_relname": "th2tran-aurum-chess-xdc-0.0.2.10.xdc",
+    "size": 1096150,
+    "icon_relname": "th2tran-aurum-chess-xdc-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "luiseilerys-gitxdc",
+    "tag_name": "2026-10-07",
+    "url": "https://github.com/luiseilerys/GitXDC",
+    "date": "2026-10-07T15:46:31Z",
+    "description": "مخزن گیت داخل همین چت.\nفایل می‌سازید، کامیت می‌کنید و مسئله و درخواست ادغام را با بقیه هم‌گام می‌کنید.",
+    "source_code_url": "https://github.com/luiseilerys/GitXDC",
+    "name": "GitXDC",
+    "category": "tool",
+    "cache_relname": "luiseilerys-gitxdc-2026-10-07.xdc",
+    "size": 784693,
+    "icon_relname": "luiseilerys-gitxdc-icon.png",
+    "group": "dev"
+  },
+  {
+    "app_id": "skadge-boom-arena-webxdc",
+    "tag_name": "v1",
+    "url": "https://codeberg.org/skadge/boom-arena-webxdc/releases/download/v1/boom-arena.xdc",
+    "date": "2026-07-23T21:51:15+02:00",
+    "description": "بازی بمب‌گذاری چندنفره.\nتا چهار نفر در یک میدان جعبه می‌گذارند و آخرین نفر می‌ماند.",
+    "source_code_url": "https://codeberg.org/skadge/boom-arena-webxdc",
+    "name": "Boom Arena",
+    "category": "game",
+    "cache_relname": "skadge-boom-arena-webxdc-v1.xdc",
+    "size": 20881,
+    "icon_relname": "skadge-boom-arena-webxdc-icon.png",
+    "group": "arcade"
+  },
+  {
+    "app_id": "h4kor-baby-tracker",
+    "tag_name": "v0.1.0",
+    "url": "https://codeberg.org/h4kor/baby-tracker/releases/download/v0.1.0/baby-tracker.xdc",
+    "date": "2026-07-08T11:52:01+02:00",
+    "description": "یادداشت شیشه‌ی نوزاد، به میلی‌لیتر.\nمقدار و ساعت را ثبت می‌کنید تا نفر بعدی در چت ببیند.",
+    "source_code_url": "https://codeberg.org/h4kor/baby-tracker",
+    "name": "Baby Tracker",
+    "category": "tool",
+    "cache_relname": "h4kor-baby-tracker-v0.1.0.xdc",
+    "size": 8067,
+    "icon_relname": "h4kor-baby-tracker-icon.png",
+    "group": "health"
+  },
+  {
+    "app_id": "sudoshz-sandogh",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-16T09:30:00Z",
+    "description": "صندوق قرض‌الحسنه‌ی خانواده، به تومان.\nسهم ماهانه را می‌نویسید، نوبت وام را با قرعه‌ی یکسان می‌کشید و قسط را با تاریخ شمسی ثبت می‌کنید.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "صندوق",
+    "category": "tool",
+    "cache_relname": "sudoshz-sandogh-v1.0.0.xdc",
+    "size": 173223,
+    "icon_relname": "sudoshz-sandogh-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-igo",
+    "tag_name": "v1.1.0",
+    "url": "https://github.com/Webxdc-mini-app/igo",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "بازی گو (ایگو) روی صفحه‌ی ۱۹ یا ۱۵ خانه؛ بازی با رایانه یا آنلاین با هم‌گروهی‌ها داخل چت.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «گو».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/igo",
+    "name": "گو (۱۹ و ۱۵ خانه)",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-igo-v1.1.0.xdc",
+    "size": 10058,
+    "icon_relname": "webxdc-mini-app-igo-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "webxdc-mini-app-reversi",
+    "tag_name": "v1.1.3",
+    "url": "https://github.com/Webxdc-mini-app/reversi",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "بازی اتللو؛ تک‌نفره در برابر رایانه یا دونفره‌ی آنلاین با اعضای همین چت.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «اتللو».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/reversi",
+    "name": "اتللو (ریورسی)",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-reversi-v1.1.3.xdc",
+    "size": 90928,
+    "icon_relname": "webxdc-mini-app-reversi-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "webxdc-mini-app-rubik-teacher",
+    "tag_name": "v1.0.1",
+    "url": "https://github.com/Webxdc-mini-app/Rubik-Teacher",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "مکعب روبیک ۳×۳ را با دوربین می‌خواند و حل آن را در ۷ مرحله‌ی ساده با پیش‌نمایش سه‌بعدی، حرکت‌به‌حرکت آموزش می‌دهد.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «معلم مکعب روبیک».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Rubik-Teacher",
+    "name": "معلم مکعب روبیک",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-rubik-teacher-v1.0.1.xdc",
+    "size": 141227,
+    "icon_relname": "webxdc-mini-app-rubik-teacher-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "webxdc-mini-app-mon-reservation-staff",
+    "tag_name": "v1.3.2",
+    "url": "https://github.com/Webxdc-mini-app/Mon_Reservation_Staff",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "رزروهایی که تلفنی، در چت یا حضوری گرفته می‌شوند را در گروه کارکنان مشترک ثبت و مدیریت می‌کند.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «دفتر رزرو کارکنان».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Mon_Reservation_Staff",
+    "name": "دفتر رزرو مشترک کارکنان",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-mon-reservation-staff-v1.3.2.xdc",
+    "size": 67119,
+    "icon_relname": "webxdc-mini-app-mon-reservation-staff-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-repair-desk",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/repair-desk",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "گزارش خرابی تجهیزات، وضعیت تعمیر، هزینه و یادداشت‌ها را در گروه به اشتراک می‌گذارد.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «پذیرش خرابی و تعمیر».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/repair-desk",
+    "name": "پذیرش خرابی و تعمیرات",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-repair-desk-v1.0.0.xdc",
+    "size": 8961,
+    "icon_relname": "webxdc-mini-app-repair-desk-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-reception-select",
+    "tag_name": "v1.0.4",
+    "url": "https://github.com/Webxdc-mini-app/reception-select",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "دستگاه ورودی دفتر: مهمان مسئول موردنظر را انتخاب و صدا می‌زند و به کارکنان اعلان می‌رسد؛ چندزبانه.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «فراخوان مهمان».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/reception-select",
+    "name": "زنگ پذیرش مهمان",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-reception-select-v1.0.4.xdc",
+    "size": 82268,
+    "icon_relname": "webxdc-mini-app-reception-select-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-attendance-management",
+    "tag_name": "v2.1.0",
+    "url": "https://github.com/Webxdc-mini-app/attendance_management",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "ثبت ورود، استراحت و خروج، اصلاح سوابق، جمع ماهانه و خروجی CSV؛ رابط چندزبانه.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «حضور و غیاب».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/attendance_management",
+    "name": "حضور و غیاب کارکنان",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-attendance-management-v2.1.0.xdc",
+    "size": 160172,
+    "icon_relname": "webxdc-mini-app-attendance-management-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-cat-s-household-budget",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/Cat_s_Household_Budget",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "ثبت درآمد و هزینه‌ها، جستجو و ویرایش، نمودار دخل‌وخرج و پشتیبان‌گیری JSON.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «دفتر خرج گربه».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Cat_s_Household_Budget",
+    "name": "دخل‌وخرج گربه‌ای",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-cat-s-household-budget-v1.0.0.xdc",
+    "size": 173884,
+    "icon_relname": "webxdc-mini-app-cat-s-household-budget-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-notice-confirmation-sheet",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/Notice_Confirmation_Sheet",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "اطلاعیه‌های داخلی را منتشر می‌کند و هر نفر «خواندم و فهمیدم» را ثبت می‌کند؛ فهرست تأییدشده‌ها و نشده‌ها.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «برگه‌ی تأیید اطلاعیه».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Notice_Confirmation_Sheet",
+    "name": "برگه‌ی تأیید اطلاعیه",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-notice-confirmation-sheet-v1.0.0.xdc",
+    "size": 31209,
+    "icon_relname": "webxdc-mini-app-notice-confirmation-sheet-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "webxdc-mini-app-supply-box",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/Supply_BOX",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "ثبت اینکه کلید، ابزار یا لپ‌تاپ دست چه کسی است، تاریخ برگشت و وضعیت بازگشت.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «جعبه وسایل».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Supply_BOX",
+    "name": "امانت اقلام اداری",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-supply-box-v1.0.0.xdc",
+    "size": 386707,
+    "icon_relname": "webxdc-mini-app-supply-box-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-supply-hub",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/Supply_Hub",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "ثبت درخواست خرید اقلام، بررسی تکراری‌ها و پیگیری پذیرش، سفارش و تحویل.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «انبار لوازم».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Supply_Hub",
+    "name": "درخواست خرید اقلام",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-supply-hub-v1.0.0.xdc",
+    "size": 581817,
+    "icon_relname": "webxdc-mini-app-supply-hub-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-bingo-club",
+    "tag_name": "v1.1.0",
+    "url": "https://github.com/Webxdc-mini-app/bingo_club",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "بینگوی گروهی برای مهمانی؛ یک نفر قرعه می‌کشد و کارت‌ها خودکار علامت می‌خورند.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «باشگاه بینگو».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/bingo_club",
+    "name": "باشگاه بینگو",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-bingo-club-v1.1.0.xdc",
+    "size": 127636,
+    "icon_relname": "webxdc-mini-app-bingo-club-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "webxdc-mini-app-seatmate-authority",
+    "tag_name": "v1.1.1",
+    "url": "https://github.com/Webxdc-mini-app/seatmate_authority",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "پذیرش مشتری، نوبت انتظار، تعداد نفرات و شماره‌ی میز را بین کارکنان فروشگاه یا رستوران به اشتراک می‌گذارد.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «نوبت‌میز».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/seatmate_authority",
+    "name": "نوبت‌دهی میز رستوران",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-seatmate-authority-v1.1.1.xdc",
+    "size": 75150,
+    "icon_relname": "webxdc-mini-app-seatmate-authority-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "webxdc-mini-app-nekoshu",
+    "tag_name": "v1.1.1",
+    "url": "https://github.com/Webxdc-mini-app/nekoshu",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "گربه‌ی خودت را بیاور، از او مراقبت کن و با گربه‌های بقیه‌ی اعضا آشنا شو.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «دورهمی گربه‌ها».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/nekoshu",
+    "name": "گردهمایی گربه‌ها",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-nekoshu-v1.1.1.xdc",
+    "size": 134582,
+    "icon_relname": "webxdc-mini-app-nekoshu-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "webxdc-mini-app-dogrun",
+    "tag_name": "v1.1.1",
+    "url": "https://github.com/Webxdc-mini-app/dogrun",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "سگ خودت را بزرگ کن و با سگ‌های بقیه‌ی اعضای چت توپ‌بازی کن.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «پارک سگ».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/dogrun",
+    "name": "پارک سگ‌ها",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-dogrun-v1.1.1.xdc",
+    "size": 68660,
+    "icon_relname": "webxdc-mini-app-dogrun-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "webxdc-mini-app-emergency-call",
+    "tag_name": "v1.0.1",
+    "url": "https://github.com/Webxdc-mini-app/Emergency_Call",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "یک دکمه برای خبر دادن به گروه: زنگ اضطراری، فراخوان جمع شدن، صدا زدن پذیرش یا مسابقه‌ی سرعتی.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «زنگ خطر و دکمه‌ی سریع».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Emergency_Call",
+    "name": "زنگ اضطراری و دکمه‌ی سریع",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-emergency-call-v1.0.1.xdc",
+    "size": 101743,
+    "icon_relname": "webxdc-mini-app-emergency-call-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "webxdc-mini-app-aquaryuum",
+    "tag_name": "v1.0.2",
+    "url": "https://github.com/Webxdc-mini-app/aquaryuum",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "ماهی قرمز خودت را بیاور، مراقبش باش و با ماهی‌های دوستانت در چت تعامل کن.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «آکواریوم».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/aquaryuum",
+    "name": "آکواریوم ماهی قرمز",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-aquaryuum-v1.0.2.xdc",
+    "size": 70944,
+    "icon_relname": "webxdc-mini-app-aquaryuum-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "webxdc-mini-app-aozora-classroom",
+    "tag_name": "v1.0.4",
+    "url": "https://github.com/Webxdc-mini-app/Aozora-Classroom",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "معلم درس می‌فرستد و دانش‌آموزان با «فهمیدم»، «نفهمیدم» یا پرسش جواب می‌دهند؛ برای کلاس‌های کوچک.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «کلاس آسمان آبی».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Aozora-Classroom",
+    "name": "کلاس زیر آسمان",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-aozora-classroom-v1.0.4.xdc",
+    "size": 123142,
+    "icon_relname": "webxdc-mini-app-aozora-classroom-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "webxdc-mini-app-auction-house",
+    "tag_name": "v1.1.0",
+    "url": "https://github.com/Webxdc-mini-app/Auction-House",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "حراج داخل چت: کالا عرضه کنید، پیشنهاد قیمت بدهید و نتیجه را با همه به اشتراک بگذارید.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «خانه مزایده».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Auction-House",
+    "name": "خانه‌ی حراج",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-auction-house-v1.1.0.xdc",
+    "size": 96365,
+    "icon_relname": "webxdc-mini-app-auction-house-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "webxdc-mini-app-gomoku",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/gomoku",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "بازی پنج‌تایی در یک ردیف؛ با رایانه یا آنلاین با اعضای چت، با تماشا و بازی دوباره.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «پنج در یک ردیف».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/gomoku",
+    "name": "پنج‌تایی (گوموکو)",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-gomoku-v1.0.0.xdc",
+    "size": 11995,
+    "icon_relname": "webxdc-mini-app-gomoku-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "webxdc-mini-app-shogi",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/shogi",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "شوگی کامل ۹×۹؛ بازی با رایانه یا آنلاین با هم‌چتی‌ها.\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «شوگی».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/shogi",
+    "name": "شطرنج ژاپنی (شوگی)",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-shogi-v1.0.0.xdc",
+    "size": 11846,
+    "icon_relname": "webxdc-mini-app-shogi-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "webxdc-mini-app-jomo-karuta",
+    "tag_name": "v1.0.4",
+    "url": "https://github.com/Webxdc-mini-app/jomo-karuta",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "بازی کارتی سنتی کاروتا با ۴۴ کارت و صدای خواننده‌ی داخلی؛ یک نفر می‌خواند و بقیه کارت را برمی‌دارند. (حجم زیاد: حدود ۱۵ مگابایت)\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.",
+    "source_code_url": "https://github.com/Webxdc-mini-app/jomo-karuta",
+    "name": "کاروتای جومو",
+    "category": "game",
+    "cache_relname": "webxdc-mini-app-jomo-karuta-v1.0.4.xdc",
+    "size": 15218755,
+    "icon_relname": "webxdc-mini-app-jomo-karuta-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "webxdc-mini-app-machimeshi",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/Webxdc-mini-app/machimeshi",
+    "date": "2026-10-19T06:00:00Z",
+    "description": "ثبت سفارش مشتری‌ها و پرداخت برای رستوران یا کافه‌ی کوچک؛ صفحه‌ی مشتری و صفحه‌ی کارکنان (رمز پیش‌فرض را عوض کنید).\nرابط ژاپنی؛ از سازمان Webxdc-mini-app.\nنسخه‌ی فارسی هم در فروشگاه هست: «سفارش غذای محله».",
+    "source_code_url": "https://github.com/Webxdc-mini-app/machimeshi",
+    "name": "ماچی‌مشی؛ دفتر سفارش رستوران",
+    "category": "tool",
+    "cache_relname": "webxdc-mini-app-machimeshi-v1.0.0.xdc",
+    "size": 70342,
+    "icon_relname": "webxdc-mini-app-machimeshi-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-salamam",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "خبر سلامتی خانواده و گروه در قطعی‌ها و بحران‌ها.\nبا یک ضربه «سالمم»، «کمک لازم دارم» یا «جابه‌جا شدم» بفرستید؛ محل قرار، نیاز فوری و هشدار برای اعضای بی‌خبر. روی اینترنت ملی هم کار می‌کند.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "من سالمم",
+    "category": "tool",
+    "cache_relname": "sudoshz-salamam-v1.0.0.xdc",
+    "size": 118043,
+    "icon_relname": "sudoshz-salamam-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-vitrin",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "فروشگاه کوچک داخل گروه یا کانال دلتاچت.\nکاتالوگ با عکس و قیمت تومان، سبد خرید، سفارش رمزنگاری‌شده که فقط فروشنده و خریدار می‌بینند، وضعیت سفارش و فاکتور قابل چاپ.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "ویترین",
+    "category": "tool",
+    "cache_relname": "sudoshz-vitrin-v1.0.0.xdc",
+    "size": 129334,
+    "icon_relname": "sudoshz-vitrin-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-jozveban",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "کلاس درس داخل چت: جزوه و عکس تخته‌ی هر جلسه، پرسش و پاسخ، حضور و غیاب.\nآزمونک زمان‌دار چندگزینه‌ای با تصحیح خودکار؛ پاسخ دانش‌آموزان تا انتشار نتایج رمز است. کارنامه برای معلم.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "جزوه‌بان",
+    "category": "tool",
+    "cache_relname": "sudoshz-jozveban-v1.0.0.xdc",
+    "size": 135315,
+    "icon_relname": "sudoshz-jozveban-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "sudoshz-hamsayeyar",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "کمک‌رسانی همسایه‌ها در بحران.\nدرخواست کمک (آب، شارژ، دارو، خرید…)، قبول و انجام، فهرست امکانات مشترک مثل موتور برق، و سرکشی به سالمندان. آدرس دقیق و مختصات خودکار حذف می‌شود.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "همسایه‌یار",
+    "category": "tool",
+    "cache_relname": "sudoshz-hamsayeyar-v1.0.0.xdc",
+    "size": 123382,
+    "icon_relname": "sudoshz-hamsayeyar-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-koole",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "کوله‌ی اضطراری و برنامه‌ی خانواده بر پایه‌ی راهنمای هلال احمر و بهزیستی، با ذکر منبع.\nچک‌لیست به تعداد اعضا، هشدار تاریخ انقضا، محل قرار، شماره‌های ضروری و راهنمای «اگر کسی گم شد». صرفا برای آگاهی؛ جایگزین دستورالعمل رسمی نیست.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "کوله‌ی اضطراری",
+    "category": "tool",
+    "cache_relname": "sudoshz-koole-v1.0.0.xdc",
+    "size": 135147,
+    "icon_relname": "sudoshz-koole-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-mizban",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "اسکان موقت خانواده‌های جابه‌جا شده در گروه‌های آشنا.\nثبت جای خالی و درخواست جا با شهر و ظرفیت، فیلترها، پیشنهاد و پذیرش هماهنگی؛ بدون آدرس دقیق و همراه نکته‌های ایمنی.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "میزبان",
+    "category": "tool",
+    "cache_relname": "sudoshz-mizban-v1.0.0.xdc",
+    "size": 128180,
+    "icon_relname": "sudoshz-mizban-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-elanat",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "تابلوی اعلانات برای ساختمان، مدرسه و اداره.\nمدیر اطلاعیه با مهلت شمسی می‌گذارد، هر عضو «خوندم» می‌زند، مدیر فهرست خوانده و نخوانده را می‌بیند و فقط برای نخوانده‌ها یادآوری می‌فرستد.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "تابلوی اطلاعیه",
+    "category": "tool",
+    "cache_relname": "sudoshz-elanat-v1.0.0.xdc",
+    "size": 121255,
+    "icon_relname": "sudoshz-elanat-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "sudoshz-mahi",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T07:00:00Z",
+    "description": "بازی خانوادگی نوروزی: با هم از ماهی قرمز مراقبت کنید.\nغذا بدهید، آب تنگ را عوض کنید و سفره‌ی هفت‌سین را بچینید؛ روز سیزده‌به‌در ماهی را در آب روان رها می‌کنید. مناسب بچه‌ها.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "ماهی قرمز هفت‌سین",
+    "category": "game",
+    "cache_relname": "sudoshz-mahi-v1.0.0.xdc",
+    "size": 123978,
+    "icon_relname": "sudoshz-mahi-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-fa-emergency-call",
+    "tag_name": "v1.0.1-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Emergency_Call",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "یک دکمه‌ی بزرگ برای خبر دادن به همه‌ی گروه: زنگ خطر، آتش‌سوزی، درخواست کمک، جمع شدن یا مسابقه‌ی سرعت؛ با سابقه‌ی فشار.\nنسخه‌ی فارسی بر پایه‌ی Emergency Call از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Emergency_Call",
+    "name": "زنگ خطر و دکمه‌ی سریع",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-emergency-call-v1.0.1-fa1.xdc",
+    "size": 207421,
+    "icon_relname": "sudoshz-fa-emergency-call-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-fa-aozora-classroom",
+    "tag_name": "v1.0.4-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Aozora-Classroom",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "معلم درس با عکس می‌فرستد و دانش‌آموزان «فهمیدم»، «نفهمیدم» یا پرسش می‌فرستند؛ معلم شمار هر کدام را می‌بیند.\nنسخه‌ی فارسی بر پایه‌ی Aozora Classroom از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Aozora-Classroom",
+    "name": "کلاس آسمان آبی",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-aozora-classroom-v1.0.4-fa1.xdc",
+    "size": 228703,
+    "icon_relname": "sudoshz-fa-aozora-classroom-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "sudoshz-fa-supply-box",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Supply_BOX",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "امانت و برگشت کلید، ابزار و رایانه: چه چیزی دست کیست، کی برمی‌گردد، با سابقه و نمودار ماهانه.\nنسخه‌ی فارسی بر پایه‌ی Supply BOX از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Supply_BOX",
+    "name": "جعبه وسایل",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-supply-box-v1.0.0-fa1.xdc",
+    "size": 493325,
+    "icon_relname": "sudoshz-fa-supply-box-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-notice-confirmation-sheet",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Notice_Confirmation_Sheet",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "اطلاعیه‌ی داخلی با مهلت منتشر کنید؛ هر عضو «خواندم و تأیید کردم» می‌زند و فهرست تأییدشده‌ها و نشده‌ها پیداست.\nنسخه‌ی فارسی بر پایه‌ی Notice Confirmation Sheet از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Notice_Confirmation_Sheet",
+    "name": "برگه‌ی تأیید اطلاعیه",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-notice-confirmation-sheet-v1.0.0-fa1.xdc",
+    "size": 137520,
+    "icon_relname": "sudoshz-fa-notice-confirmation-sheet-icon.png",
+    "group": "plan"
+  },
+  {
+    "app_id": "sudoshz-fa-repair-desk",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/repair-desk",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "گزارش خرابی تجهیزات با مکان و شرح، وضعیت رسیدگی، هزینه به تومان و جمع‌بندی ماهانه، مشترک در گروه.\nنسخه‌ی فارسی بر پایه‌ی Repair Desk از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/repair-desk",
+    "name": "پذیرش خرابی و تعمیر",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-repair-desk-v1.0.0-fa1.xdc",
+    "size": 114911,
+    "icon_relname": "sudoshz-fa-repair-desk-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-reception-select",
+    "tag_name": "v1.0.4-fa1",
+    "url": "https://github.com/Webxdc-mini-app/reception-select",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "گوشی یا تبلت ورودی دفتر: مهمان کارمند موردنظر را انتخاب می‌کند و به او اعلان می‌رسد؛ رابط چندزبانه با پیش‌فرض فارسی.\nنسخه‌ی فارسی بر پایه‌ی Reception Select از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/reception-select",
+    "name": "فراخوان مهمان",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-reception-select-v1.0.4-fa1.xdc",
+    "size": 188859,
+    "icon_relname": "sudoshz-fa-reception-select-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-attendance-management",
+    "tag_name": "v2.1.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/attendance_management",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "ثبت ورود، استراحت و خروج کارکنان با تاریخ شمسی، جمع ماهانه، صفحه‌ی مسئول و خروجی CSV.\nنسخه‌ی فارسی بر پایه‌ی Attendance Management از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/attendance_management",
+    "name": "حضور و غیاب",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-attendance-management-v2.1.0-fa1.xdc",
+    "size": 267157,
+    "icon_relname": "sudoshz-fa-attendance-management-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-mon-reservation-staff",
+    "tag_name": "v1.3.2-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Mon_Reservation_Staff",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "رزروهای تلفنی، چتی یا حضوری را در گروه کارکنان ثبت کنید: تاریخ، ساعت، تعداد نفر، وضعیت و یادداشت.\nنسخه‌ی فارسی بر پایه‌ی Mon Reservation Staff از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Mon_Reservation_Staff",
+    "name": "دفتر رزرو کارکنان",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-mon-reservation-staff-v1.3.2-fa1.xdc",
+    "size": 173633,
+    "icon_relname": "sudoshz-fa-mon-reservation-staff-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-seatmate-authority",
+    "tag_name": "v1.1.1-fa1",
+    "url": "https://github.com/Webxdc-mini-app/seatmate_authority",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "نوبت‌دهی رستوران و کافه: مهمان در ورودی ثبت می‌شود، صندلی به ترتیب نوبت داده می‌شود و کارکنان راهنمایی و خروج را ثبت می‌کنند.\nنسخه‌ی فارسی بر پایه‌ی SEATMATE از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/seatmate_authority",
+    "name": "نوبت‌میز",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-seatmate-authority-v1.1.1-fa1.xdc",
+    "size": 181715,
+    "icon_relname": "sudoshz-fa-seatmate-authority-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-cat-s-household-budget",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Cat_s_Household_Budget",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "دفتر دخل‌وخرج شخصی به تومان با دسته‌بندی، تاریخ شمسی، فهرست و نمودار؛ روی همین گوشی ذخیره می‌شود.\nنسخه‌ی فارسی بر پایه‌ی Cat's Household Budget از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Cat_s_Household_Budget",
+    "name": "دفتر خرج گربه",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-cat-s-household-budget-v1.0.0-fa1.xdc",
+    "size": 280324,
+    "icon_relname": "sudoshz-fa-cat-s-household-budget-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-machimeshi",
+    "tag_name": "v1.5.4-fa1",
+    "url": "https://github.com/Webxdc-mini-app/machimeshi",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "سفارش‌گیری برای جشن مدرسه، غذاخوری محله یا نذری: مهمان سفارش می‌دهد و کارکنان پخت، فراخوان و پرداخت را پیگیری می‌کنند.\nنسخه‌ی فارسی بر پایه‌ی machimeshi از Webxdc mini app (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/machimeshi",
+    "name": "سفارش غذای محله",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-machimeshi-v1.5.4-fa1.xdc",
+    "size": 177518,
+    "icon_relname": "sudoshz-fa-machimeshi-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-supply-hub",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Supply_Hub",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "درخواست خرید لوازم اداری با تعداد، فوریت و مبلغ تومان؛ پیگیری پذیرش، سفارش و تحویل و گزارش ماهانه.\nنسخه‌ی فارسی بر پایه‌ی Supply Hub از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Supply_Hub",
+    "name": "انبار لوازم",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-supply-hub-v1.0.0-fa1.xdc",
+    "size": 688742,
+    "icon_relname": "sudoshz-fa-supply-hub-icon.png",
+    "group": "biz"
+  },
+  {
+    "app_id": "sudoshz-fa-rubik-teacher",
+    "tag_name": "v1.0.1-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Rubik-Teacher",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "رنگ‌های مکعب روبیک ۳×۳ را با دوربین یا دستی وارد کنید و حل آن را در ۷ مرحله‌ی ساده، حرکت به حرکت، ببینید.\nنسخه‌ی فارسی بر پایه‌ی Rubik Teacher از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Rubik-Teacher",
+    "name": "معلم مکعب روبیک",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-rubik-teacher-v1.0.1-fa1.xdc",
+    "size": 243264,
+    "icon_relname": "sudoshz-fa-rubik-teacher-icon.png",
+    "group": "learn"
+  },
+  {
+    "app_id": "sudoshz-fa-reversi",
+    "tag_name": "v1.1.3-fa1",
+    "url": "https://github.com/Webxdc-mini-app/reversi",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "اتللو با رایانه یا دونفره‌ی آنلاین با اعضای همین گفتگو، با تماشا و بازی دوباره.\nنسخه‌ی فارسی بر پایه‌ی Reversi از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/reversi",
+    "name": "اتللو",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-reversi-v1.1.3-fa1.xdc",
+    "size": 195768,
+    "icon_relname": "sudoshz-fa-reversi-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "sudoshz-fa-gomoku",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/gomoku",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "پنج‌تایی (گوموکو) با رایانه یا آنلاین با اعضای گفتگو؛ هر کس اول پنج مهره را در یک ردیف بچیند، برنده است.\nنسخه‌ی فارسی بر پایه‌ی Gomoku از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/gomoku",
+    "name": "پنج در یک ردیف",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-gomoku-v1.0.0-fa1.xdc",
+    "size": 116664,
+    "icon_relname": "sudoshz-fa-gomoku-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "sudoshz-fa-igo",
+    "tag_name": "v1.1.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/igo",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "بازی گو روی صفحه‌ی ۱۹ یا ۱۵ خانه، با رایانه یا آنلاین با هم‌گروهی‌ها؛ با راهنمای کومی و سکی.\nنسخه‌ی فارسی بر پایه‌ی Igo از Webxdc mini app (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/igo",
+    "name": "گو",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-igo-v1.1.0-fa1.xdc",
+    "size": 112381,
+    "icon_relname": "sudoshz-fa-igo-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "sudoshz-fa-shogi",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/shogi",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "شطرنج ژاپنی ۹×۹ با رایانه یا آنلاین با هم‌گفتگویی‌ها؛ متن‌ها فارسی و مهره‌ها با نشانه‌ی سنتی.\nنسخه‌ی فارسی بر پایه‌ی Shogi از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/shogi",
+    "name": "شوگی",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-shogi-v1.0.0-fa1.xdc",
+    "size": 118099,
+    "icon_relname": "sudoshz-fa-shogi-icon.png",
+    "group": "board"
+  },
+  {
+    "app_id": "sudoshz-fa-bingo-club",
+    "tag_name": "v1.1.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/bingo_club",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "بینگوی گروهی برای مهمانی: یک گوشی قرعه می‌کشد و کارت هر کس خودکار علامت می‌خورد.\nنسخه‌ی فارسی بر پایه‌ی Bingo Club از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/bingo_club",
+    "name": "باشگاه بینگو",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-bingo-club-v1.1.0-fa1.xdc",
+    "size": 229416,
+    "icon_relname": "sudoshz-fa-bingo-club-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-fa-auction-house",
+    "tag_name": "v1.1.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Auction-House",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "مزایده‌ی داخل گفتگو: گرداننده جنس می‌گذارد، بقیه به تومان پیشنهاد می‌دهند و بالاترین پیشنهاد برای همه پیداست.\nنسخه‌ی فارسی بر پایه‌ی Auction House از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Auction-House",
+    "name": "خانه مزایده",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-auction-house-v1.1.0-fa1.xdc",
+    "size": 201672,
+    "icon_relname": "sudoshz-fa-auction-house-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-fa-nekoshu",
+    "tag_name": "v1.1.1-fa1",
+    "url": "https://github.com/Webxdc-mini-app/nekoshu",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "گربه‌ی خودت را بیاور، غذا و نوازش بده و در دورهمی با گربه‌های بقیه‌ی اعضا آشنا شو.\nنسخه‌ی فارسی بر پایه‌ی nekoshu از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/nekoshu",
+    "name": "دورهمی گربه‌ها",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-nekoshu-v1.1.1-fa1.xdc",
+    "size": 240605,
+    "icon_relname": "sudoshz-fa-nekoshu-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-fa-dogrun",
+    "tag_name": "v1.1.1-fa1",
+    "url": "https://github.com/Webxdc-mini-app/dogrun",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "سگ خودت را بزرگ کن، به او خوراکی بده و در پارک با سگ‌های بقیه‌ی اعضا توپ‌بازی کن.\nنسخه‌ی فارسی بر پایه‌ی dogrun از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/dogrun",
+    "name": "پارک سگ",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-dogrun-v1.1.1-fa1.xdc",
+    "size": 174569,
+    "icon_relname": "sudoshz-fa-dogrun-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-fa-aquaryuum",
+    "tag_name": "v1.0.2-fa1",
+    "url": "https://github.com/Webxdc-mini-app/aquaryuum",
+    "date": "2026-10-19T10:30:00Z",
+    "description": "ماهی قرمز خودت را بیاور، غذا بده و آب تنگ را عوض کن و با ماهی‌های دوستانت در یک تنگ شنا کن.\nنسخه‌ی فارسی بر پایه‌ی aquaryuum از Kawakamai Katsuyuki (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/aquaryuum",
+    "name": "آکواریوم",
+    "category": "game",
+    "cache_relname": "sudoshz-fa-aquaryuum-v1.0.2-fa1.xdc",
+    "size": 176497,
+    "icon_relname": "sudoshz-fa-aquaryuum-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-dotayi",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T10:45:00Z",
+    "description": "برای دو نفر که با هم‌اند؛ گرم و خانوادگی.\nسؤال روز که جواب‌ها تا هر دو ننویسید پنهان می‌ماند، نامه‌ی مهرشده تا یک تاریخ، خاطره با عکس، مناسبت‌ها (یلدا، سپندارمذگان، سالگرد)، حال‌وهوا، آزمون «چقدر منو می‌شناسی» و چرخ ایده‌ی قرار.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "دوتایی",
+    "category": "tool",
+    "cache_relname": "sudoshz-dotayi-v1.0.0.xdc",
+    "size": 142183,
+    "icon_relname": "sudoshz-dotayi-icon.png",
+    "group": "social"
+  },
+  {
+    "app_id": "sudoshz-saadi",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "بوستان، گلستان و غزلیات سعدی، کامل و بی‌نیاز از اینترنت.\nفهرست باب‌ها، بیت و حکایت روز، جستجو، نشان‌کردن، دیوار شعر گروه و فرستادن بیت به گفتگو. متن‌ها از گنجور (ganjoor.net).",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "سعدی: بوستان و گلستان",
+    "category": "tool",
+    "cache_relname": "sudoshz-saadi-v1.0.0.xdc",
+    "size": 744180,
+    "icon_relname": "sudoshz-saadi-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-molana",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "مثنوی معنوی و غزلیات شمس، کامل و آفلاین.\nبیت روز، جستجو در هر دو دفتر، نشان‌کردن، دیوار شعر گروه و فرستادن بیت به گفتگو. متن‌ها از گنجور (ganjoor.net).",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "مولانا: مثنوی و شمس",
+    "category": "tool",
+    "cache_relname": "sudoshz-molana-v1.0.0.xdc",
+    "size": 2350432,
+    "icon_relname": "sudoshz-molana-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-khayyam",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "رباعیات خیام از گنجور، آفلاین.\nرباعی روز، جستجو، نشان‌کردن، دیوار شعر گروه و فرستادن رباعی به گفتگو.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "رباعیات خیام",
+    "category": "tool",
+    "cache_relname": "sudoshz-khayyam-v1.0.0.xdc",
+    "size": 298837,
+    "icon_relname": "sudoshz-khayyam-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-babataher",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "دوبیتی‌های باباطاهر از گنجور، آفلاین.\nدوبیتی روز، جستجو، نشان‌کردن، دیوار شعر گروه و فرستادن به گفتگو.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "دوبیتی‌های باباطاهر",
+    "category": "tool",
+    "cache_relname": "sudoshz-babataher-v1.0.0.xdc",
+    "size": 307679,
+    "icon_relname": "sudoshz-babataher-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-shahname",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "شاهنامه‌ی فردوسی، کامل و آفلاین، با داستان‌های برگزیده (ضحاک، هفت‌خان، رستم و سهراب، سیاوش، بیژن و منیژه و…).\nبیت روز، جستجو، نشان‌کردن، دیوار گروه و فرستادن بیت به گفتگو. متن از گنجور (ganjoor.net).",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "شاهنامه",
+    "category": "tool",
+    "cache_relname": "sudoshz-shahname-v1.0.0.xdc",
+    "size": 1601161,
+    "icon_relname": "sudoshz-shahname-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-moshaere",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "مشاعره‌ی گروهی: هر بیت با حرف آخر بیت قبلی. بیت‌ها با پیکره‌ی حافظ، سعدی، خیام، باباطاهر و شمس سنجیده می‌شوند و پیشنهاد هم می‌دهد.\nزمان نوبت، امتیاز و حالت آزاد با رأی گروه. متن‌ها از گنجور.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "مشاعره",
+    "category": "game",
+    "cache_relname": "sudoshz-moshaere-v1.0.0.xdc",
+    "size": 2014512,
+    "icon_relname": "sudoshz-moshaere-icon.png",
+    "group": "poetry"
+  },
+  {
+    "app_id": "sudoshz-amadegi",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "آموزش آمادگی در شرایط جنگی بر پایه‌ی اطلاعیه‌های هلال احمر و راهنمای سازمان پدافند غیرعامل، با ذکر منبع هر کارت.\nهنگام آژیر و انفجار، نقطه‌ی امن، بعد از حمله، زیر آوار، شب، گروه‌های آسیب‌پذیر؛ آزمون و «تمرین گروهی» با زمان رسیدن هر نفر به پناهگاه. صرفا برای آگاهی.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "آمادگی دفاعی",
+    "category": "tool",
+    "cache_relname": "sudoshz-amadegi-v1.0.0.xdc",
+    "size": 175470,
+    "icon_relname": "sudoshz-amadegi-icon.png",
+    "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-aramjan",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:20:21Z",
+    "description": "آرامش در روزهای سخت: تنفس آرام، بازگشت به حال (۵-۴-۳-۲)، کمک‌های اولیه‌ی روان‌شناختی، کودکان و بازی‌های آرام، «حالم چطوره؟» گروهی و شماره‌های کمک (۱۴۸۰، ۱۲۳، ۱۱۵…).\nبر پایه‌ی اطلاعیه‌های هلال احمر و راهنمای فدراسیون صلیب سرخ و هلال احمر. صرفا برای آگاهی.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "آرام‌جان",
+    "category": "tool",
+    "cache_relname": "sudoshz-aramjan-v1.0.0.xdc",
+    "size": 169592,
+    "icon_relname": "sudoshz-aramjan-icon.png",
+    "group": "health"
+  },
+  {
+    "app_id": "sudoshz-komak",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-19T14:33:50Z",
+    "description": "کارت‌های گام‌به‌گام کمک‌های اولیه از راهنمای فدراسیون بین‌المللی صلیب سرخ و هلال احمر (ترجمه‌ی فارسی) و اطلاعیه‌های هلال احمر: احیا، خفگی، خونریزی، شوک، سوختگی، شکستگی و آسیب‌های انفجار.\nریتم‌سنج احیا، آزمون و فهرست «چه کسی در گروه بلد است». صرفا برای آگاهی؛ جایگزین آموزش حضوری نیست.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "کمک‌های اولیه",
+    "category": "tool",
+    "cache_relname": "sudoshz-komak-v1.0.0.xdc",
+    "size": 191432,
+    "icon_relname": "sudoshz-komak-icon.png",
+    "group": "crisis"
   }
 ]

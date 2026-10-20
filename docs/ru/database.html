@@ -86,9 +86,7 @@
         <p>Сервис автоматически создает или обновляет необходимые таблицы при первом запуске. Нет необходимости выполнять SQL-команды вручную для создания таблиц <code>quotas</code> или <code>contacts</code>.</p>
     </div>
     <script>
-        window.onload = function() {
-            applyTranslations("{{.Language}}");
-        };
+        document.addEventListener('DOMContentLoaded', function () { applyTranslations("{{.Language}}"); });
     </script>
 </body>
 

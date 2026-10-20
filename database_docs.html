@@ -50,7 +50,8 @@
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
             <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
-            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+                        <li><a href="bots.html" data-i18n="nav_bots" class="nav-bots-link">Bots</a></li>
+<li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
@@ -192,7 +193,7 @@
 
         <h2>کش حافظه در برابر دیتابیس روی دیسک</h2>
         <p>برای سرعت، سرور در حال اجرا ممکن است ردیف‌های اعتبارنامه (<code>auth.pass_table</code>) و مجموع سهمیه هر کاربر (<code>storage.imapsql</code>) را در RAM نگه دارد. منبع حقیقی همچنان فایل‌های دیتابیس است.</p>
-        <p>اگر با CLI (مثلاً <code>maddy creds</code>، <code>maddy accounts</code> یا <code>maddy imap-acct</code>) در حالی که سرویس روشن است دیتابیس را عوض کردید، یک بار Admin API را با <code>POST /admin/cache/reload</code> صدا بزنید تا فرآیند دوباره جداول را بخواند؛ یا سرویس را ری‌استارت کنید.</p>
+        <p>اگر با CLI (مثلا <code>maddy creds</code>، <code>maddy accounts</code> یا <code>maddy imap-acct</code>) در حالی که سرویس روشن است دیتابیس را عوض کردید، یک بار Admin API را با <code>POST /admin/cache/reload</code> صدا بزنید تا فرآیند دوباره جداول را بخواند؛ یا سرویس را ری‌استارت کنید.</p>
 
         <h2>مهاجرت (Migration)</h2>
         <p>سرویس به صورت خودکار جداول مورد نیاز را در اولین اجرا ایجاد یا به‌روزرسانی می‌کند. نیازی به اجرای دستورات SQL

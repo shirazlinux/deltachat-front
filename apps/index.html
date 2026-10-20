@@ -31,7 +31,8 @@
             <li><a href="../privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="../security.html" data-i18n="nav_security">Security</a></li>
             <li><a href="index.html" data-i18n="nav_applications">Apps</a></li>
-            <li><a href="../deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+                        <li><a href="../bots.html" data-i18n="nav_bots" class="nav-bots-link">Bots</a></li>
+<li><a href="../deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="../docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
@@ -64,6 +65,8 @@
         <span data-i18n="footer_version">Version</span> {{.Version}}
     </footer>
 
+    <!-- Delta Chat and the webxdc simulator serve this. A normal browser gets a 404 and ignores it. -->
+    <script src="/webxdc.js"></script>
     <!-- Load store app after translations so t() is ready -->
     <script type="module" src="webxdc-logic.js"></script>
     <script>

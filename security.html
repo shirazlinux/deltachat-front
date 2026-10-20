@@ -29,27 +29,28 @@
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
             <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
-            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+                        <li><a href="bots.html" data-i18n="nav_bots" class="nav-bots-link">Bots</a></li>
+<li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
 
     <main class="page-content glass-panel fade-in">
-        <h1 style="text-align: center;" data-i18n="security_title">Security &amp; Privacy</h1>
-        <p style="font-size: 1.1em;" data-i18n-html="security_intro"></p>
+        <h1 style="text-align: center;" data-i18n="security_title">امنیت و حریم خصوصی</h1>
+        <p style="font-size: 1.1em;" data-i18n-html="security_intro">کاربران عزیز توجه داشته باشید که دلتاچت می‌تواند هم برای ارتباط <strong>امن و رمزنگاری‌شده</strong> و هم برای ارتباط <strong>غیر امن (ایمیل سنتی)</strong> استفاده شود.</p>
 
-        <h3 style="margin-top: 30px; text-align: center;" data-i18n="security_warning">To maintain full security, follow these guidelines</h3>
+        <h3 style="margin-top: 30px; text-align: center;" data-i18n="security_warning">برای حفظ امنیت کامل، حتما موارد زیر را رعایت کنید</h3>
 
         <div class="glass-panel" style="background: rgba(255,255,255,0.03); text-align: start; margin-top: 20px;">
-            <p data-i18n-html="security_classic_email"></p>
+            <p data-i18n-html="security_classic_email"><strong>توقف استفاده از ایمیل کلاسیک:</strong> در تنظیمات دلتاچت، بخش <code>Advanced</code>، گزینه «ایمیل سنتی» را روی <strong>«نه»</strong> قرار دهید.</p>
             <hr class="neon-hr" style="margin: 15px 0;">
-            <p data-i18n-html="security_unsafe_msgs"></p>
+            <p data-i18n-html="security_unsafe_msgs"><strong>تشخیص پیام‌های ناامن:</strong> پیام‌هایی که با آیکون <strong>پاکت‌نامه</strong> یا <strong>آیکون خاکستری</strong> ظاهر می‌شوند، در واقع ناامن هستند. آیکون خاکستری نشان‌دهنده غیرفعال بودن رمزنگاری است.</p>
             <hr class="neon-hr" style="margin: 15px 0;">
-            <p data-i18n-html="security_start_chat"></p>
+            <p data-i18n-html="security_start_chat"><strong>شروع چت فقط با لینک:</strong> به هیچ عنوان مستقیما به ID (آدرس ایمیل) پیام ندهید. ارتباط باید حتما از طریق اشتراک‌گذاری لینک به فرمت <code>https://i.delta.chat/#..</code> شروع شود. هرگونه ID خارج از این فرمت ناامن است.</p>
             <hr class="neon-hr" style="margin: 15px 0;">
-            <p data-i18n-html="security_server_diff"></p>
+            <p data-i18n-html="security_server_diff"><strong>تفاوت سرورها:</strong> سرورهای <code>chatmail</code> تبادل ایمیل رمزنشده را کلا رد می‌کنند. اما <code>madmail</code> در نسخه‌های قدیمی ممکن است اجازه ارسال غیرامن را بدهد که توسط صاحب سرور یا دیتاسنتر قابل مشاهده است.</p>
             <hr class="neon-hr" style="margin: 15px 0;">
-            <p data-i18n-html="security_admin_note"></p>
+            <p data-i18n-html="security_admin_note"><strong>نکته برای مدیران:</strong> اگر از نسخه‌های قدیمی Madmail استفاده می‌کنید، حتما سرور خود را به‌روزرسانی کنید تا امنیت کاربران حفظ شود.</p>
         </div>
     </main>
 
@@ -58,7 +59,9 @@
     </footer>
 
     <script>
-        window.onload = function () { applyTranslations("{{.Language}}"); };
+        document.addEventListener('DOMContentLoaded', function () {
+            applyTranslations("{{.Language}}");
+        });
     </script>
 </body>
 </html>

@@ -184,7 +184,8 @@
             <li><a href="privacy.html" data-i18n="nav_privacy">Privacy</a></li>
             <li><a href="security.html" data-i18n="nav_security">Security</a></li>
             <li><a href="apps/index.html" data-i18n="nav_applications">Apps</a></li>
-            <li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
+                        <li><a href="bots.html" data-i18n="nav_bots" class="nav-bots-link">Bots</a></li>
+<li><a href="deploy.html" data-i18n="nav_deploy">Deploy</a></li>
             <li><a href="docs_index.html" data-i18n="nav_docs">Docs</a></li>
         </ul>
     </nav>
@@ -206,7 +207,7 @@
             </tr>
             <tr>
                 <td><code>X.Y.Z</code></td>
-                <td>نسخه مشخص (مثلاً 0.18.0)</td>
+                <td>نسخه مشخص (مثلا 0.18.0)</td>
             </tr>
         </table>
 
@@ -832,7 +833,7 @@ chatmail tls://0.0.0.0:443 {
         </div>
 
         <div class="tip-box">
-            <strong>جایگزین:</strong> اگر گواهینامه خودتان را دارید (مثلاً از certbot):
+            <strong>جایگزین:</strong> اگر گواهینامه خودتان را دارید (مثلا از certbot):
             <div class="code-box" style="margin-top: 10px;">tls file /data/tls/fullchain.pem /data/tls/privkey.pem</div>
             <p style="margin-top: 5px;">و در docker-compose فایل‌های TLS را mount کنید: <code
                     dir="ltr">./tls:/data/tls</code></p>
@@ -927,7 +928,7 @@ chatmail tls://0.0.0.0:443 {
     </div>
 
     <script>
-        window.onload = function() { applyTranslations("{{.Language}}"); };
+        document.addEventListener('DOMContentLoaded', function () { applyTranslations("{{.Language}}"); });
     </script>
     <footer class="site-footer" data-version="{{.Version}}">
         <span data-i18n="footer_version">Version</span> {{.Version}}
