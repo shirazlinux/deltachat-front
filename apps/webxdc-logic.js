@@ -400,15 +400,15 @@ const Categories = ({apps, setFilterGroup, filterGroup}) => {
   }, [apps]);
   const current = CATEGORIES.find((c) => c.id === filterGroup) || CATEGORIES[0];
   return html`<div id="categories" dir="rtl">
-    <div class="cat-chips" role="tablist">
+    <div class="cat-chips" role="group" aria-label="دسته‌بندی‌ها">
       ${CATEGORIES.filter((c) => c.id === "home" || counts[c.id]).map((c) => html`
-        <button type="button" role="tab" aria-selected=${filterGroup === c.id}
+        <button type="button" aria-pressed=${filterGroup === c.id ? "true" : "false"}
           class=${"cat-chip" + (filterGroup === c.id ? " active" : "")}
           onClick=${() => setFilterGroup(c.id)}>
           <span class="cat-icon">${c.icon}</span>${c.name}<span class="cat-count">${counts[c.id] || 0}</span>
         </button>`)}
     </div>
-    <div class="cat-desc"><strong>${current.icon} ${current.name}</strong> — ${current.desc}</div>
+    <div class="cat-desc" aria-live="polite"><strong>${current.icon} ${current.name}</strong> — ${current.desc}</div>
   </div>`;
 };
 
