@@ -4035,5 +4035,20 @@
     "icon_relname": "sudoshz-daftar-icon.png",
     "group": "plan",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-darookhane",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-21T09:30:00Z",
+    "description": "داروخانه خانواده برای گروه خانوادگی.\nقبل از خرید ببینید دارو را دارید یا نه: جست‌وجوی سریع فارسی و انگلیسی، تعداد، محل نگهداری و تاریخ انقضای شمسی. هشدار داروهای تاریخ‌گذشته و نزدیک به انقضا، فهرست خرید و تاریخچه تغییرات. توصیه پزشکی نیست.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "داروخانه خانواده",
+    "category": "tool",
+    "cache_relname": "sudoshz-darookhane-v1.0.0.xdc",
+    "size": 158532,
+    "icon_relname": "sudoshz-darookhane-icon.png",
+    "group": "health",
+    "author": "shirazlinux"
   }
 ]
