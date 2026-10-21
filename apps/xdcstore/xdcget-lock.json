@@ -3753,15 +3753,15 @@
   },
   {
     "app_id": "sudoshz-amoozesh",
-    "tag_name": "v1.0.1",
+    "tag_name": "v1.0.2",
     "url": "https://github.com/shirazlinux",
-    "date": "2026-10-20T14:31:09Z",
+    "date": "2026-10-21T14:00:00Z",
     "description": "آموزش گام‌به‌گام دلتاچت به فارسی و بدون اینترنت: نصب، ساخت نمایه، افزودن مخاطب با QR، گروه و کانال، مینی‌اپ‌ها، پشتیبان و چند دستگاه، امنیت و عیب‌یابی در اینترنت ملی. جستجو، پیشرفت و آزمونک دارد. برگرفته از راهنمای رسمی دلتاچت (GPL-3.0).",
     "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
     "name": "آموزش دلتاچت",
     "category": "tool",
-    "cache_relname": "sudoshz-amoozesh-v1.0.1.xdc",
-    "size": 190756,
+    "cache_relname": "sudoshz-amoozesh-v1.0.2.xdc",
+    "size": 209867,
     "icon_relname": "sudoshz-amoozesh-icon.png",
     "group": "learn"
   },
@@ -4049,6 +4049,21 @@
     "size": 158532,
     "icon_relname": "sudoshz-darookhane-icon.png",
     "group": "health",
+    "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-ettesal",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-21T14:00:00Z",
+    "description": "راهنمای قدم‌به‌قدم و آفلاین برای وصل ماندن در قطعی اینترنت بین‌الملل.\nافزودن رله داخلی و چند رله، پروکسی Shadowsocks، پخش لینک دعوت و QR بدون اینترنت، دست‌به‌دست کردن امن APK با بررسی چک‌سام و چک‌لیست عیب‌یابی. فهرست مشترک رله‌های داخلی با رأی «کار می‌کند / نمی‌کند» و زمان آخرین بررسی (گزارش اعضا، نه وضعیت زنده).",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "راهنمای اتصال در قطعی",
+    "category": "tool",
+    "cache_relname": "sudoshz-ettesal-v1.0.0.xdc",
+    "size": 174589,
+    "icon_relname": "sudoshz-ettesal-icon.png",
+    "group": "crisis",
     "author": "shirazlinux"
   }
 ]
