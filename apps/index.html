@@ -40,6 +40,32 @@
     <div class="page-content">
         <h2 style="text-align: center;" data-i18n="apps_store_title">WebXDC app store</h2>
 
+        <div class="glass-panel warning-box fade-in" dir="rtl" lang="fa" style="text-align: right;">
+            <div class="warning-header">
+                <span class="warning-icon">📲</span>
+                <h3>این فروشگاه را داخل دلتاچت بیاورید</h3>
+            </div>
+            <div class="warning-content" style="text-align: right;">
+                <p>با یک تنظیم ساده، همه مینی اپ‌های این فروشگاه داخل خود دلتاچت باز می‌شوند و با یک لمس در چت فرستاده می‌شوند تا دیگران هم استفاده کنند.</p>
+                <ol>
+                    <li>در دلتاچت به <strong>تنظیمات</strong>، بخش <strong>پیشرفته</strong> و سپس <strong>ویژگی‌های آزمایشی</strong> بروید.</li>
+                    <li>گزینه <strong>App Picker URL</strong> (آدرس انتخابگر برنامه) را بزنید و این آدرس را جای آدرس قبلی بگذارید:<br>
+                        <code dir="ltr" id="store-url" style="user-select: all;">https://delta.sudoshz.ir/apps/index.html</code>
+                        <button type="button" id="copy-store-url" style="margin-inline-start: .5em; padding: .3em .8em;">کپی آدرس</button>
+                    </li>
+                    <li>یک چت باز کنید، دکمه پیوست (📎) و بعد <strong>برنامه‌ها</strong> را بزنید. حالا همین فروشگاه را می‌بینید.</li>
+                    <li>روی هر مینی اپ بزنید تا در همان چت فرستاده شود و همه اعضا بتوانند آن را باز کنند.</li>
+                </ol>
+                <p class="disclaimer"><small>این گزینه در نسخه‌های تازه دلتاچت برای اندروید و iOS هست. اگر آن را نمی‌بینید، دلتاچت را به‌روز کنید. در هر حال می‌توانید فایل هر اپ را از همین صفحه بگیرید و در چت بفرستید.</small></p>
+            </div>
+        </div>
+        <script>
+            document.getElementById("copy-store-url").addEventListener("click", function () {
+                var b = this, t = document.getElementById("store-url").textContent;
+                (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { b.textContent = "کپی شد"; }, function () { b.textContent = "آدرس را نگه دارید و کپی کنید"; });
+            });
+        </script>
+
         <div class="glass-panel warning-box fade-in">
             <div class="warning-header">
                 <span class="warning-icon">⚠️</span>
