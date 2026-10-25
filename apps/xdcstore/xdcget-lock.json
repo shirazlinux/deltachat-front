@@ -4180,5 +4180,20 @@
     "icon_relname": "sudoshz-nazri-icon.png",
     "group": "social",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-vaccine",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-25T17:21:14Z",
+    "description": "کارت واکسن و رشد کودک با تقویم شمسی.\nبرنامه کشوری ایمن‌سازی ۱۴۰۳ وزارت بهداشت، موعد هر نوبت، ثبت وزن و قد و دور سر با نمودار؛ جایگزین کارت رسمی نیست.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "کارت واکسن کودک",
+    "category": "tool",
+    "cache_relname": "sudoshz-vaccine-v1.0.0.xdc",
+    "size": 142768,
+    "icon_relname": "sudoshz-vaccine-icon.png",
+    "group": "health",
+    "author": "shirazlinux"
   }
 ]
