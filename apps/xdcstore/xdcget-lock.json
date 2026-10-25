@@ -4165,5 +4165,20 @@
     "icon_relname": "sudoshz-nasieh-icon.png",
     "group": "biz",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-nazri",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-25T16:54:39Z",
+    "description": "هماهنگی نذری و هیئت در گفتگو.\nچه کسی چه چیزی و چقدر می‌آورد، تعداد پرس و هزینه به تومان، تاریخ شمسی و فهرست پخش در محله.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "نذری‌یار",
+    "category": "tool",
+    "cache_relname": "sudoshz-nazri-v1.0.0.xdc",
+    "size": 161116,
+    "icon_relname": "sudoshz-nazri-icon.png",
+    "group": "social",
+    "author": "shirazlinux"
   }
 ]
