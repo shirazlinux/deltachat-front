@@ -4136,5 +4136,19 @@
     "icon_relname": "sudoshz-naghshe-neshan-icon.png",
     "group": "crisis",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "experintellia-effectcraft",
+    "tag_name": "v0.1.0",
+    "url": "https://github.com/experintellia/effectcraft/releases/download/v0.1.0/effectcraft.xdc",
+    "date": "2026-10-22T04:47:46Z",
+    "description": "ابزار موشن‌گرافیک و جلوه‌های ویدیویی، شبیه افترافکت، داخل دلتاچت.\nلایه، کی‌فریم و افکت دارد؛ رابط انگلیسی است و حجمش زیاد است (۱۵ مگابایت). پروانه Apache-2.0.",
+    "source_code_url": "https://github.com/experintellia/effectcraft",
+    "name": "EffectCraft",
+    "category": "tool",
+    "cache_relname": "experintellia-effectcraft-v0.1.0.xdc",
+    "size": 15239836,
+    "icon_relname": "experintellia-effectcraft-icon.png",
+    "group": "create"
   }
 ]
