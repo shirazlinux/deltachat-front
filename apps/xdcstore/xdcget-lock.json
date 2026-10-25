@@ -4195,5 +4195,20 @@
     "icon_relname": "sudoshz-vaccine-icon.png",
     "group": "health",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-sticker",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-25T17:53:31Z",
+    "description": "استیکرساز فارسی آفلاین.\nمتن فارسی با فونت‌های آزاد روی عکس یا رنگ، عبارت‌های آماده مثل «دمت گرم»، خروجی PNG و گالری مشترک در گفتگو.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "استیکرساز فارسی",
+    "category": "tool",
+    "cache_relname": "sudoshz-sticker-v1.0.0.xdc",
+    "size": 227361,
+    "icon_relname": "sudoshz-sticker-icon.png",
+    "group": "create",
+    "author": "shirazlinux"
   }
 ]
