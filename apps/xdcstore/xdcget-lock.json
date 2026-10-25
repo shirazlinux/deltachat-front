@@ -4210,5 +4210,20 @@
     "icon_relname": "sudoshz-sticker-icon.png",
     "group": "create",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-kelas",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-25T18:19:08Z",
+    "description": "دفتر کلاسی و آزمونک برای معلم و دانش‌آموز.\nحضور و غیاب شمسی، تکلیف، نمره از ۲۰ که هر دانش‌آموز فقط نمره خودش را می‌بیند، و آزمونک با پاسخ قفل‌شده تا پایان آزمون.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "دفتر کلاسی",
+    "category": "tool",
+    "cache_relname": "sudoshz-kelas-v1.0.0.xdc",
+    "size": 149083,
+    "icon_relname": "sudoshz-kelas-icon.png",
+    "group": "learn",
+    "author": "shirazlinux"
   }
 ]
