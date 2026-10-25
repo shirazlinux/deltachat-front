@@ -4150,5 +4150,20 @@
     "size": 15239836,
     "icon_relname": "experintellia-effectcraft-icon.png",
     "group": "create"
+  },
+  {
+    "app_id": "sudoshz-nasieh",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-25T16:37:38Z",
+    "description": "دفتر نسیه مغازه به تومان با تاریخ شمسی.\nبدهی و پرداخت هر مشتری، جمع کل و رسید؛ مشتری در همان گفتگو فقط حساب خودش را می‌بیند و «تأیید کردم» می‌زند.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "نسیه‌نامه",
+    "category": "tool",
+    "cache_relname": "sudoshz-nasieh-v1.0.0.xdc",
+    "size": 179648,
+    "icon_relname": "sudoshz-nasieh-icon.png",
+    "group": "biz",
+    "author": "shirazlinux"
   }
 ]
