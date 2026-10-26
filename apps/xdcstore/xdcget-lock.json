@@ -3612,20 +3612,6 @@
     "group": "social"
   },
   {
-    "app_id": "sudoshz-dotayi",
-    "tag_name": "v1.0.1",
-    "url": "https://github.com/shirazlinux",
-    "date": "2026-10-20T09:23:03Z",
-    "description": "برای دو نفر که با هم‌اند؛ گرم و خانوادگی.\nسؤال روز که جواب‌ها تا هر دو ننویسید پنهان می‌ماند، نامه‌ی مهرشده تا یک تاریخ، خاطره با عکس، مناسبت‌ها (یلدا، سپندارمذگان، سالگرد)، حال‌وهوا، آزمون «چقدر منو می‌شناسی» و چرخ ایده‌ی قرار.",
-    "source_code_url": "https://github.com/shirazlinux",
-    "name": "دوتایی",
-    "category": "tool",
-    "cache_relname": "sudoshz-dotayi-v1.0.1.xdc",
-    "size": 187413,
-    "icon_relname": "sudoshz-dotayi-icon.png",
-    "group": "social"
-  },
-  {
     "app_id": "sudoshz-saadi",
     "tag_name": "v1.0.2",
     "url": "https://github.com/shirazlinux",
@@ -4224,6 +4210,21 @@
     "size": 149083,
     "icon_relname": "sudoshz-kelas-icon.png",
     "group": "learn",
+    "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-dotayi",
+    "tag_name": "v1.0.2",
+    "url": "https://github.com/shirazlinux",
+    "date": "2026-10-26T10:20:59Z",
+    "description": "برای دو نفر که با هم‌اند؛ گرم و خانوادگی.\nسؤال روز که جواب‌ها تا هر دو ننویسید پنهان می‌ماند و جواب خودت همان لحظه دیده می‌شود، نامه‌ی مهرشده تا یک تاریخ، خاطره با عکس، مناسبت‌ها (یلدا، سپندارمذگان، سالگرد)، حال‌وهوا با تاریخچه‌ی روزبه‌روز، آزمون «چقدر منو می‌شناسی» و چرخ ایده‌ی قرار.",
+    "source_code_url": "https://github.com/shirazlinux",
+    "name": "دوتایی",
+    "category": "tool",
+    "cache_relname": "sudoshz-dotayi-v1.0.2.xdc",
+    "size": 188988,
+    "icon_relname": "sudoshz-dotayi-icon.png",
+    "group": "social",
     "author": "shirazlinux"
   }
 ]
