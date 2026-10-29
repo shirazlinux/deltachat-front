@@ -4226,5 +4226,19 @@
     "icon_relname": "sudoshz-dotayi-icon.png",
     "group": "social",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-fa-nyutaijo",
+    "tag_name": "v1.6.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chat_nyutaijo",
+    "date": "2026-10-29T05:35:09Z",
+    "description": "اسکان‌یار: ورود و خروج با QR برای اسکان اضطراری، هیئت و همایش، ثبت خانوار و توزیع اقلام امدادی با تاریخ شمسی.\nرمز پیش‌فرض secret فقط صفحه مدیریت را قفل می‌کند، هیچ داده‌ای را رمزگذاری نمی‌کند؛ حتما آن را عوض کنید. فارسی‌شده از Webxdc-mini-app با پروانه MIT.",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chat_nyutaijo",
+    "name": "اسکان‌یار",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-nyutaijo-v1.6.0-fa1.xdc",
+    "size": 267707,
+    "icon_relname": "sudoshz-fa-nyutaijo-icon.png",
+    "group": "crisis"
   }
 ]
