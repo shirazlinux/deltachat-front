@@ -4342,5 +4342,19 @@
     "size": 164708,
     "icon_relname": "sudoshz-fa-touban-icon.png",
     "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-fa-shelter-kit",
+    "tag_name": "v1.2.3-fa1",
+    "url": "https://github.com/Webxdc-mini-app/shelter-starter-kit",
+    "date": "2026-10-29T08:14:56Z",
+    "description": "کیت اسکان اضطراری: راهنما و چک‌لیست راه‌اندازی اسکان اضطراری در مدرسه، مسجد و سوله با نقش‌ها و وظایف. فارسی‌شده از Webxdc-mini-app با پروانه MIT.",
+    "source_code_url": "https://github.com/Webxdc-mini-app/shelter-starter-kit",
+    "name": "کیت اسکان اضطراری",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-shelter-kit-v1.2.3-fa1.xdc",
+    "size": 973158,
+    "icon_relname": "sudoshz-fa-shelter-kit-icon.png",
+    "group": "crisis"
   }
 ]
