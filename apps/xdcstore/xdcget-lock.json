@@ -4313,5 +4313,20 @@
     "size": 160492,
     "icon_relname": "sudoshz-fa-anpi-icon.png",
     "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-zehni",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-29T07:13:14Z",
+    "description": "نقشه ذهنی گروهی: ساخت نقشه ذهنی مشترک در گفتگو، افزودن و ویرایش شاخه‌ها به‌صورت همزمان، بدون اینترنت.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "نقشه ذهنی گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-zehni-v1.0.0.xdc",
+    "size": 147052,
+    "icon_relname": "sudoshz-zehni-icon.png",
+    "group": "create",
+    "author": "shirazlinux"
   }
 ]
