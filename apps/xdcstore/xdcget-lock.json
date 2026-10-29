@@ -4255,5 +4255,20 @@
     "icon_relname": "sudoshz-vaghtyab-icon.png",
     "group": "plan",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-formsaz",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-29T05:54:59Z",
+    "description": "فرم‌ساز گروهی: ساخت فرم و نظرسنجی در گروه، جمع‌آوری پاسخ اعضا و خروجی جدول، با تاریخ شمسی و بدون اینترنت.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "فرم‌ساز گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-formsaz-v1.0.0.xdc",
+    "size": 136904,
+    "icon_relname": "sudoshz-formsaz-icon.png",
+    "group": "plan",
+    "author": "shirazlinux"
   }
 ]
