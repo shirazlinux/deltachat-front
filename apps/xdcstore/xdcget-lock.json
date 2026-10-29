@@ -4240,5 +4240,20 @@
     "size": 267707,
     "icon_relname": "sudoshz-fa-nyutaijo-icon.png",
     "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-vaghtyab",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-29T05:39:03Z",
+    "description": "وقت‌یاب گروهی: پیدا کردن زمان مشترک جلسه با تقویم شمسی و پاسخ «می‌آیم / شاید / نمی‌آیم» برای هر گزینه، بدون نیاز به اینترنت.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "وقت‌یاب گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-vaghtyab-v1.0.0.xdc",
+    "size": 130192,
+    "icon_relname": "sudoshz-vaghtyab-icon.png",
+    "group": "plan",
+    "author": "shirazlinux"
   }
 ]
