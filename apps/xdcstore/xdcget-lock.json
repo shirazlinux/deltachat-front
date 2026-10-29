@@ -4270,5 +4270,19 @@
     "icon_relname": "sudoshz-formsaz-icon.png",
     "group": "plan",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-fa-busshi",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chatto-busshi",
+    "date": "2026-10-29T06:44:15Z",
+    "description": "اقلام و تدارکات: ثبت موجودی و نیاز اقلام امدادی مانند آب، پتو، چادر و دارو برای پایگاه‌های امداد. فارسی‌شده از Webxdc-mini-app با پروانه MIT.",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chatto-busshi",
+    "name": "اقلام و تدارکات",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-busshi-v1.0.0-fa1.xdc",
+    "size": 168683,
+    "icon_relname": "sudoshz-fa-busshi-icon.png",
+    "group": "crisis"
   }
 ]
