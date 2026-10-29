@@ -4356,5 +4356,20 @@
     "size": 973158,
     "icon_relname": "sudoshz-fa-shelter-kit-icon.png",
     "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-takhte",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-29T08:21:57Z",
+    "description": "تخته وظایف",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "تخته وظایف",
+    "category": "tool",
+    "cache_relname": "sudoshz-takhte-v1.0.0.xdc",
+    "size": 159746,
+    "icon_relname": "sudoshz-takhte-icon.png",
+    "group": "plan",
+    "author": "shirazlinux"
   }
 ]
