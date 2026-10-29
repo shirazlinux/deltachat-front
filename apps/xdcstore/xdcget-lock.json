@@ -4284,5 +4284,20 @@
     "size": 168683,
     "icon_relname": "sudoshz-fa-busshi-icon.png",
     "group": "crisis"
+  },
+  {
+    "app_id": "sudoshz-sabad",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-10-29T06:45:43Z",
+    "description": "سبد محله: خرید گروهی و مشترک همسایه‌ها، ثبت سفارش هر نفر، جمع‌بندی اقلام و سهم هزینه به تومان، با تاریخ شمسی و بدون اینترنت.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "سبد محله",
+    "category": "tool",
+    "cache_relname": "sudoshz-sabad-v1.0.0.xdc",
+    "size": 191917,
+    "icon_relname": "sudoshz-sabad-icon.png",
+    "group": "biz",
+    "author": "shirazlinux"
   }
 ]
