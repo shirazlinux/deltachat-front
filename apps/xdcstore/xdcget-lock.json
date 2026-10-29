@@ -4299,5 +4299,19 @@
     "icon_relname": "sudoshz-sabad-icon.png",
     "group": "biz",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-fa-anpi",
+    "tag_name": "v1.0.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chatto-anpi",
+    "date": "2026-10-29T07:00:35Z",
+    "description": "وضعیت افراد: اعلام سلامت اعضای گروه پس از زلزله و سیل (سالمم / آسیب دیده‌ام / نیاز به کمک) و جمع‌بندی وضعیت. فارسی‌شده از Webxdc-mini-app با پروانه MIT.",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chatto-anpi",
+    "name": "وضعیت افراد",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-anpi-v1.0.0-fa1.xdc",
+    "size": 160492,
+    "icon_relname": "sudoshz-fa-anpi-icon.png",
+    "group": "crisis"
   }
 ]
