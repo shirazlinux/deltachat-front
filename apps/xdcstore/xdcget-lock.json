@@ -4328,5 +4328,19 @@
     "icon_relname": "sudoshz-zehni-icon.png",
     "group": "create",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-fa-touban",
+    "tag_name": "v1.2.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chat-touban",
+    "date": "2026-10-29T07:40:31Z",
+    "description": "نوبت کشیک: جدول نوبت کشیک و شیفت برای پایگاه امداد، هلال‌احمر و نگهبانی محله با تاریخ شمسی. فارسی‌شده از Webxdc-mini-app با پروانه MIT.",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chat-touban",
+    "name": "نوبت کشیک",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-touban-v1.2.0-fa1.xdc",
+    "size": 164708,
+    "icon_relname": "sudoshz-fa-touban-icon.png",
+    "group": "crisis"
   }
 ]
