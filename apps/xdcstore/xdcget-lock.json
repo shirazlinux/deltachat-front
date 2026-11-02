@@ -4385,5 +4385,19 @@
     "size": 2663082,
     "icon_relname": "amzd-openscad-icon.png",
     "group": "create"
+  },
+  {
+    "app_id": "sudoshz-fa-jigsaw",
+    "tag_name": "v1.2.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chatto-jigsaw",
+    "date": "2026-11-02T15:17:14Z",
+    "description": "پازل عکس گروهی: یک عکس را تکه‌تکه کنید و با هم در چت بچینید. فارسی‌شده از chatto-jigsaw (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chatto-jigsaw",
+    "name": "پازل عکس گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-jigsaw-v1.2.0-fa1.xdc",
+    "size": 180376,
+    "icon_relname": "sudoshz-fa-jigsaw-icon.png",
+    "group": "arcade"
   }
 ]
