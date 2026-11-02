@@ -4413,5 +4413,20 @@
     "size": 138074,
     "icon_relname": "sudoshz-fa-chess-icon.png",
     "group": "board"
+  },
+  {
+    "app_id": "sudoshz-roznevesht",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-11-02T15:31:34Z",
+    "description": "روزنوشت گروهی کارگاه، باغ یا مغازه: کارها، عکس‌ها، هزینه به تومان و گزارش هفتگی با تاریخ شمسی.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "روزنوشت کار",
+    "category": "tool",
+    "cache_relname": "sudoshz-roznevesht-v1.0.0.xdc",
+    "size": 212146,
+    "icon_relname": "sudoshz-roznevesht-icon.png",
+    "group": "biz",
+    "author": "shirazlinux"
   }
 ]
