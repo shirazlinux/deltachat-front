@@ -4371,5 +4371,19 @@
     "icon_relname": "sudoshz-takhte-icon.png",
     "group": "plan",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "amzd-openscad",
+    "tag_name": "v1.2.0",
+    "url": "https://github.com/Amzd/openscad-webxdc/releases/download/1.2.0/app.xdc",
+    "date": "2026-11-02T13:20:02Z",
+    "description": "مدل‌سازی سه‌بعدی با کد OpenSCAD، داخل چت و بدون اینترنت.\nرابط برنامه انگلیسی است و خروجی STL برای چاپ سه‌بعدی می‌دهد.",
+    "source_code_url": "https://github.com/Amzd/openscad-webxdc",
+    "name": "OpenSCAD",
+    "category": "tool",
+    "cache_relname": "amzd-openscad-v1.2.0.xdc",
+    "size": 2663082,
+    "icon_relname": "amzd-openscad-icon.png",
+    "group": "create"
   }
 ]
