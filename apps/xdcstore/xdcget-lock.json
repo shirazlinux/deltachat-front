@@ -4399,5 +4399,19 @@
     "size": 180376,
     "icon_relname": "sudoshz-fa-jigsaw-icon.png",
     "group": "arcade"
+  },
+  {
+    "app_id": "sudoshz-fa-chess",
+    "tag_name": "v1.0.4-fa1",
+    "url": "https://github.com/Webxdc-mini-app/Modern-Chess",
+    "date": "2026-11-02T15:23:20Z",
+    "description": "شطرنج دونفره در چت با نام‌های فارسی مهره‌ها و تاریخچه حرکت‌ها. فارسی‌شده از Modern-Chess (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/Modern-Chess",
+    "name": "شطرنج",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-chess-v1.0.4-fa1.xdc",
+    "size": 138074,
+    "icon_relname": "sudoshz-fa-chess-icon.png",
+    "group": "board"
   }
 ]
