@@ -4183,21 +4183,6 @@
     "author": "shirazlinux"
   },
   {
-    "app_id": "sudoshz-sticker",
-    "tag_name": "v1.0.0",
-    "url": "https://github.com/shirazlinux/persian-webxdc",
-    "date": "2026-10-25T17:53:31Z",
-    "description": "استیکرساز فارسی آفلاین.\nمتن فارسی با فونت‌های آزاد روی عکس یا رنگ، عبارت‌های آماده مثل «دمت گرم»، خروجی PNG و گالری مشترک در گفتگو.",
-    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
-    "name": "استیکرساز فارسی",
-    "category": "tool",
-    "cache_relname": "sudoshz-sticker-v1.0.0.xdc",
-    "size": 227361,
-    "icon_relname": "sudoshz-sticker-icon.png",
-    "group": "create",
-    "author": "shirazlinux"
-  },
-  {
     "app_id": "sudoshz-kelas",
     "tag_name": "v1.0.0",
     "url": "https://github.com/shirazlinux/persian-webxdc",
@@ -4427,6 +4412,21 @@
     "size": 212146,
     "icon_relname": "sudoshz-roznevesht-icon.png",
     "group": "biz",
+    "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-sticker",
+    "tag_name": "v1.1.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-11-03T11:39:01Z",
+    "description": "استیکرساز فارسی آفلاین، حالا با استیکر متحرک و متن‌های آماده فارسی (سلام، تشکر، تبریک نوروز و یلدا). خروجی PNG و متحرک و گالری مشترک در گفتگو.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "استیکرساز فارسی",
+    "category": "tool",
+    "cache_relname": "sudoshz-sticker-v1.1.0.xdc",
+    "size": 232601,
+    "icon_relname": "sudoshz-sticker-icon.png",
+    "group": "create",
     "author": "shirazlinux"
   }
 ]
