@@ -4443,5 +4443,19 @@
     "icon_relname": "sudoshz-jadval-icon.png",
     "group": "board",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-fa-nanpure",
+    "tag_name": "v1.3.2-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chat-nanpure",
+    "date": "2026-11-03T12:38:15Z",
+    "description": "سودوکوی گروهی: یک جدول سودوکو را با هم در چت حل کنید، با رقم‌های فارسی و امتیاز هر نفر. فارسی‌شده از chat-nanpure (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chat-nanpure",
+    "name": "سودوکوی گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-nanpure-v1.3.2-fa1.xdc",
+    "size": 137433,
+    "icon_relname": "sudoshz-fa-nanpure-icon.png",
+    "group": "board"
   }
 ]
