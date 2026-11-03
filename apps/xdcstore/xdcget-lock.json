@@ -4428,5 +4428,20 @@
     "icon_relname": "sudoshz-sticker-icon.png",
     "group": "create",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-jadval",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-11-03T12:31:53Z",
+    "description": "جدول کلمات متقاطع گروهی با پرسش‌هایی از ادب و فرهنگ ایران؛ هر عضو با رنگ خودش خانه‌ها را پر می‌کند.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "جدول گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-jadval-v1.0.0.xdc",
+    "size": 145524,
+    "icon_relname": "sudoshz-jadval-icon.png",
+    "group": "board",
+    "author": "shirazlinux"
   }
 ]
