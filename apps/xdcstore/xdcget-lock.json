@@ -4457,5 +4457,19 @@
     "size": 137433,
     "icon_relname": "sudoshz-fa-nanpure-icon.png",
     "group": "board"
+  },
+  {
+    "app_id": "experintellia-gridcraft",
+    "tag_name": "v0.2.0",
+    "url": "https://github.com/experintellia/gridcraft/releases/download/v0.2.0/gridcraft.xdc",
+    "date": "2026-11-06T13:52:00Z",
+    "description": "جدول و صفحه گسترده گروهی با رابط انگلیسی.\nسلول‌ها، نمودار و فرمول را داخل چت و بدون اینترنت ویرایش می‌کنید. مجوز Apache-2.0.",
+    "source_code_url": "https://github.com/experintellia/gridcraft",
+    "name": "GridCraft",
+    "category": "tool",
+    "cache_relname": "experintellia-gridcraft-v0.2.0.xdc",
+    "size": 4779973,
+    "icon_relname": "experintellia-gridcraft-icon.png",
+    "group": "create"
   }
 ]
