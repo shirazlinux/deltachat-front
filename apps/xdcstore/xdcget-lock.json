@@ -4486,5 +4486,19 @@
     "icon_relname": "sudoshz-siahchal-icon.png",
     "group": "learn",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-fa-broadcast",
+    "tag_name": "v1.6.7-fa1",
+    "url": "https://github.com/Webxdc-mini-app/chatto-broadcast",
+    "date": "2026-11-06T14:54:37Z",
+    "description": "رادیو گروه: پیام صوتی و ویدیوی کوتاه برای مدرسه، هیئت، محله یا شرایط اضطراری. فارسی‌شده از chatto-broadcast (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/chatto-broadcast",
+    "name": "رادیو گروه",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-broadcast-v1.6.7-fa1.xdc",
+    "size": 158163,
+    "icon_relname": "sudoshz-fa-broadcast-icon.png",
+    "group": "media"
   }
 ]
