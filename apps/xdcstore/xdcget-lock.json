@@ -4471,5 +4471,20 @@
     "size": 4779973,
     "icon_relname": "experintellia-gridcraft-icon.png",
     "group": "create"
+  },
+  {
+    "app_id": "sudoshz-siahchal",
+    "tag_name": "v1.0.0",
+    "url": "https://github.com/shirazlinux/persian-webxdc",
+    "date": "2026-11-06T14:51:01Z",
+    "description": "سیاه‌چال واژه: یادگیری واژگان فارسی و انگلیسی در قالب بازی سیاه‌چال گروهی، آفلاین و با امتیاز هر نفر.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "سیاه‌چال واژه",
+    "category": "tool",
+    "cache_relname": "sudoshz-siahchal-v1.0.0.xdc",
+    "size": 156859,
+    "icon_relname": "sudoshz-siahchal-icon.png",
+    "group": "learn",
+    "author": "shirazlinux"
   }
 ]
