@@ -4500,5 +4500,19 @@
     "size": 158163,
     "icon_relname": "sudoshz-fa-broadcast-icon.png",
     "group": "media"
+  },
+  {
+    "app_id": "sudoshz-fa-hakosta",
+    "tag_name": "v1.5.0-fa1",
+    "url": "https://github.com/Webxdc-mini-app/hakosta",
+    "date": "2026-11-11T23:59:53Z",
+    "description": "کارت مهر محله: کارت وفاداری و مهر برای مغازه‌ها و فعالیت‌های محله، با تخفیف به تومان و تاریخ انقضای شمسی. فارسی‌شده از hakosta (MIT).",
+    "source_code_url": "https://github.com/Webxdc-mini-app/hakosta",
+    "name": "کارت مهر محله",
+    "category": "tool",
+    "cache_relname": "sudoshz-fa-hakosta-v1.5.0-fa1.xdc",
+    "size": 259270,
+    "icon_relname": "sudoshz-fa-hakosta-icon.png",
+    "group": "biz"
   }
 ]
