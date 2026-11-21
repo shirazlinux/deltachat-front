@@ -2774,7 +2774,7 @@
   {
     "app_id": "sudoshz-esm-famil",
     "tag_name": "v1.0.2",
-    "url": "https://github.com/shirazlinux",
+    "url": "https://delta.sudoshz.ir/apps/xdcstore/sudoshz-esm-famil-v1.0.2.xdc",
     "date": "2026-10-20T15:22:11Z",
     "description": "اسم‌فامیل و واژه‌سازی گروهی.\nبا یک حرف، اسم و شهر و غذا می‌نویسید. در واژه‌سازی حرف وسط باید داخل واژه باشد.",
     "source_code_url": "https://github.com/shirazlinux",
@@ -4542,5 +4542,20 @@
     "size": 2329390,
     "icon_relname": "wofwca-dcxwebxdc-icon.png",
     "group": "dev"
+  },
+  {
+    "app_id": "sudoshz-esm-famil-group",
+    "tag_name": "v1.0.0",
+    "url": "https://delta.sudoshz.ir/apps/xdcstore/sudoshz-esm-famil-group-v1.0.0.xdc",
+    "date": "2026-11-21T07:28:51Z",
+    "description": "اسم‌فامیل کلاسیک در گروه دلتاچت.\nحرف تصادفی فارسی، زمان‌سنج، خانه‌های موضوعی، داوری گروهی جواب‌ها و جدول امتیاز.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "اسم‌فامیل گروهی",
+    "category": "tool",
+    "cache_relname": "sudoshz-esm-famil-group-v1.0.0.xdc",
+    "size": 146726,
+    "icon_relname": "sudoshz-esm-famil-group-icon.png",
+    "group": "board",
+    "author": "shirazlinux"
   }
 ]
