@@ -4528,5 +4528,19 @@
     "size": 667360,
     "icon_relname": "sudoshz-fa-calendario-icon.png",
     "group": "plan"
+  },
+  {
+    "app_id": "wofwca-dcxwebxdc",
+    "tag_name": "v1.0.0",
+    "url": "https://delta.sudoshz.ir/apps/xdcstore/wofwca-dcxwebxdc-v1.0.0.xdc",
+    "date": "2026-11-21T05:40:50Z",
+    "description": "دلتاچت داخل دلتاچت.\nخود پیام‌رسان دلتاچت به‌صورت مینی‌اپ در چت اجرا می‌شود. ساخته WofWca، با پروانه GPL-3.0.",
+    "source_code_url": "https://github.com/WofWca/DCXWebXDC",
+    "name": "دلتاچت تو در تو",
+    "category": "tool",
+    "cache_relname": "wofwca-dcxwebxdc-v1.0.0.xdc",
+    "size": 2329390,
+    "icon_relname": "wofwca-dcxwebxdc-icon.png",
+    "group": "dev"
   }
 ]
