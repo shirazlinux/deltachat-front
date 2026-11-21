@@ -4557,5 +4557,20 @@
     "icon_relname": "sudoshz-esm-famil-group-icon.png",
     "group": "board",
     "author": "shirazlinux"
+  },
+  {
+    "app_id": "sudoshz-yalda-story",
+    "tag_name": "v1.0.0",
+    "url": "https://delta.sudoshz.ir/apps/xdcstore/sudoshz-yalda-story-v1.0.0.xdc",
+    "date": "2026-11-21T08:40:17Z",
+    "description": "قصه جمعی برای شب یلدا.\nبا شروع آماده از افسانه‌های ایرانی، نوبت به نوبت می‌نویسید و متن قصه را برای بلندخوانی می‌فرستید.",
+    "source_code_url": "https://github.com/shirazlinux/persian-webxdc",
+    "name": "قصه شب یلدا",
+    "category": "tool",
+    "cache_relname": "sudoshz-yalda-story-v1.0.0.xdc",
+    "size": 180566,
+    "icon_relname": "sudoshz-yalda-story-icon.png",
+    "group": "social",
+    "author": "shirazlinux"
   }
 ]
